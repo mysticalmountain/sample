@@ -1,0 +1,1 @@
+insert into uc_user (id, name) values ('1001', 'aaaaa');
