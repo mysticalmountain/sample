@@ -6,7 +6,7 @@ import java.io.Serializable;
 /**
  * Created by andongxu on 16-6-15.
  */
-public class ReqDto implements Serializable {
+public class Req implements Serializable {
 
     @NotNull(message = "不允许为空")
     private String reqId;
@@ -21,7 +21,7 @@ public class ReqDto implements Serializable {
 
     @Override
     public String toString() {
-        return "ReqDto{" +
+        return "Req{" +
                 "reqId='" + reqId + '\'' +
                 '}';
     }

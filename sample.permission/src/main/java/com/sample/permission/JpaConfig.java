@@ -26,6 +26,12 @@ public class JpaConfig {
     @Value("${jpa.entity.package}")
     private String entityPackage;
 
+    @Value("${hibernate.show_sql:false}")
+    private boolean showSql;
+
+    @Value("${hibernate.generate_ddl:false}")
+    private boolean generateDdl;
+
     @Bean
     @ConfigurationProperties(prefix = "spring.datasource")
     public DataSource dataSource() {
@@ -36,8 +42,8 @@ public class JpaConfig {
     @Bean
     public EntityManagerFactory entityManagerFactory(DataSource dataSource) {
         HibernateJpaVendorAdapter vendorAdapter = new HibernateJpaVendorAdapter();
-        vendorAdapter.setGenerateDdl(true);
-        vendorAdapter.setShowSql(true);
+        vendorAdapter.setGenerateDdl(generateDdl);
+        vendorAdapter.setShowSql(showSql);
         LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
         factory.setJpaVendorAdapter(vendorAdapter);
         factory.setPackagesToScan(getEntityPackage());

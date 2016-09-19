@@ -1,7 +1,6 @@
 package com.sample.test;
 
-import com.sample.permission.dto.QueryServiceReqDto;
-import com.sample.permission.dto.ServiceDto;
+import com.sample.permission.dto.QueryServiceReq;
 import org.apache.commons.beanutils.BeanUtils;
 
 import java.lang.reflect.InvocationTargetException;
@@ -21,7 +20,7 @@ public class BeanUtilTest {
 //        BeanUtils.copyProperties(s1, s2);
 //        System.out.println(s1);
 
-        QueryServiceReqDto queryServiceReqDto = new QueryServiceReqDto();
+        QueryServiceReq queryServiceReqDto = new QueryServiceReq();
         queryServiceReqDto.setId(Long.valueOf(2));
 
         Map<String, Object> ps = new HashMap<String, Object>();

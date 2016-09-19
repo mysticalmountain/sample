@@ -1,7 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e02f9c9f-0e39-4558-95a1-e24c03b2b1f6" name="Default" comment="" />
+    <list default="true" id="e02f9c9f-0e39-4558-95a1-e24c03b2b1f6" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__sample_sample_user_1_0_SNAPSHOT.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/model/dto/QueryReqDto.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/model/dto/QueryRspDto.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/model/dto/ReqDto.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/model/dto/RspDto.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/QueryReq.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/QueryRsp.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/QueryServiceReqDto.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/QueryServiceRspDto.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.web/src/test/java/com/sample/web/HttpRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.web/src/test/java/com/sample/web/controller/Test.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditServiceService.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/QueryServiceService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/pom.xml" afterPath="$PROJECT_DIR$/sample.core/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/sample.core.iml" afterPath="$PROJECT_DIR$/sample.core/sample.core.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/log/LogManager.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/log/LogManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/AbstractSampleService.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/AbstractSampleService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/IService.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/IService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/Service.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/Service.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/aspect/ServiceAspect.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/aspect/ServiceAspect.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/handler/AbstractServiceHandler.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/handler/AbstractServiceHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/handler/ServiceHandlerChain.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/handler/ServiceHandlerChain.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/validator/IValidatorService.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/validator/IValidatorService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/validator/ValidatorService.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/validator/ValidatorService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/pom.xml" afterPath="$PROJECT_DIR$/sample.permission/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/sample.permission.iml" afterPath="$PROJECT_DIR$/sample.permission/sample.permission.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/JpaConfig.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/JpaConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/BaseRsp.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/BaseRsp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/EditChannelReq.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/EditChannelReq.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/EditRoleReq.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/EditRoleReq.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/ServiceDto.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/ServiceDto.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/ValidateRsp.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/ValidateRsp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditChannelService.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditChannelService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditRoleService.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditRoleService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/QueryService.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/QueryService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/ValidateService.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/ValidateService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/QueryServiceHandler.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/QueryServiceHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/sample.permission/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/EditRoleHandlerTest.java" afterPath="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/EditRoleHandlerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/QueryServiceHandlerTest.java" afterPath="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/QueryServiceHandlerTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/test/resources/application.properties" afterPath="$PROJECT_DIR$/sample.permission/src/test/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.test/pom.xml" afterPath="$PROJECT_DIR$/sample.test/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.test/sample.test.iml" afterPath="$PROJECT_DIR$/sample.test/sample.test.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/Tmp.java" afterPath="$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/Tmp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/service/Support.java" afterPath="$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/service/Support.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.test/src/test/java/com/sample/test/BeanUtilTest.java" afterPath="$PROJECT_DIR$/sample.test/src/test/java/com/sample/test/BeanUtilTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.user/sample.user.iml" afterPath="$PROJECT_DIR$/sample.user/sample.user.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/USC01001.java" afterPath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/USC01001.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/UserIdReq.java" afterPath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/UserIdReq.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/UserIdRsp.java" afterPath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/UserIdRsp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/UsernameReq.java" afterPath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/UsernameReq.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.user/src/test/java/com/sample/user/Tmp.java" afterPath="$PROJECT_DIR$/sample.user/src/test/java/com/sample/user/Tmp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.web/sample.web.iml" afterPath="$PROJECT_DIR$/sample.web/sample.web.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/WebConfig.java" afterPath="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/WebConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/controller/ServiceController.java" afterPath="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/controller/ServiceController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/ServiceDispatcher.java" afterPath="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/ServiceDispatcher.java" />
+    </list>
     <ignored path="sample.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -44,106 +102,138 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ServiceController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/controller/ServiceController.java">
+      <file leaf-file-name="ServiceDispatcher.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/ServiceDispatcher.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+              <caret line="57" column="61" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="61" />
               <folding>
-                <element signature="e#811#812#0" expanded="true" />
-                <element signature="e#853#854#0" expanded="true" />
-                <element signature="e#959#960#0" expanded="true" />
-                <element signature="e#993#994#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/sample.permission/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6585366">
+              <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/sample.core/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-7.3333335">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthorProfileRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/user/repository/AuthorProfileRepository.java">
+      <file leaf-file-name="ConcurrentHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/handler/ConcurrentHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding />
+              <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1014#1015#0" expanded="true" />
+                <element signature="e#1073#1074#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/service/impl/UserServiceImpl.java">
+      <file leaf-file-name="QueryServiceServiceTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/concurrent/QueryServiceServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-              <folding />
+              <caret line="44" column="65" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegisterService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/service/RegisterService.java">
+      <file leaf-file-name="RateHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/handler/RateHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
-              <folding />
+              <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.65625">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthorRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/user/repository/AuthorRepository.java">
+      <file leaf-file-name="RateConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/RateConfig.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <caret line="19" column="25" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="25" />
+              <folding>
+                <element signature="e#879#880#0" expanded="true" />
+                <element signature="e#910#911#0" expanded="true" />
+                <element signature="e#958#959#0" expanded="true" />
+                <element signature="e#998#999#0" expanded="true" />
+                <element signature="e#1041#1042#0" expanded="true" />
+                <element signature="e#1080#1081#0" expanded="true" />
+                <element signature="e#1144#1145#0" expanded="true" />
+                <element signature="e#1200#1201#0" expanded="true" />
+                <element signature="e#1237#1238#0" expanded="true" />
+                <element signature="e#1272#1273#0" expanded="true" />
+                <element signature="e#1326#1327#0" expanded="true" />
+                <element signature="e#1374#1375#0" expanded="true" />
+                <element signature="e#1405#1406#0" expanded="true" />
+                <element signature="e#1435#1436#0" expanded="true" />
+                <element signature="e#1478#1479#0" expanded="true" />
+                <element signature="e#1516#1517#0" expanded="true" />
+                <element signature="e#1548#1549#0" expanded="true" />
+                <element signature="e#1578#1579#0" expanded="true" />
+                <element signature="e#1622#1623#0" expanded="true" />
+                <element signature="e#1660#1661#0" expanded="true" />
+                <element signature="e#1692#1693#0" expanded="true" />
+                <element signature="e#1720#1721#0" expanded="true" />
+                <element signature="e#1763#1764#0" expanded="true" />
+                <element signature="e#1797#1798#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample.permission/src/test/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RoleRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/user/repository/RoleRepository.java">
+      <file leaf-file-name="AbstractSampleService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/AbstractSampleService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-              <folding />
+              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/user/repository/BookRepository.java">
+      <file leaf-file-name="IRateHandler.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/handler/IRateHandler.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AuthticationRepository.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/user/repository/AuthticationRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -161,6 +251,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="modificationStamps">
@@ -181,57 +274,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditService.java" />
-        <option value="$PROJECT_DIR$/sample.test/src/test/java/com/sample/test/UrlEncode.java" />
-        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/Service.java" />
-        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/IService.java" />
-        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/AbstractSampleService.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/tmp/ITmp.java" />
-        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/tmp/ITmp.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/tmp/TmpB.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/tmp/TmpA.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/tmp/TmpC.java" />
-        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/ISampleService.java" />
-        <option value="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/IServiceObject.java" />
-        <option value="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/IServiceVisitor.java" />
-        <option value="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/CommonServiceVisitor.java" />
-        <option value="$PROJECT_DIR$/sample.web/src/test/java/com/sample/web/Test.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/Tmp.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/Client.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/test/java/Server.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/test/java/Client.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/test/java/EncriptTest.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditRoleService.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/ValidateService.java" />
         <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/QueryService.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditServiceService.java" />
         <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditChannelService.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/ValidateChannelHandler.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/ValidateMenuHandler.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/EditChannelHandler.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/QueryServiceHandler.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/EditRoleHandler.java" />
-        <option value="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/IServiceData.java" />
-        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/aspect/ServiceAspect.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/EditChannelHandlerTest.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/PermissionTestApp.java" />
-        <option value="$PROJECT_DIR$/sample.web/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/sample.web/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/handler/ServiceHandlerChain.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/boot/PermissionTestApp.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/boot/permission/PermissionApp.java" />
-        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/CoreConfig.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/PermissionApp.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditRoleService.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditServiceService.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/ValidateRsp.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/ValidateService.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/web/http/converter/StringHttpMessageConverter.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/web/http/converter/MyStringHttpMessageConverter.java" />
+        <option value="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/MyStringHttpMessageConverter.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/validator/ValidatorService.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/web/service/EditChannelServiceTest.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/web/WebTest.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/Service.java" />
         <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/PermissionConfig.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/boot/PermissionTestApp.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/JpaConfig.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/config/PermissionConfig.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/boot/PermissionApp.java" />
-        <option value="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/BaseTest.java" />
-        <option value="$PROJECT_DIR$/sample.web/src/test/java/com/sample/web/controller/Test.java" />
-        <option value="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/ServiceDispatcher.java" />
+        <option value="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/WebConfig.java" />
+        <option value="$PROJECT_DIR$/sample.web/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/controller/ServiceController.java" />
-        <option value="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/service/RegisterService.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/model/dto/QueryReq.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/QueryServiceHandlerTest.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/handler/AbstractServiceHandler.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/handler/ServiceHandlerChain.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/QueryServiceService.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/web/service/QueryServiceServiceTest.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/sample.test/pom.xml" />
+        <option value="$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/RateLimiterTest.java" />
+        <option value="$PROJECT_DIR$/sample.test/src/test/java/com/sample/test/RateLimiterTest.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/IRateHandler.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/handler/RateRule.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/RateType.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/RateException.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/aspect/ServiceAspect.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/JpaConfig.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/Constant.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/QueryServiceHandler.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/ServiceDto.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/QueryServiceReq.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/model/dto/QueryRsp.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/RateRule.java" />
+        <option value="$PROJECT_DIR$/sample.core/pom.xml" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/handler/IConcurrentHandler.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/handler/IRateHandler.java" />
+        <option value="$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/Tmp.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/RateConfig.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/handler/ConcurrentHandler.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/AbstractSampleService.java" />
+        <option value="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/handler/RateHandler.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/concurrent/QueryServiceServiceTest.java" />
+        <option value="$PROJECT_DIR$/sample.permission/src/test/resources/application.properties" />
+        <option value="$PROJECT_DIR$/sample.permission/pom.xml" />
       </list>
     </option>
   </component>
@@ -313,7 +406,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -331,16 +424,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scratches">
         <subPane />
       </pane>
@@ -362,6 +445,154 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dispatch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample.web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample.permission" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample.core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -378,7 +609,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/sample.user" />
+    <property name="last_opened_file_path" value="$USER_HOME$/hdbank/source/bank/01.code/fairy_fastdfs_sample" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -390,20 +621,6 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///home/andongxu/workspace/sample/sample.core/src/main/java/com/sample/core/validator/ValidatorService.java" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission" />
-      <recent name="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/boot" />
-      <recent name="$PROJECT_DIR$/sample.permission/src/test/java" />
-      <recent name="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service" />
-      <recent name="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/repository" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.sample.permission.config" />
-      <recent name="com.sample.boot" />
-      <recent name="com.sample.core.service.tmp" />
-      <recent name="com.sample.permission.service.handler" />
-      <recent name="com.sample.permission.repository" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/sample.permission/src/test/resources" />
       <recent name="$PROJECT_DIR$/sample.web/src/main/resources" />
@@ -411,76 +628,35 @@
       <recent name="$PROJECT_DIR$/sample.jpa/src/main/resources" />
       <recent name="$PROJECT_DIR$/sample.test/src/main/java/com/sample/test" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.sample.test" />
+      <recent name="com.sample.web" />
+      <recent name="com.sample.permission.config" />
+      <recent name="com.sample.boot" />
+      <recent name="com.sample.core.service.tmp" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/handler" />
+      <recent name="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission" />
+      <recent name="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/boot" />
+      <recent name="$PROJECT_DIR$/sample.permission/src/test/java" />
+      <recent name="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.PermissionApp (1)">
-    <configuration default="false" name="EncriptTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="EncriptTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sample.permission" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.QueryServiceServiceTest.multiThread">
+    <configuration default="false" name="RateLimiterTest.withRateLimiter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.sample.web.controller.*" />
+          <option name="PATTERN" value="com.sample.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.sample.web.controller.Test" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <module name="sample.test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sample.web" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="PermissionApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.sample.permission.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="com.sample.permission.PermissionApp" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sample.permission" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="EditChannelHandlerTest.success" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.sample.permission.service.handler.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="sample.permission" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.sample.permission.service.handler" />
-      <option name="MAIN_CLASS_NAME" value="com.sample.permission.service.handler.EditChannelHandlerTest" />
-      <option name="METHOD_NAME" value="success" />
+      <option name="PACKAGE_NAME" value="com.sample.test" />
+      <option name="MAIN_CLASS_NAME" value="com.sample.test.RateLimiterTest" />
+      <option name="METHOD_NAME" value="withRateLimiter" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -494,14 +670,92 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="PermissionApp (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="QueryServiceHandlerTest.findAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.sample.boot.*" />
+          <option name="PATTERN" value="com.sample.permission.service.handler.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="com.sample.boot.PermissionApp" />
+      <module name="sample.permission" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.sample.permission.service.handler" />
+      <option name="MAIN_CLASS_NAME" value="com.sample.permission.service.handler.QueryServiceHandlerTest" />
+      <option name="METHOD_NAME" value="findAll" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="QueryServiceServiceTest.oneThread" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.sample.permission.concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="sample.permission" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.sample.permission.concurrent" />
+      <option name="MAIN_CLASS_NAME" value="com.sample.permission.concurrent.QueryServiceServiceTest" />
+      <option name="METHOD_NAME" value="oneThread" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="QueryServiceServiceTest.multiThread" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.sample.permission.concurrent.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="sample.permission" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.sample.permission.concurrent" />
+      <option name="MAIN_CLASS_NAME" value="com.sample.permission.concurrent.QueryServiceServiceTest" />
+      <option name="METHOD_NAME" value="multiThread" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Tmp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.sample.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.sample.test.Tmp" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -510,7 +764,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="sample.permission" />
+      <module name="sample.test" />
       <envs />
       <method />
     </configuration>
@@ -953,19 +1207,19 @@
     <list size="7">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.BootDataJpaApplication" />
       <item index="1" class="java.lang.String" itemvalue="Spring Boot.Application" />
-      <item index="2" class="java.lang.String" itemvalue="Application.EncriptTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Test" />
-      <item index="4" class="java.lang.String" itemvalue="Application.PermissionApp" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.EditChannelHandlerTest.success" />
-      <item index="6" class="java.lang.String" itemvalue="Application.PermissionApp (1)" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.RateLimiterTest.withRateLimiter" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.QueryServiceHandlerTest.findAll" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.QueryServiceServiceTest.oneThread" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.QueryServiceServiceTest.multiThread" />
+      <item index="6" class="java.lang.String" itemvalue="Application.Tmp" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.PermissionApp (1)" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Test" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EditChannelHandlerTest.success" />
-        <item index="3" class="java.lang.String" itemvalue="Application.PermissionApp" />
-        <item index="4" class="java.lang.String" itemvalue="Application.EncriptTest" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.QueryServiceServiceTest.multiThread" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.QueryServiceHandlerTest.findAll" />
+        <item index="2" class="java.lang.String" itemvalue="Application.Tmp" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.QueryServiceServiceTest.oneThread" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.RateLimiterTest.withRateLimiter" />
       </list>
     </recent_temporary>
   </component>
@@ -1004,44 +1258,46 @@
       <workItem from="1473668769923" duration="8109000" />
       <workItem from="1473677028902" duration="14783000" />
       <workItem from="1473700558153" duration="1722000" />
-      <workItem from="1473732381975" duration="26168000" />
+      <workItem from="1473732381975" duration="33802000" />
+      <workItem from="1474164696509" duration="6349000" />
+      <workItem from="1474171057091" duration="42850000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EditChannelHandlerTest_success - 2016.09.14 at 00h 03m 32s.xml">
-      <configuration name="EditChannelHandlerTest.success" configurationId="JUnit" />
+    <history-entry file="QueryServiceServiceTest_multiThread - 2016.09.19 at 17h 36m 27s.xml">
+      <configuration name="QueryServiceServiceTest.multiThread" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EditChannelHandlerTest_success - 2016.09.14 at 00h 03m 57s.xml">
-      <configuration name="EditChannelHandlerTest.success" configurationId="JUnit" />
+    <history-entry file="QueryServiceServiceTest_multiThread - 2016.09.19 at 17h 36m 51s.xml">
+      <configuration name="QueryServiceServiceTest.multiThread" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EditChannelHandlerTest_success - 2016.09.14 at 00h 04m 39s.xml">
-      <configuration name="EditChannelHandlerTest.success" configurationId="JUnit" />
+    <history-entry file="QueryServiceServiceTest_multiThread - 2016.09.19 at 17h 37m 23s.xml">
+      <configuration name="QueryServiceServiceTest.multiThread" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EditChannelHandlerTest_success - 2016.09.14 at 00h 05m 20s.xml">
-      <configuration name="EditChannelHandlerTest.success" configurationId="JUnit" />
+    <history-entry file="QueryServiceServiceTest_multiThread - 2016.09.19 at 17h 38m 13s.xml">
+      <configuration name="QueryServiceServiceTest.multiThread" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EditChannelHandlerTest_success - 2016.09.14 at 00h 06m 27s.xml">
-      <configuration name="EditChannelHandlerTest.success" configurationId="JUnit" />
+    <history-entry file="QueryServiceServiceTest_multiThread - 2016.09.19 at 17h 39m 05s.xml">
+      <configuration name="QueryServiceServiceTest.multiThread" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EditChannelHandlerTest_success - 2016.09.14 at 00h 07m 04s.xml">
-      <configuration name="EditChannelHandlerTest.success" configurationId="JUnit" />
+    <history-entry file="QueryServiceServiceTest_multiThread - 2016.09.19 at 17h 42m 40s.xml">
+      <configuration name="QueryServiceServiceTest.multiThread" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EditChannelHandlerTest_success - 2016.09.14 at 00h 10m 12s.xml">
-      <configuration name="EditChannelHandlerTest.success" configurationId="JUnit" />
+    <history-entry file="QueryServiceServiceTest_multiThread - 2016.09.19 at 17h 43m 59s.xml">
+      <configuration name="QueryServiceServiceTest.multiThread" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EditChannelHandlerTest_success - 2016.09.14 at 00h 10m 36s.xml">
-      <configuration name="EditChannelHandlerTest.success" configurationId="JUnit" />
+    <history-entry file="QueryServiceServiceTest_multiThread - 2016.09.19 at 17h 53m 44s.xml">
+      <configuration name="QueryServiceServiceTest.multiThread" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EditChannelHandlerTest_success - 2016.09.14 at 00h 12m 08s.xml">
-      <configuration name="EditChannelHandlerTest.success" configurationId="JUnit" />
+    <history-entry file="QueryServiceServiceTest_multiThread - 2016.09.19 at 17h 55m 18s.xml">
+      <configuration name="QueryServiceServiceTest.multiThread" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EditChannelHandlerTest_success - 2016.09.14 at 00h 23m 53s.xml">
-      <configuration name="EditChannelHandlerTest.success" configurationId="JUnit" />
+    <history-entry file="QueryServiceServiceTest_multiThread - 2016.09.19 at 17h 56m 25s.xml">
+      <configuration name="QueryServiceServiceTest.multiThread" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="571123000" />
+    <option name="totallyTimeSpent" value="627956000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1061,14 +1317,14 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952252" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.253406" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32991013" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24903722" sideWeight="0.4940171" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833788" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4386921" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.48365122" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" x="0" y="390" width="1600" height="355" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41280654" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.48365122" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" x="0" y="474" width="1600" height="355" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30359435" sideWeight="0.5070422" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -1077,9 +1333,9 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36512262" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2920411" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34146342" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27278563" sideWeight="0.49295774" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30744544" sideWeight="0.49295774" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27086008" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35694823" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34468666" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24903722" sideWeight="0.50598294" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1101,211 +1357,227 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/config/DBConfig.java</url>
           <line>76</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.user/src/test/java/com/sample/user/service/UserServiceTest.java</url>
           <line>23</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.user/src/test/java/com/sample/user/Tmp.java</url>
-          <line>20</line>
+          <line>16</line>
           <properties />
           <option name="timeStamp" value="33" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/validator/ValidatorService.java</url>
-          <line>18</line>
+          <line>12</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.test/src/test/java/com/sample/test/Va.java</url>
           <line>27</line>
           <properties />
           <option name="timeStamp" value="37" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.user/src/test/java/com/sample/user/service/RegisterServiceTest.java</url>
           <line>37</line>
           <properties />
           <option name="timeStamp" value="40" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/repository/RoleRepositoryTest.java</url>
           <line>88</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/repository/RoleRepositoryTest.java</url>
           <line>101</line>
           <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/repository/MenuRepositoryTest.java</url>
           <line>29</line>
           <properties />
           <option name="timeStamp" value="46" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/repository/PermissionMenuTest.java</url>
           <line>58</line>
           <properties />
           <option name="timeStamp" value="47" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/EditChannelHandlerTest.java</url>
           <line>32</line>
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/EditRoleHandlerTest.java</url>
           <line>33</line>
           <properties />
           <option name="timeStamp" value="52" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditServiceService.java</url>
-          <line>21</line>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/QueryServiceService.java</url>
+          <line>26</line>
           <properties />
           <option name="timeStamp" value="53" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/EditRoleHandler.java</url>
           <line>42</line>
           <properties />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/ValidateChannelHandler.java</url>
           <line>27</line>
           <properties />
           <option name="timeStamp" value="58" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/ValidateChannelHandlerTest.java</url>
           <line>27</line>
           <properties />
           <option name="timeStamp" value="59" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/repository/MenuRepositoryTest.java</url>
           <line>57</line>
           <properties />
           <option name="timeStamp" value="62" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/repository/MenuRepositoryTest.java</url>
           <line>67</line>
           <properties />
           <option name="timeStamp" value="63" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/ValidateMenuHandler.java</url>
           <line>28</line>
           <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.test/src/test/java/com/sample/test/BeanUtilTest.java</url>
-          <line>16</line>
+          <line>15</line>
           <properties />
           <option name="timeStamp" value="68" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/repository/ServiceRepositoryTest.java</url>
           <line>60</line>
           <properties />
           <option name="timeStamp" value="71" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/repository/ServiceRepositoryTest.java</url>
           <line>76</line>
           <properties />
           <option name="timeStamp" value="72" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/repository/ServiceRepositoryTest.java</url>
           <line>86</line>
           <properties />
           <option name="timeStamp" value="74" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/QueryServiceHandlerTest.java</url>
-          <line>35</line>
+          <line>34</line>
           <properties />
           <option name="timeStamp" value="77" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/QueryServiceHandlerTest.java</url>
-          <line>43</line>
+          <line>42</line>
           <properties />
           <option name="timeStamp" value="78" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/QueryServiceHandlerTest.java</url>
-          <line>51</line>
+          <line>50</line>
           <properties />
           <option name="timeStamp" value="79" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/QueryServiceHandlerTest.java</url>
-          <line>59</line>
+          <line>58</line>
           <properties />
           <option name="timeStamp" value="80" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.test/src/test/java/com/sample/test/FastJsonTest.java</url>
           <line>52</line>
           <properties />
           <option name="timeStamp" value="94" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/ServiceDispatcher.java</url>
-          <properties />
-          <option name="timeStamp" value="98" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/ServiceDispatcher.java</url>
-          <line>1</line>
-          <properties />
-          <option name="timeStamp" value="99" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditChannelService.java</url>
-          <line>29</line>
-          <properties />
-          <option name="timeStamp" value="104" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/EditChannelHandler.java</url>
           <line>47</line>
           <properties />
           <option name="timeStamp" value="105" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/aspect/ServiceAspect.java</url>
-          <line>80</line>
+          <line>58</line>
           <properties />
           <option name="timeStamp" value="110" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/ServiceDispatcher.java</url>
-          <line>51</line>
+          <line>52</line>
           <properties />
           <option name="timeStamp" value="111" />
         </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/ServiceDispatcher.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="115" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.2.5.RELEASE/spring-core-4.2.5.RELEASE-sources.jar!/org/springframework/util/MimeTypeUtils.java</url>
+          <line>230</line>
+          <properties />
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/QueryServiceService.java</url>
+          <line>32</line>
+          <properties />
+          <option name="timeStamp" value="134" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/QueryServiceHandler.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="135" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/handler/ConcurrentHandler.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="115" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="137" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
@@ -1328,6 +1600,7 @@
         <watch expression="JSON.parseObject(requestData.substring(0, requestData.length() - 1), parameterType1)" />
         <watch expression="serviceHandler.getClass().getAnnotation(Service.class)" />
         <watch expression="requestData.substring(0, requestData.length() - 1)" />
+        <watch expression="&quot;{\&quot;errorCode\&quot;:&quot; + &quot;999999&quot; + &quot;,\&quot;errorMsg\&quot;:&quot; +&quot;\&quot;&quot; + e.getMessage() + &quot;\&quot;&quot; + &quot;,success\&quot;:false}&quot;" />
       </configuration>
     </watches-manager>
   </component>
@@ -1336,315 +1609,18 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/log/handler/AbstractLogHandler.java">
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/model/dto/Req.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/log/handler/RspLogHandler.java">
+    <entry file="file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/web/service/EditChannelServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/log/handler/LogHandlerChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/log/handler/ReqLogHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.5.RELEASE/spring-aop-4.2.5.RELEASE-sources.jar!/org/springframework/aop/support/AopUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="306" column="0" selection-start-line="306" selection-start-column="0" selection-end-line="306" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/exception/ExceptionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="19" selection-start-line="65" selection-start-column="19" selection-end-line="65" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/exception/api/IExceptionManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditChannelService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/aspect/ServiceAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5964913">
-          <caret line="96" column="0" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.5.RELEASE/spring-aop-4.2.5.RELEASE-sources.jar!/org/springframework/aop/aspectj/AbstractAspectJAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="608" column="0" selection-start-line="608" selection-start-column="0" selection-end-line="608" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.5.RELEASE/spring-aop-4.2.5.RELEASE-sources.jar!/org/springframework/aop/aspectj/AspectJAroundAdvice.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.5.RELEASE/spring-aop-4.2.5.RELEASE-sources.jar!/org/springframework/aop/interceptor/ExposeInvocationInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.5.RELEASE/spring-aop-4.2.5.RELEASE-sources.jar!/org/springframework/aop/framework/ReflectiveMethodInvocation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="178" column="0" selection-start-line="178" selection-start-column="0" selection-end-line="178" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.2.5.RELEASE/spring-aop-4.2.5.RELEASE-sources.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="207" column="0" selection-start-line="207" selection-start-column="0" selection-end-line="207" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.web/src/test/java/com/sample/web/HttpRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="22" selection-start-line="108" selection-start-column="22" selection-end-line="108" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/EditChannelHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/ValidateService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/4.2.5.RELEASE/spring-context-4.2.5.RELEASE-sources.jar!/org/springframework/context/annotation/ComponentScan.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="56" column="18" selection-start-line="56" selection-start-column="18" selection-end-line="56" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/repository/ChannelRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.permission/src/test/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="33" selection-start-line="6" selection-start-column="33" selection-end-line="6" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/handler/ServiceHandlerChain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="44" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/ValidateChannelHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="24" column="22" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/CoreConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.3.3.RELEASE/spring-boot-autoconfigure-1.3.3.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="48" column="18" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.3.3.RELEASE/spring-boot-autoconfigure-1.3.3.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/AutoConfigurationPackage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#1361#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.3.3.RELEASE/spring-boot-autoconfigure-1.3.3.RELEASE-sources.jar!/org/springframework/boot/autoconfigure/EnableAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="73" column="14" selection-start-line="73" selection-start-column="14" selection-end-line="73" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/JpaConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/PermissionConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/boot/PermissionTestApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/BaseTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="60" selection-start-line="14" selection-start-column="60" selection-end-line="14" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/EditChannelHandlerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/WebApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/IServiceData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/IServiceVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.web/src/test/java/com/sample/web/controller/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/CommonServiceVisitor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <caret line="18" column="5" selection-start-line="13" selection-start-column="4" selection-end-line="18" selection-end-column="5" />
           <folding />
         </state>
       </provider>
@@ -1652,80 +1628,76 @@
     <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/boot/PermissionApp.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="30" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <caret line="19" column="57" selection-start-line="19" selection-start-column="57" selection-end-line="19" selection-end-column="57" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#704#705#0" expanded="false" />
+            <element signature="e#768#769#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/ServiceDispatcher.java">
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/log/handler/AbstractLogHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.2.5.RELEASE/spring-web-4.2.5.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.962963">
-          <caret line="151" column="9" selection-start-line="151" selection-start-column="9" selection-end-line="151" selection-end-column="9" />
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/controller/ServiceController.java">
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/handler/AbstractServiceHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <caret line="15" column="35" selection-start-line="15" selection-start-column="35" selection-end-line="15" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/handler/ServiceHandlerChain.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="5" selection-start-line="43" selection-start-column="5" selection-end-line="43" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/web/service/QueryServiceServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
           <folding>
-            <element signature="e#811#812#0" expanded="true" />
-            <element signature="e#853#854#0" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#993#994#0" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/QueryService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="33" column="23" selection-start-line="33" selection-start-column="12" selection-end-line="33" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-10.666667">
+          <caret line="118" column="25" selection-start-line="114" selection-start-column="12" selection-end-line="118" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/user/repository/AuthorRepository.java">
+    <entry file="file://$PROJECT_DIR$/sample.test/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state vertical-scroll-proportion="-12.666667">
+          <caret line="61" column="21" selection-start-line="61" selection-start-column="21" selection-end-line="61" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/user/repository/RoleRepository.java">
+    <entry file="file://$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/user/repository/BookRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/user/repository/AuthticationRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1738,26 +1710,361 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/service/impl/UserServiceImpl.java">
+    <entry file="jar://$USER_HOME$/dev/jdk1.7.0_79/src.zip!/java/util/concurrent/CountDownLatch.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <caret line="202" column="11" selection-start-line="202" selection-start-column="11" selection-end-line="202" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/service/RegisterService.java">
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/log/handler/ILogHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="24" selection-start-line="28" selection-start-column="24" selection-end-line="28" selection-end-column="24" />
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/log/handler/LogHandlerChain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65625">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/log/handler/ReqLogHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/log/handler/RspLogHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="67" selection-start-line="24" selection-start-column="67" selection-end-line="24" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/validator/FormatException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/ISampleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/EditChannelHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="23" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/EditChannelHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.test/src/test/java/com/sample/test/RateLimiterTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="30" column="54" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/exception/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/CoreConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/JpaConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="21" selection-start-line="46" selection-start-column="21" selection-end-line="46" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/aspect/ServiceAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="75" column="0" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/QueryServiceService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="0" selection-start-line="37" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/ServiceDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/QueryServiceReq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="41" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/model/dto/Rsp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/model/dto/QueryRsp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="33" selection-start-line="84" selection-start-column="33" selection-end-line="84" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/QueryServiceHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#1455#1473#0" expanded="true" />
+            <element signature="e#1537#1549#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/dev/jdk1.7.0_79/src.zip!/java/util/concurrent/Semaphore.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="283" column="11" selection-start-line="283" selection-start-column="11" selection-end-line="283" selection-end-column="11" />
+          <folding>
+            <element signature="e#9650#9651#0" expanded="true" />
+            <element signature="e#9728#9729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/handler/IConcurrentHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="24" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/19.0/guava-19.0.jar!/com/google/common/util/concurrent/RateLimiter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.37037">
+          <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/Tmp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/RateException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/QueryServiceHandlerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="73" selection-start-line="27" selection-start-column="73" selection-end-line="27" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/model/dto/QueryReq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/handler/IRateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/RateConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="25" />
+          <folding>
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#998#999#0" expanded="true" />
+            <element signature="e#1041#1042#0" expanded="true" />
+            <element signature="e#1080#1081#0" expanded="true" />
+            <element signature="e#1144#1145#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+            <element signature="e#1326#1327#0" expanded="true" />
+            <element signature="e#1374#1375#0" expanded="true" />
+            <element signature="e#1405#1406#0" expanded="true" />
+            <element signature="e#1435#1436#0" expanded="true" />
+            <element signature="e#1478#1479#0" expanded="true" />
+            <element signature="e#1516#1517#0" expanded="true" />
+            <element signature="e#1548#1549#0" expanded="true" />
+            <element signature="e#1578#1579#0" expanded="true" />
+            <element signature="e#1622#1623#0" expanded="true" />
+            <element signature="e#1660#1661#0" expanded="true" />
+            <element signature="e#1692#1693#0" expanded="true" />
+            <element signature="e#1720#1721#0" expanded="true" />
+            <element signature="e#1763#1764#0" expanded="true" />
+            <element signature="e#1797#1798#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/handler/ConcurrentHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="64" selection-start-line="50" selection-start-column="64" selection-end-line="50" selection-end-column="64" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1014#1015#0" expanded="true" />
+            <element signature="e#1073#1074#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/AbstractSampleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/rate/handler/RateHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="34" selection-start-line="32" selection-start-column="34" selection-end-line="32" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/concurrent/QueryServiceServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="65" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.permission/src/test/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/ServiceDispatcher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="61" selection-start-line="57" selection-start-column="55" selection-end-line="57" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.core/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3333335">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sample.permission/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6585366">
+          <caret line="43" column="19" selection-start-line="43" selection-start-column="19" selection-end-line="43" selection-end-column="19" />
           <folding />
         </state>
       </provider>

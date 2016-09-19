@@ -47,4 +47,14 @@ public class ServiceDto implements Serializable {
     public void setClassName(String className) {
         this.className = className;
     }
+
+    @Override
+    public String toString() {
+        return "ServiceDto{" +
+                "id=" + id +
+                ", code='" + code + '\'' +
+                ", className='" + className + '\'' +
+                ", tmp='" + tmp + '\'' +
+                '}';
+    }
 }

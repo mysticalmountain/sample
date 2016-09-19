@@ -10,9 +10,6 @@ import java.io.IOException;
 public class Tmp {
 
     public static void main(String [] args) throws IOException {
-        File file = new File("/home/andongxu/workspace/tmp-file");
-        if (!file.exists()) {
-            file.createNewFile();
-        }
+        System.out.println(Integer.MAX_VALUE);
     }
 }

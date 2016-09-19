@@ -1,0 +1,1117 @@
+2016-09-18 10:14:24 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 10:16:19 [ http-nio-8080-exec-5:115072 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 10:16:19 [ http-nio-8080-exec-5:115504 ] - [ ERROR ] 
+java.lang.NullPointerException
+	at com.sample.permission.service.handler.EditChannelHandler.doHandle(EditChannelHandler.java:53)
+	at com.sample.permission.service.handler.EditChannelHandler.doHandle(EditChannelHandler.java:27)
+	at com.sample.core.service.handler.AbstractServiceHandler.execute(AbstractServiceHandler.java:14)
+	at com.sample.core.service.handler.ServiceHandlerChain.handle(ServiceHandlerChain.java:39)
+	at com.sample.core.service.handler.AbstractServiceHandler.execute(AbstractServiceHandler.java:16)
+	at com.sample.core.service.handler.ServiceHandlerChain.handle(ServiceHandlerChain.java:39)
+	at com.sample.permission.service.EditChannelService.doService(EditChannelService.java:25)
+	at com.sample.permission.service.EditChannelService.doService(EditChannelService.java:16)
+	at com.sample.core.service.AbstractSampleService.service(AbstractSampleService.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.sample.core.service.aspect.ServiceAspect.execute(ServiceAspect.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:609)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:68)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy96.service(Unknown Source)
+	at com.sample.web.dispatch.CommonServiceVisitor.visit(CommonServiceVisitor.java:15)
+	at com.sample.web.dispatch.ServiceDispatcher.execute(ServiceDispatcher.java:45)
+	at com.sample.web.controller.ServiceController.service(ServiceController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-18 10:16:19 [ http-nio-8080-exec-5:115519 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-18 10:20:44 [ http-nio-8080-exec-2:380132 ] - [ ERROR ] not match : - 
+com.alibaba.fastjson.JSONException: not match : - 
+	at com.alibaba.fastjson.parser.JSONLexerBase.nextTokenWithChar(JSONLexerBase.java:388)
+	at com.alibaba.fastjson.parser.JSONLexerBase.nextTokenWithColon(JSONLexerBase.java:370)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parseExtra(DefaultJSONParser.java:1460)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.parseField(JavaBeanDeserializer.java:676)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:564)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:189)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:185)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parseObject(DefaultJSONParser.java:614)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:339)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:243)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:456)
+	at com.sample.web.dispatch.ServiceDispatcher$1.get(ServiceDispatcher.java:50)
+	at com.sample.web.dispatch.CommonServiceVisitor.visit(CommonServiceVisitor.java:14)
+	at com.sample.web.dispatch.ServiceDispatcher.execute(ServiceDispatcher.java:45)
+	at com.sample.web.controller.ServiceController.service(ServiceController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-18 10:21:06 [ http-nio-8080-exec-5:402678 ] - [ ERROR ] not match : - 
+com.alibaba.fastjson.JSONException: not match : - 
+	at com.alibaba.fastjson.parser.JSONLexerBase.nextTokenWithChar(JSONLexerBase.java:388)
+	at com.alibaba.fastjson.parser.JSONLexerBase.nextTokenWithColon(JSONLexerBase.java:370)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parseExtra(DefaultJSONParser.java:1460)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.parseField(JavaBeanDeserializer.java:676)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:564)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:189)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:185)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parseObject(DefaultJSONParser.java:614)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:339)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:243)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:456)
+	at com.sample.web.dispatch.ServiceDispatcher$1.get(ServiceDispatcher.java:50)
+	at com.sample.web.dispatch.CommonServiceVisitor.visit(CommonServiceVisitor.java:14)
+	at com.sample.web.dispatch.ServiceDispatcher.execute(ServiceDispatcher.java:45)
+	at com.sample.web.controller.ServiceController.service(ServiceController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-18 10:22:10 [ Thread-2:466718 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 10:22:45 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 10:23:53 [ http-nio-8080-exec-1:67461 ] - [ ERROR ] not match : - 
+com.alibaba.fastjson.JSONException: not match : - 
+	at com.alibaba.fastjson.parser.JSONLexerBase.nextTokenWithChar(JSONLexerBase.java:388)
+	at com.alibaba.fastjson.parser.JSONLexerBase.nextTokenWithColon(JSONLexerBase.java:370)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parseExtra(DefaultJSONParser.java:1460)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.parseField(JavaBeanDeserializer.java:676)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:564)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:189)
+	at com.alibaba.fastjson.parser.deserializer.JavaBeanDeserializer.deserialze(JavaBeanDeserializer.java:185)
+	at com.alibaba.fastjson.parser.DefaultJSONParser.parseObject(DefaultJSONParser.java:614)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:339)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:243)
+	at com.alibaba.fastjson.JSON.parseObject(JSON.java:456)
+	at com.sample.web.dispatch.ServiceDispatcher$1.get(ServiceDispatcher.java:50)
+	at com.sample.web.dispatch.CommonServiceVisitor.visit(CommonServiceVisitor.java:14)
+	at com.sample.web.dispatch.ServiceDispatcher.execute(ServiceDispatcher.java:45)
+	at com.sample.web.controller.ServiceController.service(ServiceController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-18 10:24:55 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 10:25:20 [ Thread-2:154229 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 10:25:35 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 10:25:58 [ http-nio-8080-exec-1:22218 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 10:26:01 [ http-nio-8080-exec-1:25480 ] - [ ERROR ] 
+java.lang.NullPointerException
+	at com.sample.permission.service.handler.EditChannelHandler.doHandle(EditChannelHandler.java:53)
+	at com.sample.permission.service.handler.EditChannelHandler.doHandle(EditChannelHandler.java:27)
+	at com.sample.core.service.handler.AbstractServiceHandler.execute(AbstractServiceHandler.java:14)
+	at com.sample.core.service.handler.ServiceHandlerChain.handle(ServiceHandlerChain.java:39)
+	at com.sample.core.service.handler.AbstractServiceHandler.execute(AbstractServiceHandler.java:16)
+	at com.sample.core.service.handler.ServiceHandlerChain.handle(ServiceHandlerChain.java:39)
+	at com.sample.permission.service.EditChannelService.doService(EditChannelService.java:25)
+	at com.sample.permission.service.EditChannelService.doService(EditChannelService.java:16)
+	at com.sample.core.service.AbstractSampleService.service(AbstractSampleService.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.sample.core.service.aspect.ServiceAspect.execute(ServiceAspect.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:609)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:68)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy96.service(Unknown Source)
+	at com.sample.web.dispatch.CommonServiceVisitor.visit(CommonServiceVisitor.java:15)
+	at com.sample.web.dispatch.ServiceDispatcher.execute(ServiceDispatcher.java:45)
+	at com.sample.web.controller.ServiceController.service(ServiceController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-18 10:26:01 [ http-nio-8080-exec-1:25783 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-18 10:27:17 [ http-nio-8080-exec-3:101177 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 10:27:17 [ http-nio-8080-exec-3:101397 ] - [ ERROR ] 
+java.lang.NullPointerException
+	at com.sample.permission.service.handler.EditChannelHandler.doHandle(EditChannelHandler.java:53)
+	at com.sample.permission.service.handler.EditChannelHandler.doHandle(EditChannelHandler.java:27)
+	at com.sample.core.service.handler.AbstractServiceHandler.execute(AbstractServiceHandler.java:14)
+	at com.sample.core.service.handler.ServiceHandlerChain.handle(ServiceHandlerChain.java:39)
+	at com.sample.core.service.handler.AbstractServiceHandler.execute(AbstractServiceHandler.java:16)
+	at com.sample.core.service.handler.ServiceHandlerChain.handle(ServiceHandlerChain.java:39)
+	at com.sample.permission.service.EditChannelService.doService(EditChannelService.java:25)
+	at com.sample.permission.service.EditChannelService.doService(EditChannelService.java:16)
+	at com.sample.core.service.AbstractSampleService.service(AbstractSampleService.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.sample.core.service.aspect.ServiceAspect.execute(ServiceAspect.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:609)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:68)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy96.service(Unknown Source)
+	at com.sample.web.dispatch.CommonServiceVisitor.visit(CommonServiceVisitor.java:15)
+	at com.sample.web.dispatch.ServiceDispatcher.execute(ServiceDispatcher.java:45)
+	at com.sample.web.controller.ServiceController.service(ServiceController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-18 10:27:17 [ http-nio-8080-exec-3:101400 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-18 10:34:09 [ Thread-2:513144 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 10:34:24 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 10:35:04 [ http-nio-8080-exec-1:40286 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 10:35:04 [ http-nio-8080-exec-1:40431 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 10:35:05 [ http-nio-8080-exec-1:41232 ] - [ ERROR ] 
+java.lang.NullPointerException
+	at com.sample.permission.service.handler.EditChannelHandler.doHandle(EditChannelHandler.java:53)
+	at com.sample.permission.service.handler.EditChannelHandler.doHandle(EditChannelHandler.java:27)
+	at com.sample.core.service.handler.AbstractServiceHandler.execute(AbstractServiceHandler.java:14)
+	at com.sample.core.service.handler.ServiceHandlerChain.handle(ServiceHandlerChain.java:39)
+	at com.sample.core.service.handler.AbstractServiceHandler.execute(AbstractServiceHandler.java:16)
+	at com.sample.core.service.handler.ServiceHandlerChain.handle(ServiceHandlerChain.java:39)
+	at com.sample.permission.service.EditChannelService.doService(EditChannelService.java:25)
+	at com.sample.permission.service.EditChannelService.doService(EditChannelService.java:16)
+	at com.sample.core.service.AbstractSampleService.service(AbstractSampleService.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.sample.core.service.aspect.ServiceAspect.execute(ServiceAspect.java:72)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:609)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:68)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy96.service(Unknown Source)
+	at com.sample.web.dispatch.CommonServiceVisitor.visit(CommonServiceVisitor.java:15)
+	at com.sample.web.dispatch.ServiceDispatcher.execute(ServiceDispatcher.java:46)
+	at com.sample.web.controller.ServiceController.service(ServiceController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-18 10:35:05 [ http-nio-8080-exec-1:41241 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-18 10:35:05 [ http-nio-8080-exec-1:41299 ] - [ INFO ] response data <---{"success":false}
+2016-09-18 10:42:35 [ Thread-2:491166 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 11:06:24 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 11:06:49 [ http-nio-8080-exec-1:24402 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 11:06:49 [ http-nio-8080-exec-1:24600 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 11:06:50 [ http-nio-8080-exec-1:25257 ] - [ ERROR ] 
+java.lang.NullPointerException
+	at com.sample.permission.service.handler.EditChannelHandler.doHandle(EditChannelHandler.java:53)
+	at com.sample.permission.service.handler.EditChannelHandler.doHandle(EditChannelHandler.java:27)
+	at com.sample.core.service.handler.AbstractServiceHandler.execute(AbstractServiceHandler.java:14)
+	at com.sample.core.service.handler.ServiceHandlerChain.handle(ServiceHandlerChain.java:39)
+	at com.sample.core.service.handler.AbstractServiceHandler.execute(AbstractServiceHandler.java:16)
+	at com.sample.core.service.handler.ServiceHandlerChain.handle(ServiceHandlerChain.java:39)
+	at com.sample.permission.service.EditChannelService.doService(EditChannelService.java:30)
+	at com.sample.permission.service.EditChannelService.doService(EditChannelService.java:21)
+	at com.sample.core.service.AbstractSampleService.service(AbstractSampleService.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.sample.core.service.aspect.ServiceAspect.execute(ServiceAspect.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:609)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:68)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy96.service(Unknown Source)
+	at com.sample.web.dispatch.CommonServiceVisitor.visit(CommonServiceVisitor.java:15)
+	at com.sample.web.dispatch.ServiceDispatcher.execute(ServiceDispatcher.java:46)
+	at com.sample.web.controller.ServiceController.service(ServiceController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-18 11:06:50 [ http-nio-8080-exec-1:25458 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-18 11:06:50 [ http-nio-8080-exec-1:25513 ] - [ INFO ] response data --->{"success":false}
+2016-09-18 11:08:21 [ http-nio-8080-exec-3:116894 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 11:08:21 [ http-nio-8080-exec-3:116904 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 11:08:22 [ http-nio-8080-exec-3:117073 ] - [ ERROR ] 
+java.lang.NullPointerException
+	at com.sample.permission.service.handler.EditChannelHandler.doHandle(EditChannelHandler.java:53)
+	at com.sample.permission.service.handler.EditChannelHandler.doHandle(EditChannelHandler.java:27)
+	at com.sample.core.service.handler.AbstractServiceHandler.execute(AbstractServiceHandler.java:14)
+	at com.sample.core.service.handler.ServiceHandlerChain.handle(ServiceHandlerChain.java:39)
+	at com.sample.core.service.handler.AbstractServiceHandler.execute(AbstractServiceHandler.java:16)
+	at com.sample.core.service.handler.ServiceHandlerChain.handle(ServiceHandlerChain.java:39)
+	at com.sample.permission.service.EditChannelService.doService(EditChannelService.java:30)
+	at com.sample.permission.service.EditChannelService.doService(EditChannelService.java:21)
+	at com.sample.core.service.AbstractSampleService.service(AbstractSampleService.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.sample.core.service.aspect.ServiceAspect.execute(ServiceAspect.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:609)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:68)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy96.service(Unknown Source)
+	at com.sample.web.dispatch.CommonServiceVisitor.visit(CommonServiceVisitor.java:15)
+	at com.sample.web.dispatch.ServiceDispatcher.execute(ServiceDispatcher.java:46)
+	at com.sample.web.controller.ServiceController.service(ServiceController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-18 11:08:22 [ http-nio-8080-exec-3:117077 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-18 11:08:22 [ http-nio-8080-exec-3:117077 ] - [ INFO ] response data --->{"success":false}
+2016-09-18 11:09:13 [ Thread-2:168936 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 11:09:29 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 11:09:44 [ http-nio-8080-exec-1:14937 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 11:09:44 [ http-nio-8080-exec-1:15135 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 11:09:44 [ http-nio-8080-exec-1:15200 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 11:09:44 [ http-nio-8080-exec-1:15282 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-18 11:09:44 [ http-nio-8080-exec-1:15326 ] - [ INFO ] response data --->{"success":false}
+2016-09-18 11:11:19 [ http-nio-8080-exec-3:109995 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 11:11:19 [ http-nio-8080-exec-3:110009 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 11:11:19 [ http-nio-8080-exec-3:110010 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 11:11:41 [ http-nio-8080-exec-3:132076 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-18 11:11:41 [ http-nio-8080-exec-3:132077 ] - [ INFO ] response data --->{"success":false}
+2016-09-18 11:11:41 [ Thread-2:132137 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 11:13:57 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 11:14:20 [ http-nio-8080-exec-1:22969 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 11:14:21 [ http-nio-8080-exec-1:23132 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 11:14:21 [ http-nio-8080-exec-1:23185 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 11:14:24 [ http-nio-8080-exec-1:26814 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='000000', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 11:14:24 [ http-nio-8080-exec-1:26842 ] - [ INFO ] response data --->{"errorCode":"000000","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 11:20:32 [ Thread-2:394653 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 11:20:46 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 11:21:08 [ http-nio-8080-exec-1:22434 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 11:21:08 [ http-nio-8080-exec-1:22675 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 11:21:08 [ http-nio-8080-exec-1:22770 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 11:21:09 [ http-nio-8080-exec-1:22921 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 11:21:09 [ http-nio-8080-exec-1:22979 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 11:26:23 [ http-nio-8080-exec-3:337098 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 11:26:23 [ http-nio-8080-exec-3:337110 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 11:26:23 [ http-nio-8080-exec-3:337112 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 11:26:23 [ http-nio-8080-exec-3:337115 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 11:26:23 [ http-nio-8080-exec-3:337115 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 11:26:35 [ http-nio-8080-exec-5:349162 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 11:26:35 [ http-nio-8080-exec-5:349163 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 11:26:35 [ http-nio-8080-exec-5:349179 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 11:26:35 [ http-nio-8080-exec-5:349179 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 11:26:35 [ http-nio-8080-exec-5:349180 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 11:27:08 [ http-nio-8080-exec-7:382232 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 11:27:08 [ http-nio-8080-exec-7:382232 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 11:27:08 [ http-nio-8080-exec-7:382234 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 11:27:08 [ http-nio-8080-exec-7:382234 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 11:27:08 [ http-nio-8080-exec-7:382235 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 11:40:27 [ http-nio-8080-exec-9:1181067 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 11:40:27 [ http-nio-8080-exec-9:1181067 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 11:40:27 [ http-nio-8080-exec-9:1181073 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 11:40:27 [ http-nio-8080-exec-9:1181074 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 11:40:27 [ http-nio-8080-exec-9:1181074 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 11:50:41 [ Thread-2:1795217 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 11:51:01 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 11:51:15 [ http-nio-8080-exec-1:13605 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 11:51:15 [ http-nio-8080-exec-1:13842 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 11:51:15 [ http-nio-8080-exec-1:13925 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 11:51:15 [ http-nio-8080-exec-1:14078 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 11:51:15 [ http-nio-8080-exec-1:14119 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 11:55:27 [ http-nio-8080-exec-3:266076 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 11:55:27 [ http-nio-8080-exec-3:266096 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 11:55:27 [ http-nio-8080-exec-3:266099 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 11:55:27 [ http-nio-8080-exec-3:266100 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 11:55:27 [ http-nio-8080-exec-3:266100 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 11:55:40 [ http-nio-8080-exec-5:278660 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 11:55:40 [ http-nio-8080-exec-5:278661 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 11:55:40 [ http-nio-8080-exec-5:278663 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 11:55:40 [ http-nio-8080-exec-5:278663 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 11:55:40 [ http-nio-8080-exec-5:278663 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 11:56:58 [ http-nio-8080-exec-7:356368 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 11:56:58 [ http-nio-8080-exec-7:356369 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 11:56:58 [ http-nio-8080-exec-7:356375 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 11:56:58 [ http-nio-8080-exec-7:356376 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 11:56:58 [ http-nio-8080-exec-7:356376 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 11:57:09 [ Thread-2:368054 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 11:59:37 [ main:1 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 12:00:00 [ http-nio-8080-exec-1:23361 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 12:00:00 [ http-nio-8080-exec-1:23666 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 12:00:01 [ http-nio-8080-exec-1:23762 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 12:00:01 [ http-nio-8080-exec-1:23912 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 12:00:01 [ http-nio-8080-exec-1:23958 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 12:03:59 [ http-nio-8080-exec-3:262356 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 12:03:59 [ http-nio-8080-exec-3:262357 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 12:03:59 [ http-nio-8080-exec-3:262359 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 12:03:59 [ http-nio-8080-exec-3:262360 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 12:03:59 [ http-nio-8080-exec-3:262360 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 12:12:41 [ Thread-2:783809 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 12:12:58 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 12:13:03 [ main:5171 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 12:13:47 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 12:55:31 [ Thread-2:2504609 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 12:55:48 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 12:55:57 [ http-nio-8080-exec-1:9951 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 12:55:58 [ http-nio-8080-exec-1:10158 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 12:55:58 [ http-nio-8080-exec-1:10222 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 12:55:58 [ http-nio-8080-exec-1:10345 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 12:55:58 [ http-nio-8080-exec-1:10421 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 12:58:30 [ Thread-2:162666 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 12:58:45 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 12:58:49 [ main:4102 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 12:59:42 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 12:59:46 [ main:4642 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 13:00:20 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 13:00:33 [ http-nio-8080-exec-1:12580 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 13:00:33 [ http-nio-8080-exec-1:12795 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 13:00:33 [ http-nio-8080-exec-1:12838 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 13:00:33 [ http-nio-8080-exec-1:12967 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 13:00:33 [ http-nio-8080-exec-1:13012 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 13:01:53 [ Thread-2:93050 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 13:02:14 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 13:02:26 [ http-nio-8080-exec-1:11608 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 13:02:26 [ http-nio-8080-exec-1:11809 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 13:02:26 [ http-nio-8080-exec-1:11849 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 13:02:26 [ http-nio-8080-exec-1:12021 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 13:02:26 [ http-nio-8080-exec-1:12086 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 13:04:56 [ Thread-2:162395 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 13:05:14 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 13:05:25 [ http-nio-8080-exec-1:11187 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 13:05:26 [ http-nio-8080-exec-1:11361 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 13:05:26 [ http-nio-8080-exec-1:11410 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 13:05:26 [ http-nio-8080-exec-1:11539 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 13:05:26 [ http-nio-8080-exec-1:11577 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 13:32:51 [ http-nio-8080-exec-3:1656358 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 13:32:51 [ http-nio-8080-exec-3:1656359 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 13:32:51 [ http-nio-8080-exec-3:1656361 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 13:32:51 [ http-nio-8080-exec-3:1656362 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 13:32:51 [ http-nio-8080-exec-3:1656363 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 13:34:13 [ http-nio-8080-exec-5:1739095 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 13:34:13 [ http-nio-8080-exec-5:1739096 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 13:34:13 [ http-nio-8080-exec-5:1739097 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 13:34:13 [ http-nio-8080-exec-5:1739097 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 13:34:13 [ http-nio-8080-exec-5:1739098 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 13:34:44 [ http-nio-8080-exec-7:1770227 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 13:34:44 [ http-nio-8080-exec-7:1770227 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 13:34:44 [ http-nio-8080-exec-7:1770228 ] - [ ERROR ] Unified exception:[{"reqId":"不允许为空"}]
+2016-09-18 13:34:44 [ http-nio-8080-exec-7:1770229 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{"reqId":"不允许为空"}]', isSuccess=false}
+2016-09-18 13:34:44 [ http-nio-8080-exec-7:1770229 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{\"reqId\":\"不允许为空\"}]","success":false}
+2016-09-18 13:36:59 [ Thread-2:1904482 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 13:37:23 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 13:37:38 [ http-nio-8080-exec-1:15417 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 13:37:39 [ http-nio-8080-exec-1:15510 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 13:37:39 [ http-nio-8080-exec-1:15540 ] - [ ERROR ] Unified exception:[{reqId=不允许为空}]
+2016-09-18 13:37:39 [ http-nio-8080-exec-1:15589 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{reqId=不允许为空}]', isSuccess=false}
+2016-09-18 13:37:39 [ http-nio-8080-exec-1:15612 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{reqId=不允许为空}]","success":false}
+2016-09-18 13:37:52 [ http-nio-8080-exec-3:29113 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 13:37:52 [ http-nio-8080-exec-3:29114 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 13:37:52 [ http-nio-8080-exec-3:29115 ] - [ ERROR ] Unified exception:[{reqId=不允许为空}]
+2016-09-18 13:37:52 [ http-nio-8080-exec-3:29116 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{reqId=不允许为空}]', isSuccess=false}
+2016-09-18 13:37:52 [ http-nio-8080-exec-3:29116 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{reqId=不允许为空}]","success":false}
+2016-09-18 13:44:40 [ http-nio-8080-exec-5:436638 ] - [ INFO ] request data --->{"owner":"WX"}
+2016-09-18 13:44:40 [ http-nio-8080-exec-5:436638 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 13:44:40 [ http-nio-8080-exec-5:436639 ] - [ ERROR ] Unified exception:[{reqId=不允许为空}]
+2016-09-18 13:44:40 [ http-nio-8080-exec-5:436640 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='999899', errorMsg='[{reqId=不允许为空}]', isSuccess=false}
+2016-09-18 13:44:40 [ http-nio-8080-exec-5:436640 ] - [ INFO ] response data --->{"errorCode":"999899","errorMsg":"[{reqId=不允许为空}]","success":false}
+2016-09-18 13:45:38 [ http-nio-8080-exec-7:494968 ] - [ INFO ] request data --->{"owner":"WX", "reqId":"123456"}
+2016-09-18 13:45:38 [ http-nio-8080-exec-7:494969 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=EditChannelReq{owner='WX', keyValues=null}
+2016-09-18 13:45:39 [ http-nio-8080-exec-7:495597 ] - [ ERROR ] 
+java.lang.NullPointerException
+	at com.sample.permission.service.handler.EditChannelHandler.doHandle(EditChannelHandler.java:53)
+	at com.sample.permission.service.handler.EditChannelHandler.doHandle(EditChannelHandler.java:27)
+	at com.sample.core.service.handler.AbstractServiceHandler.execute(AbstractServiceHandler.java:14)
+	at com.sample.core.service.handler.ServiceHandlerChain.handle(ServiceHandlerChain.java:39)
+	at com.sample.core.service.handler.AbstractServiceHandler.execute(AbstractServiceHandler.java:16)
+	at com.sample.core.service.handler.ServiceHandlerChain.handle(ServiceHandlerChain.java:39)
+	at com.sample.permission.service.EditChannelService.doService(EditChannelService.java:30)
+	at com.sample.permission.service.EditChannelService.doService(EditChannelService.java:21)
+	at com.sample.core.service.AbstractSampleService.service(AbstractSampleService.java:11)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:302)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:190)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:157)
+	at org.springframework.aop.aspectj.MethodInvocationProceedingJoinPoint.proceed(MethodInvocationProceedingJoinPoint.java:85)
+	at com.sample.core.service.aspect.ServiceAspect.execute(ServiceAspect.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethodWithGivenArgs(AbstractAspectJAdvice.java:620)
+	at org.springframework.aop.aspectj.AbstractAspectJAdvice.invokeAdviceMethod(AbstractAspectJAdvice.java:609)
+	at org.springframework.aop.aspectj.AspectJAroundAdvice.invoke(AspectJAroundAdvice.java:68)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:168)
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:92)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:179)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:208)
+	at com.sun.proxy.$Proxy96.service(Unknown Source)
+	at com.sample.web.dispatch.CommonServiceVisitor.visit(CommonServiceVisitor.java:15)
+	at com.sample.web.dispatch.ServiceDispatcher.execute(ServiceDispatcher.java:46)
+	at com.sample.web.controller.ServiceController.service(ServiceController.java:21)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:870)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-18 13:45:39 [ http-nio-8080-exec-7:495619 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='123456', errorCode='999999', errorMsg='unknown exception', isSuccess=false}
+2016-09-18 13:45:39 [ http-nio-8080-exec-7:495619 ] - [ INFO ] response data --->{"errorCode":"999999","errorMsg":"unknown exception","reqId":"123456","success":false}
+2016-09-18 13:59:46 [ Thread-2:1343261 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:19:59 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:20:02 [ main:3454 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:21:41 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:21:44 [ main:3152 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:22:33 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:22:38 [ main:4915 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:23:49 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:23:52 [ main:3308 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:28:14 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:28:18 [ main:3629 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:29:21 [ main:1 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:29:24 [ main:3247 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:30:00 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:30:03 [ main:3387 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:30:30 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:30:33 [ main:3932 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:31:20 [ main:1 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:31:23 [ main:3307 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:32:07 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:32:10 [ main:3321 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:37:31 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:38:13 [ main:41845 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:38:45 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:44:00 [ main:315317 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:50:03 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:51:11 [ Thread-2:67500 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:51:25 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:53:13 [ Thread-2:107346 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:53:26 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:55:47 [ Thread-2:140517 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:57:29 [ main:1 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 14:58:54 [ Thread-2:84694 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 14:59:24 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 15:02:03 [ Thread-2:159140 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 15:02:19 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 15:02:29 [ http-nio-8080-exec-1:9847 ] - [ ERROR ] Required request body is missing: public java.lang.String com.sample.web.controller.ServiceController.service(java.lang.String,java.lang.String) throws java.lang.Exception
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.sample.web.controller.ServiceController.service(java.lang.String,java.lang.String) throws java.lang.Exception
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:151)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:125)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:99)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-18 15:05:48 [ http-nio-8080-exec-2:209140 ] - [ ERROR ] Required request body is missing: public java.lang.String com.sample.web.controller.ServiceController.service(java.lang.String,java.lang.String) throws java.lang.Exception
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.sample.web.controller.ServiceController.service(java.lang.String,java.lang.String) throws java.lang.Exception
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:151)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:125)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:99)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-18 15:05:49 [ Thread-2:209263 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 15:09:00 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 15:09:13 [ http-nio-8080-exec-1:12804 ] - [ ERROR ] Required request body is missing: public java.lang.String com.sample.web.controller.ServiceController.service(java.lang.String,java.lang.String) throws java.lang.Exception
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.sample.web.controller.ServiceController.service(java.lang.String,java.lang.String) throws java.lang.Exception
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:151)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:125)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:99)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-18 15:10:57 [ Thread-2:117272 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 15:11:12 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 15:11:24 [ http-nio-8080-exec-1:12000 ] - [ ERROR ] Required request body is missing: public java.lang.String com.sample.web.controller.ServiceController.service(java.lang.String,java.lang.String) throws java.lang.Exception
+org.springframework.http.converter.HttpMessageNotReadableException: Required request body is missing: public java.lang.String com.sample.web.controller.ServiceController.service(java.lang.String,java.lang.String) throws java.lang.Exception
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:151)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:125)
+	at org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:99)
+	at org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:161)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:128)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:110)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:817)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:731)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:959)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:968)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:859)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:844)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:292)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:121)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:240)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:207)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:212)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:106)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:502)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:141)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:79)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:88)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:522)
+	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1095)
+	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:672)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1500)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.run(NioEndpoint.java:1456)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2016-09-18 15:53:09 [ main:1 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 15:53:53 [ Thread-2:2560747 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 15:54:10 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 15:54:27 [ http-nio-8080-exec-1:17387 ] - [ INFO ] request data --->{"owner":"WX", "reqId":"123456"}
+2016-09-18 15:54:28 [ http-nio-8080-exec-1:17741 ] - [ INFO ] system=,module=,trans=1003,--->args,Param 1={"reqId":"123456","owner":"WX"}
+2016-09-18 15:56:41 [ http-nio-8080-exec-2:151304 ] - [ INFO ] request data --->{"reqId":"123456"}
+2016-09-18 15:56:41 [ http-nio-8080-exec-2:151307 ] - [ INFO ] system=,module=,trans=1003,--->args,Param 1={"reqId":"123456"}
+2016-09-18 15:58:29 [ Thread-2:259353 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 15:58:44 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 16:00:12 [ Thread-2:88368 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 16:00:33 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 16:00:52 [ http-nio-8080-exec-1:18592 ] - [ INFO ] request data --->{"reqId":"123456"}
+2016-09-18 16:00:52 [ http-nio-8080-exec-1:18776 ] - [ INFO ] system=,module=,trans=1003,--->args,Param 1={"reqId":"123456"}
+2016-09-18 16:01:32 [ Thread-2:58368 ] - [ INFO ] {dataSource-1} closed
+2016-09-18 16:05:10 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-18 16:05:47 [ http-nio-8080-exec-1:36271 ] - [ INFO ] request data --->{"reqId":"123456"}
+2016-09-18 16:05:47 [ http-nio-8080-exec-1:36532 ] - [ INFO ] system=,module=,trans=1003,--->args,Param 1=Req{reqId='123456'}
+2016-09-18 16:05:48 [ http-nio-8080-exec-1:37504 ] - [ INFO ] system=,module=,trans=1003,--->datas=Rsp{reqId='123456', errorCode='null', errorMsg='null', isSuccess=true}
+2016-09-18 16:05:48 [ http-nio-8080-exec-1:37594 ] - [ INFO ] response data --->{"date":[{"code":"1001","id":10000002},{"code":"1002","id":10000003},{"code":"1003","id":10000004},{"code":"1004","id":10000005},{"code":"1005","id":10000006},{"code":"1006","id":10000007}],"reqId":"123456","success":true}
+2016-09-18 16:09:11 [ http-nio-8080-exec-3:240527 ] - [ INFO ] request data --->{"reqId":"123456", "id":10000007}
+2016-09-18 16:09:11 [ http-nio-8080-exec-3:240528 ] - [ INFO ] system=,module=,trans=1003,--->args,Param 1=Req{reqId='123456'}
+2016-09-18 16:09:11 [ http-nio-8080-exec-3:240681 ] - [ INFO ] system=,module=,trans=1003,--->datas=Rsp{reqId='123456', errorCode='null', errorMsg='null', isSuccess=true}
+2016-09-18 16:09:11 [ http-nio-8080-exec-3:240682 ] - [ INFO ] response data --->{"date":[{"code":"1006","id":10000007}],"reqId":"123456","success":true}

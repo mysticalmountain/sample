@@ -1,11 +1,11 @@
 package com.sample.permission.dto;
 
-import java.io.Serializable;
+import com.sample.core.model.dto.QueryReq;
 
 /**
- * Created by andongxu on 16-9-2.
+ * Created by andongxu on 9/10/16.
  */
-public class QueryReq implements Serializable {
+public class QueryServiceReq extends QueryReq {
 
     private Long id;
 
@@ -26,4 +26,6 @@ public class QueryReq implements Serializable {
     public void setCode(String code) {
         this.code = code;
     }
+
+
 }

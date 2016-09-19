@@ -1,11 +1,13 @@
 package com.sample.permission.dto;
 
+import com.sample.core.model.dto.Rsp;
+
 import java.io.Serializable;
 
 /**
  * Created by andongxu on 16-8-29.
  */
-public class ValidateRsp implements Serializable {
+public class ValidateRsp extends Rsp {
 
     private boolean isSuccess;
 

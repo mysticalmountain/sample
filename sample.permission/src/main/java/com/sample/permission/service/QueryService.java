@@ -1,17 +1,14 @@
 package com.sample.permission.service;
 
+import com.sample.core.Constant;
+import com.sample.core.exception.ExceptionLevel;
 import com.sample.core.exception.UnifiedException;
-import com.sample.core.model.dto.QueryRspDto;
+import com.sample.core.model.dto.QueryRsp;
 import com.sample.core.service.AbstractSampleService;
-import com.sample.core.service.ISampleService;
-import com.sample.core.service.Service;
 import com.sample.core.service.handler.ServiceHandlerChain;
-import com.sample.permission.dto.ValidateRsp;
 import org.apache.commons.beanutils.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-
-import java.lang.reflect.InvocationTargetException;
 
 /**
  * Created by andongxu on 16-9-1.
@@ -31,15 +28,15 @@ public class QueryService<I, O> extends AbstractSampleService<I, O> {
 
     @Override
     public O captureException(I i, UnifiedException ue) throws UnifiedException {
-        QueryRspDto queryRspDto = new QueryRspDto();
         try {
+            QueryRsp queryRspDto = new QueryRsp();
             BeanUtils.copyProperties(queryRspDto, i);
+            queryRspDto.setErrorMsg(ue.getErrorMessage());
+            queryRspDto.setErrorCode(ue.getErrorCode());
+            queryRspDto.setSuccess(false);
+            return (O) queryRspDto;
         } catch (Exception e) {
-            e.printStackTrace();
+            throw new UnifiedException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_UNKNOWN[0], Constant.EXCEPTION_UNKNOWN[1], null, null, e);
         }
-        queryRspDto.setErrorMsg(ue.getErrorMessage());
-        queryRspDto.setErrorCode(ue.getErrorCode());
-        queryRspDto.setSuccess(false);
-        return (O) queryRspDto;
     }
 }

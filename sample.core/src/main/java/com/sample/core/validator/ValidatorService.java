@@ -1,15 +1,9 @@
 package com.sample.core.validator;
 
 import com.alibaba.druid.support.json.JSONUtils;
+import com.sample.core.Constant;
 import com.sample.core.exception.ExceptionLevel;
 import com.sample.core.exception.UnifiedException;
-import com.sample.core.exception.UnifiedExceptionUtil;
-import com.sample.core.exception.api.IExceptionManager;
-import com.sample.core.model.dto.ReqDto;
-import com.sample.core.model.dto.RspDto;
-import com.sample.core.service.IProcessor;
-import com.sample.core.service.ISampleService;
-import com.sun.tools.internal.ws.wsdl.framework.ValidationException;
 import org.springframework.stereotype.Component;
 
 import javax.validation.ConstraintViolation;
@@ -36,7 +30,7 @@ public class ValidatorService<I, O> implements IValidatorService<I, O> {
             errors.add(error);
         }
         if (errors.size() > 0) {
-            throw new FormatException(ExceptionLevel.SLIGHT, "000000", JSONUtils.toJSONString(errors), null, null, null);
+            throw new FormatException(ExceptionLevel.SLIGHT, Constant.ERROR_CODE_DATA_FORMAT, errors.toString(), null, null, null);
         }
         return null;
     }

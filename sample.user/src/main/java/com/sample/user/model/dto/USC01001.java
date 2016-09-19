@@ -1,17 +1,15 @@
 package com.sample.user.model.dto;
 
-import com.sample.core.model.dto.ReqDto;
-import com.sample.user.model.enums.AuthType;
+import com.sample.core.model.dto.Req;
 import com.sample.user.model.enums.UserType;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Pattern;
-import javax.validation.constraints.Size;
 
 /**
  * Created by andongxu on 16-6-15.
  */
-public class USC01001 extends ReqDto {
+public class USC01001 extends Req {
 
     @Pattern(regexp = "\\w{6,32}", message = "格式:\\w{6,32}")
     @NotNull(message = "not null")

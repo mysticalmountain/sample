@@ -1,12 +1,13 @@
 package com.sample.permission.dto;
 
-import java.io.Serializable;
+import com.sample.core.model.dto.Req;
+
 import java.util.Set;
 
 /**
  * Created by andongxu on 16-8-31.
  */
-public class EditRoleReq<K, V> implements Serializable {
+public class EditRoleReq<K, V> extends Req {
 
     private String owner;
 

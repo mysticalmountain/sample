@@ -1,17 +1,13 @@
 package com.sample.permission.dto;
 
-import com.sample.permission.model.Permission;
-import com.sample.permission.model.PermissionType;
+import com.sample.core.model.dto.Req;
 
-import java.io.Serializable;
-import java.security.Key;
 import java.util.Set;
-import java.util.List;
 
 /**
  * Created by andongxu on 16-8-30.
  */
-public class EditChannelReq<K, V> implements Serializable {
+public class EditChannelReq<K, V> extends Req {
 
     private String owner;
 

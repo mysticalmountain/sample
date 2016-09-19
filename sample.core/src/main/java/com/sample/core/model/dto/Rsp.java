@@ -5,7 +5,7 @@ import java.io.Serializable;
 /**
  * Created by andongxu on 16-6-15.
  */
-public class RspDto implements Serializable {
+public class Rsp implements Serializable {
 
     protected String reqId;
 
@@ -49,7 +49,7 @@ public class RspDto implements Serializable {
 
     @Override
     public String toString() {
-        return "RspDto{" +
+        return "Rsp{" +
                 "reqId='" + reqId + '\'' +
                 ", errorCode='" + errorCode + '\'' +
                 ", errorMsg='" + errorMsg + '\'' +

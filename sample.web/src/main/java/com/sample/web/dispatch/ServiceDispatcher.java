@@ -34,6 +34,7 @@ public class ServiceDispatcher {
 
 
     public String execute(String serviceCode, final String requestData) throws Exception {
+        log.info("request data --->" + requestData);
         for (ISampleService sampleService : sampleServices) {
             Method getTargetSource = sampleService.getClass().getMethod("getTargetSource");
             TargetSource ts = (TargetSource) getTargetSource.invoke(sampleService);
@@ -47,14 +48,16 @@ public class ServiceDispatcher {
                     public Object get() throws UnifiedException {
                         try {
                             String sourceDate = URLDecoder.decode(requestData, "utf-8");
-                            return JSON.parseObject(sourceDate.substring(0, sourceDate.length() - 1), parameterTypes[0]);
+                            return JSON.parseObject(sourceDate, parameterTypes[0]);
                         } catch (Exception e) {
                             log.error(e.getMessage(), e);
                             throw new FormatException(ExceptionLevel.SLIGHT, "999999", "数据格式化错误", "web", null, e);
                         }
                     }
                 });
-                return JSON.toJSONString(result);
+                String responseData= JSON.toJSONString(result);
+                log.info("response data --->" + responseData);
+                return responseData;
             }
         }
         throw new FormatException(ExceptionLevel.SERIOUS, "999999", "unknown exception", "web", null, null);

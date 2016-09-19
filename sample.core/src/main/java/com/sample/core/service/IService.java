@@ -9,6 +9,4 @@ public interface IService<I, O> {
 
 //    public O service(I i, Object... args) throws UnifiedException;
 
-    public void tmp();
-
 }

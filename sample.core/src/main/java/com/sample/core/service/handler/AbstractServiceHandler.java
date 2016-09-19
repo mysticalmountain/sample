@@ -12,8 +12,9 @@ public abstract class AbstractServiceHandler<I, O> implements IServiceHandler<I,
         if (support(i)) {
             //TODO 考虑异步处理
             return this.doHandle(i);
+        }else {
+            return chain.handle(i);
         }
-        return chain.handle(i);
     }
 
     @Parent

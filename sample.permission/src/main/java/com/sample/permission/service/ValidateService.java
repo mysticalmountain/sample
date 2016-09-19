@@ -1,11 +1,14 @@
 package com.sample.permission.service;
 
+import com.sample.core.Constant;
+import com.sample.core.exception.ExceptionLevel;
 import com.sample.core.exception.UnifiedException;
 import com.sample.core.service.*;
 import com.sample.core.service.handler.ServiceHandlerChain;
 import com.sample.permission.dto.BaseRsp;
 import com.sample.permission.dto.ValidateReq;
 import com.sample.permission.dto.ValidateRsp;
+import org.apache.commons.beanutils.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -28,6 +31,15 @@ public class ValidateService extends AbstractSampleService<ValidateReq, Validate
 
     @Override
     public ValidateRsp captureException(ValidateReq validateReq, UnifiedException ue) throws UnifiedException {
-        return new ValidateRsp(false);
+        try {
+            ValidateRsp validateRsp = new ValidateRsp();
+            BeanUtils.copyProperties(validateRsp, validateReq);
+            validateRsp.setSuccess(false);
+            validateRsp.setErrorCode(ue.getErrorCode());
+            validateRsp.setErrorMsg(ue.getErrorMessage());
+            return validateRsp;
+        } catch (Exception e) {
+            throw new UnifiedException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_UNKNOWN[0], Constant.EXCEPTION_UNKNOWN[1], null, null, e);
+        }
     }
 }

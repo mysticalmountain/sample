@@ -1,11 +1,7 @@
 package com.sample.user;
 
-import com.sample.core.exception.UnifiedException;
 import com.sample.core.log.TransLog;
-import com.sample.core.model.dto.ReqDto;
-import com.sample.core.model.dto.RspDto;
-import com.sample.core.service.IProcessor;
-import com.sample.user.model.dto.USC01001;
+import com.sample.core.model.dto.Rsp;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
@@ -33,7 +29,7 @@ public class Tmp {
 
 
     @TransLog(system = "AAAA")
-    public RspDto setMe(String me) {
+    public Rsp setMe(String me) {
         System.out.println("-=======me");
         return null;
     }

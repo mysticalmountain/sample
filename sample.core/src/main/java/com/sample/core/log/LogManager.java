@@ -3,8 +3,6 @@ package com.sample.core.log;
 import com.sample.core.exception.UnifiedException;
 import com.sample.core.log.api.ILogManager;
 import com.sample.core.log.handler.LogHandlerChain;
-import com.sample.core.model.dto.ReqDto;
-import org.omg.CORBA.PRIVATE_MEMBER;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

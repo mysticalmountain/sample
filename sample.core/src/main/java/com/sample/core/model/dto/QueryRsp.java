@@ -1,59 +1,75 @@
 package com.sample.core.model.dto;
 
-import javax.validation.constraints.Pattern;
+import javax.persistence.criteria.CriteriaBuilder;
 
 /**
  * Created by andongxu on 9/10/16.
  */
-public class QueryRspDto<D> extends RspDto {
+public class QueryRsp<D> extends Rsp {
 
     /**
      * 第几页
      */
-    protected int pageNumber;
+    protected Integer pageNumber;
 
     /**
      * 每页数据条数
      */
-    protected int pageSize;
+    protected Integer pageSize;
 
     /**
      * 总记录数
      */
-    protected int totalPages;
+    protected Integer totalPages;
 
     /**
      * 总记录数据
      */
-    protected long totalElements;
+    protected Long totalElements;
 
     /**
      * 查询结果
      */
     protected D date;
 
-    public QueryRspDto() {
+    public QueryRsp() {
     }
 
-    public QueryRspDto(boolean isSuccess) {
+    public QueryRsp(boolean isSuccess) {
         super.isSuccess = isSuccess;
     }
 
 
-    public int getPageNumber() {
+    public Integer getPageNumber() {
         return pageNumber;
     }
 
-    public void setPageNumber(int pageNumber) {
+    public void setPageNumber(Integer pageNumber) {
         this.pageNumber = pageNumber;
     }
 
-    public int getPageSize() {
+    public Integer getPageSize() {
         return pageSize;
     }
 
-    public void setPageSize(int pageSize) {
+    public void setPageSize(Integer pageSize) {
         this.pageSize = pageSize;
+    }
+
+    public Integer getTotalPages() {
+        return totalPages;
+    }
+
+    public void setTotalPages(Integer totalPages) {
+        this.totalPages = totalPages;
+    }
+
+    public Long getTotalElements() {
+        return totalElements;
+    }
+
+    public void setTotalElements(Long totalElements) {
+        this.totalElements = totalElements;
     }
 
     public D getDate() {
@@ -64,25 +80,9 @@ public class QueryRspDto<D> extends RspDto {
         this.date = date;
     }
 
-    public int getTotalPages() {
-        return totalPages;
-    }
-
-    public void setTotalPages(int totalPages) {
-        this.totalPages = totalPages;
-    }
-
-    public long getTotalElements() {
-        return totalElements;
-    }
-
-    public void setTotalElements(long totalElements) {
-        this.totalElements = totalElements;
-    }
-
     @Override
     public String toString() {
-        return super.toString() + "; QueryRspDto{" +
+        return super.toString() + "QueryRsp{" +
                 "pageNumber=" + pageNumber +
                 ", pageSize=" + pageSize +
                 ", totalPages=" + totalPages +

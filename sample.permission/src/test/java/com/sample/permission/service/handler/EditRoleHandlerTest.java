@@ -26,7 +26,7 @@ import java.util.Set;
 public class EditRoleHandlerTest extends BaseTest {
 
     @Autowired
-    @Qualifier("editService")
+    @Qualifier("editServiceService")
     private ISampleService<EditRoleReq, BaseRsp> sampleService;
 
     @Test

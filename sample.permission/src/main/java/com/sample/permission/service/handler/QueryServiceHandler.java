@@ -1,12 +1,11 @@
 package com.sample.permission.service.handler;
 
+import com.sample.core.Constant;
 import com.sample.core.exception.UnifiedException;
 import com.sample.core.exception.UnifiedExceptionUtil;
-import com.sample.core.model.dto.QueryRspDto;
+import com.sample.core.model.dto.QueryRsp;
 import com.sample.core.service.handler.AbstractServiceHandler;
-import com.sample.permission.dto.QueryReq;
-import com.sample.permission.dto.QueryRsp;
-import com.sample.permission.dto.QueryServiceReqDto;
+import com.sample.permission.dto.QueryServiceReq;
 import com.sample.permission.dto.ServiceDto;
 import com.sample.permission.model.Service;
 import com.sample.permission.repository.ServiceRepository;
@@ -18,8 +17,6 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Component;
 
-import java.beans.PropertyDescriptor;
-import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -27,20 +24,20 @@ import java.util.List;
  * Created by andongxu on 16-9-1.
  */
 @Component
-public class QueryServiceHandler extends AbstractServiceHandler<QueryServiceReqDto, QueryRspDto<List<ServiceDto>>> {
+public class QueryServiceHandler extends AbstractServiceHandler<QueryServiceReq, QueryRsp<List<ServiceDto>>> {
 
     @Autowired
     private ServiceRepository serviceRepository;
 
     @Override
-    public QueryRspDto<List<ServiceDto>> doHandle(final QueryServiceReqDto reqDto) throws UnifiedException {
+    public QueryRsp<List<ServiceDto>> doHandle(final QueryServiceReq reqDto) throws UnifiedException {
         try {
             Service s = new Service();
             BeanUtils.copyProperties(s, reqDto);
             Example<Service> example = Example.of(s);
-            QueryRspDto<List<ServiceDto>> queryRsp = new QueryRspDto<List<ServiceDto>>(true);
+            QueryRsp<List<ServiceDto>> queryRsp = new QueryRsp<List<ServiceDto>>(true);
             List<ServiceDto> servicesDto = new ArrayList<ServiceDto>();
-            if (reqDto.getPageNumber() > 0) {                   //分页
+            if (reqDto.getPageNumber() != null) {                   //分页
                 Page<Service> services = serviceRepository.findAll(example, new Pageable() {
                     @Override
                     public int getPageNumber() {
@@ -99,6 +96,8 @@ public class QueryServiceHandler extends AbstractServiceHandler<QueryServiceReqD
             }
             BeanUtils.copyProperties(queryRsp, reqDto);
             queryRsp.setDate(servicesDto);
+            queryRsp.setErrorCode(Constant.SUCCESS[0]);
+            queryRsp.setErrorCode(Constant.SUCCESS[1]);
             return queryRsp;
         } catch (Exception e) {
             e.printStackTrace();
@@ -109,7 +108,7 @@ public class QueryServiceHandler extends AbstractServiceHandler<QueryServiceReqD
 
     @Override
     public boolean support(Object o) {
-        if (o instanceof QueryServiceReqDto) {
+        if (o instanceof QueryServiceReq) {
             return true;
         }
         return false;

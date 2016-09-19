@@ -28,11 +28,6 @@ public @interface Service {
      */
     String module() default "";
 
-    /**
-     * 交易
-     * @return
-     */
-    String trans() default "";
 
     /**
      * 是否记录日志

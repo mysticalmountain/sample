@@ -1,17 +1,16 @@
 package com.sample.core.service.aspect;
 
+import com.sample.core.Constant;
 import com.sample.core.exception.ExceptionLevel;
 import com.sample.core.exception.UnifiedException;
 import com.sample.core.exception.api.IExceptionManager;
 import com.sample.core.log.Log;
 import com.sample.core.log.Log4jLog;
 import com.sample.core.log.LogInfo;
-import com.sample.core.log.TransLog;
 import com.sample.core.log.api.ILogManager;
+import com.sample.core.rate.handler.IConcurrentHandler;
 import com.sample.core.service.Service;
-import com.sample.core.validator.FormatException;
 import com.sample.core.validator.IValidatorService;
-import com.sample.core.validator.Validator;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -19,11 +18,7 @@ import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.io.StringWriter;
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
-
-import org.springframework.core.LocalVariableTableParameterNameDiscoverer;
 
 /**
  * Created by andongxu on 16-7-28.
@@ -31,6 +26,8 @@ import org.springframework.core.LocalVariableTableParameterNameDiscoverer;
 @Aspect
 @Component
 public class ServiceAspect {
+
+    private Log log = Log4jLog.getLog(this.getClass());
 
     @Autowired
     private IExceptionManager exceptionManager;
@@ -41,7 +38,8 @@ public class ServiceAspect {
     @Autowired
     private ILogManager logManager;
 
-    private Log log = Log4jLog.getLog(this.getClass());
+    @Autowired
+    private IConcurrentHandler rateHandler;
 
     @Pointcut("this(com.sample.core.service.IService)")
     public void pinticut() {
@@ -52,30 +50,10 @@ public class ServiceAspect {
     public Object execute(ProceedingJoinPoint joinPoint) throws Throwable {
         Service service = null;
         long begin = System.currentTimeMillis();
-        Class c = joinPoint.getTarget().getClass();
-        Annotation[] as = c.getAnnotations();
         try {
-            Method method = getMethod(joinPoint);
             service = joinPoint.getTarget().getClass().getAnnotation(Service.class);
-            if (service == null) {
-                //TODO 考虑如何处理
-            }
-            //记录交易请求日志
-            if (service.isWriteLog()) {
-                LogInfo<Object[]> logInfo = new LogInfo<Object[]>(service.system(), service.module(), service.trans(), LogInfo.Direction.REQ, joinPoint.getArgs());
-                logManager.write(logInfo);
-            }
-            //请求参数验证
-            if (service.isValidateReq()) {
-                validatorService.service(joinPoint.getArgs()[0]);
-            }
-            Object rsp = joinPoint.proceed();
-            //记录交易响应日志
-            if (service.isWriteLog()) {
-                LogInfo<Object> logInfo = new LogInfo<Object>(service.system(), service.module(), service.trans(), LogInfo.Direction.RSP, rsp);
-                logManager.write(logInfo);
-            }
-            return rsp;
+//            return this.doExecute(joinPoint);
+            return rateHandler.handle(this, joinPoint);
         } catch (Exception e) {
             UnifiedException ue;
             if (e instanceof UnifiedException) {
@@ -84,18 +62,41 @@ public class ServiceAspect {
                 exceptionManager.publish((UnifiedException) e);
             } else {
                 log.error(e.getMessage(), e);
-                ue = new UnifiedException(ExceptionLevel.SERIOUS, "999999", "unknown exception", service.module(), null, e);
+                ue = new UnifiedException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_UNKNOWN[0], Constant.EXCEPTION_UNKNOWN[1], service.module(), null, e);
                 exceptionManager.publish(ue);
             }
             Method method = getMethod1(joinPoint, "captureException");
             Object rsp = method.invoke(joinPoint.getTarget(), joinPoint.getArgs()[0], ue);
             //记录交易响应日志
             if (service.isWriteLog()) {
-                LogInfo logInfo = new LogInfo(service.system(), service.module(), service.trans(), LogInfo.Direction.RSP, rsp);
+                LogInfo logInfo = new LogInfo(service.system(), service.module(), service.code(), LogInfo.Direction.RSP, rsp);
                 logManager.write(logInfo);
             }
             return rsp;
         }
+    }
+
+    public Object doExecute(ProceedingJoinPoint joinPoint) throws Throwable {
+        Service service = joinPoint.getTarget().getClass().getAnnotation(Service.class);
+        if (service == null) {
+            throw new UnifiedException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_UNKNOWN_SERVICE_CODE[0], Constant.EXCEPTION_UNKNOWN_SERVICE_CODE[1], null, null, null);
+        }
+        //记录交易请求日志
+        if (service.isWriteLog()) {
+            LogInfo<Object[]> logInfo = new LogInfo<Object[]>(service.system(), service.module(), service.code(), LogInfo.Direction.REQ, joinPoint.getArgs());
+            logManager.write(logInfo);
+        }
+        //请求参数验证
+        if (service.isValidateReq()) {
+            validatorService.service(joinPoint.getArgs()[0]);
+        }
+        Object rsp = joinPoint.proceed();
+        //记录交易响应日志
+        if (service.isWriteLog()) {
+            LogInfo<Object> logInfo = new LogInfo<Object>(service.system(), service.module(), service.code(), LogInfo.Direction.RSP, rsp);
+            logManager.write(logInfo);
+        }
+        return rsp;
     }
 
 

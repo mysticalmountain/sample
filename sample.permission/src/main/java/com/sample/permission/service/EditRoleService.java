@@ -1,5 +1,7 @@
 package com.sample.permission.service;
 
+import com.sample.core.Constant;
+import com.sample.core.exception.ExceptionLevel;
 import com.sample.core.exception.UnifiedException;
 import com.sample.core.service.AbstractSampleService;
 import com.sample.core.service.ISampleService;
@@ -7,6 +9,7 @@ import com.sample.core.service.Service;
 import com.sample.core.service.handler.ServiceHandlerChain;
 import com.sample.permission.dto.BaseRsp;
 import com.sample.permission.dto.EditRoleReq;
+import org.apache.commons.beanutils.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -27,8 +30,15 @@ public class EditRoleService extends AbstractSampleService<EditRoleReq, BaseRsp>
 
     @Override
     public BaseRsp captureException(EditRoleReq editRoleReq, UnifiedException ue) throws UnifiedException {
-        BaseRsp baseRsp = new BaseRsp();
-        baseRsp.setSuccess(false);
-        return baseRsp;
+        try {
+            BaseRsp baseRsp = new BaseRsp();
+            BeanUtils.copyProperties(baseRsp, editRoleReq);
+            baseRsp.setSuccess(false);
+            baseRsp.setErrorCode(ue.getErrorCode());
+            baseRsp.setErrorMsg(ue.getErrorMessage());
+            return baseRsp;
+        } catch (Exception e) {
+            throw new UnifiedException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_UNKNOWN[0], Constant.EXCEPTION_UNKNOWN[1], null, null, e);
+        }
     }
 }

@@ -36,10 +36,11 @@ public class ServiceHandlerChain {
             } else {
                 index.set(currentIndex + 1);
             }
-            return (O) chain.get(currentIndex).execute(i, this);
+
         }
-        log.error("Service handler not found");
-        return null;
+        return (O) chain.get(currentIndex).execute(i, this);
+//        log.error("Service handler not found");
+//        return null;
     }
 
 
