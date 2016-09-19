@@ -1,7 +1,6 @@
-package com.sample.core.rate.handler;
+package com.sample.core.rate;
 
 import com.google.common.util.concurrent.RateLimiter;
-import com.sample.core.rate.RateConfig;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;

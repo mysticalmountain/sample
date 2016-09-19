@@ -1,7 +1,7 @@
 package com.sample.core.service;
 
 import com.sample.core.exception.UnifiedException;
-import com.sample.core.rate.handler.IRateHandler;
+import com.sample.core.rate.IRateHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**

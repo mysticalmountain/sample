@@ -8,7 +8,7 @@ import com.sample.core.log.Log;
 import com.sample.core.log.Log4jLog;
 import com.sample.core.log.LogInfo;
 import com.sample.core.log.api.ILogManager;
-import com.sample.core.rate.handler.IConcurrentHandler;
+import com.sample.core.rate.IConcurrentHandler;
 import com.sample.core.service.Service;
 import com.sample.core.validator.IValidatorService;
 import org.aspectj.lang.ProceedingJoinPoint;

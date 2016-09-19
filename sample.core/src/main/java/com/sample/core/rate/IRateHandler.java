@@ -1,4 +1,4 @@
-package com.sample.core.rate.handler;
+package com.sample.core.rate;
 
 /**
  * Created by andongxu on 9/19/16.

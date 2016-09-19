@@ -1,15 +1,13 @@
-package com.sample.core.rate.handler;
+package com.sample.core.rate;
 
 import com.sample.core.Constant;
 import com.sample.core.exception.ExceptionLevel;
+import com.sample.core.exception.UnifiedException;
 import com.sample.core.log.Log;
 import com.sample.core.log.Log4jLog;
-import com.sample.core.rate.RateException;
-import com.sample.core.rate.RateConfig;
 import com.sample.core.service.aspect.ServiceAspect;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Component;
 
@@ -45,11 +43,11 @@ public class ConcurrentHandler implements IConcurrentHandler {
                         return serviceAspect.doExecute(joinPoint);
                     } else {
                         log.fatal(Constant.EXCEPTION_CONCURRENT[1]);
-                        throw new RateException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_CONCURRENT[0], Constant.EXCEPTION_CONCURRENT[1], null, null, null);
+                        throw new UnifiedException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_CONCURRENT[0], Constant.EXCEPTION_CONCURRENT[1], null, null, null);
                     }
                 } else {
                     log.fatal(Constant.EXCEPTION_CONCURRENT[1]);
-                    throw new RateException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_CONCURRENT[0], Constant.EXCEPTION_CONCURRENT[1], null, null, null);
+                    throw new UnifiedException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_CONCURRENT[0], Constant.EXCEPTION_CONCURRENT[1], null, null, null);
                 }
             } catch (InterruptedException e) {
                 throw e;
