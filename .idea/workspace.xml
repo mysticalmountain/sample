@@ -1,65 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e02f9c9f-0e39-4558-95a1-e24c03b2b1f6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__sample_sample_user_1_0_SNAPSHOT.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/model/dto/QueryReqDto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/model/dto/QueryRspDto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/model/dto/ReqDto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/model/dto/RspDto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/QueryReq.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/QueryRsp.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/QueryServiceReqDto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/QueryServiceRspDto.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.web/src/test/java/com/sample/web/HttpRequest.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sample.web/src/test/java/com/sample/web/controller/Test.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditServiceService.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/QueryServiceService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/pom.xml" afterPath="$PROJECT_DIR$/sample.core/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/sample.core.iml" afterPath="$PROJECT_DIR$/sample.core/sample.core.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/log/LogManager.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/log/LogManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/AbstractSampleService.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/AbstractSampleService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/IService.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/IService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/Service.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/Service.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/aspect/ServiceAspect.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/aspect/ServiceAspect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/handler/AbstractServiceHandler.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/handler/AbstractServiceHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/handler/ServiceHandlerChain.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/service/handler/ServiceHandlerChain.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/validator/IValidatorService.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/validator/IValidatorService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/validator/ValidatorService.java" afterPath="$PROJECT_DIR$/sample.core/src/main/java/com/sample/core/validator/ValidatorService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/pom.xml" afterPath="$PROJECT_DIR$/sample.permission/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/sample.permission.iml" afterPath="$PROJECT_DIR$/sample.permission/sample.permission.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/JpaConfig.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/JpaConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/BaseRsp.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/BaseRsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/EditChannelReq.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/EditChannelReq.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/EditRoleReq.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/EditRoleReq.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/ServiceDto.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/ServiceDto.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/ValidateRsp.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/dto/ValidateRsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditChannelService.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditChannelService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditRoleService.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/EditRoleService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/QueryService.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/QueryService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/ValidateService.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/ValidateService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/QueryServiceHandler.java" afterPath="$PROJECT_DIR$/sample.permission/src/main/java/com/sample/permission/service/handler/QueryServiceHandler.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/sample.permission/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/EditRoleHandlerTest.java" afterPath="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/EditRoleHandlerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/QueryServiceHandlerTest.java" afterPath="$PROJECT_DIR$/sample.permission/src/test/java/com/sample/permission/service/handler/QueryServiceHandlerTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.permission/src/test/resources/application.properties" afterPath="$PROJECT_DIR$/sample.permission/src/test/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.test/pom.xml" afterPath="$PROJECT_DIR$/sample.test/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.test/sample.test.iml" afterPath="$PROJECT_DIR$/sample.test/sample.test.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/Tmp.java" afterPath="$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/Tmp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/service/Support.java" afterPath="$PROJECT_DIR$/sample.test/src/main/java/com/sample/test/service/Support.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.test/src/test/java/com/sample/test/BeanUtilTest.java" afterPath="$PROJECT_DIR$/sample.test/src/test/java/com/sample/test/BeanUtilTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.user/sample.user.iml" afterPath="$PROJECT_DIR$/sample.user/sample.user.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/USC01001.java" afterPath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/USC01001.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/UserIdReq.java" afterPath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/UserIdReq.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/UserIdRsp.java" afterPath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/UserIdRsp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/UsernameReq.java" afterPath="$PROJECT_DIR$/sample.user/src/main/java/com/sample/user/model/dto/UsernameReq.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.user/src/test/java/com/sample/user/Tmp.java" afterPath="$PROJECT_DIR$/sample.user/src/test/java/com/sample/user/Tmp.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.web/sample.web.iml" afterPath="$PROJECT_DIR$/sample.web/sample.web.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/WebConfig.java" afterPath="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/WebConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/controller/ServiceController.java" afterPath="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/controller/ServiceController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/ServiceDispatcher.java" afterPath="$PROJECT_DIR$/sample.web/src/main/java/com/sample/web/dispatch/ServiceDispatcher.java" />
-    </list>
+    <list default="true" id="e02f9c9f-0e39-4558-95a1-e24c03b2b1f6" name="Default" comment="" />
     <ignored path="sample.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -442,144 +384,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample.web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample.web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample.web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample.web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dispatch" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample.web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample.permission" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sample.core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1260,7 +1064,7 @@
       <workItem from="1473700558153" duration="1722000" />
       <workItem from="1473732381975" duration="33802000" />
       <workItem from="1474164696509" duration="6349000" />
-      <workItem from="1474171057091" duration="42850000" />
+      <workItem from="1474171057091" duration="43198000" />
     </task>
     <servers />
   </component>
@@ -1297,7 +1101,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="627956000" />
+    <option name="totallyTimeSpent" value="628304000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1310,7 +1114,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="24" width="1600" height="828" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" x="165" y="148" width="1335" height="704" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1333,7 +1137,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36512262" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2920411" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34146342" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30744544" sideWeight="0.49295774" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30744544" sideWeight="0.49295774" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27086008" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34468666" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24903722" sideWeight="0.50598294" order="10" side_tool="true" content_ui="tabs" />
