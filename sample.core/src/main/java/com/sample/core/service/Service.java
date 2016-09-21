@@ -39,4 +39,10 @@ public @interface Service {
      */
     boolean isValidateReq() default false;
 
+    /**
+     * 是否幂等保障
+     * @return
+     */
+    boolean isIdempotent() default false;
+
 }

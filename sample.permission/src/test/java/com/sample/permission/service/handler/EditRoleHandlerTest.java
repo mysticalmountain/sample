@@ -26,18 +26,23 @@ import java.util.Set;
 public class EditRoleHandlerTest extends BaseTest {
 
     @Autowired
-    @Qualifier("editServiceService")
+    @Qualifier("editRoleService")
     private ISampleService<EditRoleReq, BaseRsp> sampleService;
 
     @Test
     public void success() throws UnifiedException {
         EditRoleReq<Long, Operate> editRoleReq = new EditRoleReq<Long, Operate>();
+        editRoleReq.setReqId("100001");
         editRoleReq.setOwner("10000000");
         Set<KeyValue<Long, Operate>> menuOperateSet = new HashSet<KeyValue<Long, Operate>>();
         KeyValue<Long, Operate> menuOperate0 = new KeyValue<Long, Operate>();
         menuOperate0.setK(Long.valueOf(10000018));
         menuOperate0.setV(Operate.WRITE);
         menuOperateSet.add(menuOperate0);
+        KeyValue<Long, Operate> menuOperate1 = new KeyValue<Long, Operate>();
+        menuOperate1.setK(Long.valueOf(10000019));
+        menuOperate1.setV(Operate.READ);
+        menuOperateSet.add(menuOperate1);
         editRoleReq.setKeyValues(menuOperateSet);
         BaseRsp baseRsp = sampleService.service(editRoleReq);
         Assert.assertNotNull(baseRsp);

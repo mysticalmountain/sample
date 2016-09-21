@@ -9,12 +9,16 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.test.annotation.Commit;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.UUID;
 
 /**
  * Created by andongxu on 16-9-2.
  */
+@Transactional
+@Commit
 public class QueryServiceHandlerTest extends BaseTest {
 
     @Autowired

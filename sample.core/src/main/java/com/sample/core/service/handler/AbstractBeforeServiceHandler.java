@@ -5,9 +5,9 @@ import com.sample.core.service.Parent;
 import com.sample.core.service.Service;
 
 /**
- * Created by andongxu on 16-8-31.
+ * Created by andongxu on 9/20/16.
  */
-public abstract class AbstractServiceHandler<I, O> implements IServiceHandler<I, O> {
+public abstract class AbstractBeforeServiceHandler<I, O> implements IServiceHandler<I, O> {
 
     @Override
     public O execute(I i, IServiceHandlerChain<I, O> chain, Service service) throws UnifiedException {
@@ -19,7 +19,7 @@ public abstract class AbstractServiceHandler<I, O> implements IServiceHandler<I,
         }
     }
 
-    @Parent
     public abstract O doHandle(I i, Service service) throws UnifiedException;
+
 
 }

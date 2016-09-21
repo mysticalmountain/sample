@@ -22,11 +22,12 @@ import java.lang.reflect.Method;
 public class ValidateService extends AbstractSampleService<ValidateReq, ValidateRsp> {
 
     @Autowired
-    private ServiceHandlerChain chain;
+    private ServiceHandlerChain<ValidateReq, ValidateRsp> chain;
 
     @Override
     public ValidateRsp doService(ValidateReq validateReq) throws UnifiedException {
-        return chain.handle(validateReq);
+        Service service = this.getClass().getAnnotation(Service.class);
+        return chain.handle(validateReq, service);
     }
 
     @Override

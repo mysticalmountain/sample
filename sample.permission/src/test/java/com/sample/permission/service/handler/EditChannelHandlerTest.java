@@ -25,22 +25,23 @@ import java.util.Set;
 public class EditChannelHandlerTest extends BaseTest {
 
     @Autowired
-    @Qualifier("editServiceService")
+    @Qualifier("editChannelService")
     private ISampleService<EditChannelReq, BaseRsp> addService;
 
     @Test
     public void success() throws UnifiedException {
         EditChannelReq<String, Operate> addReq = new EditChannelReq<String,Operate>();
+        addReq.setReqId("1000001");
         addReq.setOwner("WY");
         Set<KeyValue<String, Operate>> serviceOperateSet = new HashSet<KeyValue<String, Operate>>();
         KeyValue<String, Operate> serviceOperate0 = new KeyValue<String, Operate>();
         serviceOperate0.setK("1001");
         serviceOperate0.setV(Operate.WRITE);
-        KeyValue<String, Operate> serviceOperate1 = new KeyValue<String, Operate>();
-        serviceOperate1.setK("1002");
-        serviceOperate1.setV(Operate.READ);
+//        KeyValue<String, Operate> serviceOperate1 = new KeyValue<String, Operate>();
+//        serviceOperate1.setK("1002");
+//        serviceOperate1.setV(Operate.READ);
         serviceOperateSet.add(serviceOperate0);
-        serviceOperateSet.add(serviceOperate1);
+//        serviceOperateSet.add(serviceOperate1);
         addReq.setKeyValues(serviceOperateSet);
         addService.service(addReq);
 

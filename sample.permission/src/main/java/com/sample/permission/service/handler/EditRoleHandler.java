@@ -40,7 +40,7 @@ public class EditRoleHandler extends AbstractServiceHandler<EditRoleReq, BaseRsp
     }
 
     @Override
-    public BaseRsp doHandle(EditRoleReq editRoleReq) throws UnifiedException {
+    public BaseRsp doHandle(EditRoleReq editRoleReq, com.sample.core.service.Service service) throws UnifiedException {
         Role role = roleRepository.findOne(Long.valueOf(editRoleReq.getOwner()));
         roleRepository.flush();
         if (role.getId() == null) {

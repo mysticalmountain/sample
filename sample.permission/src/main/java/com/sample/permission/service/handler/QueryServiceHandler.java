@@ -30,7 +30,7 @@ public class QueryServiceHandler extends AbstractServiceHandler<QueryServiceReq,
     private ServiceRepository serviceRepository;
 
     @Override
-    public QueryRsp<List<ServiceDto>> doHandle(final QueryServiceReq reqDto) throws UnifiedException {
+    public QueryRsp<List<ServiceDto>> doHandle(final QueryServiceReq reqDto, com.sample.core.service.Service service) throws UnifiedException {
         try {
             Service s = new Service();
             BeanUtils.copyProperties(s, reqDto);
@@ -79,18 +79,18 @@ public class QueryServiceHandler extends AbstractServiceHandler<QueryServiceReq,
                         return false;
                     }
                 });
-                for (Service service : services) {
+                for (Service s1 : services) {
                     ServiceDto serviceDto = new ServiceDto();
-                    BeanUtils.copyProperties(serviceDto, service);
+                    BeanUtils.copyProperties(serviceDto, s1);
                     servicesDto.add(serviceDto);
                 }
                 queryRsp.setTotalElements(services.getTotalElements());
                 queryRsp.setTotalPages(services.getTotalPages());
             } else {                                            //不分页
                 List<Service> services = serviceRepository.findAll(example);
-                for (Service service : services) {
+                for (Service s1 : services) {
                     ServiceDto serviceDto = new ServiceDto();
-                    BeanUtils.copyProperties(serviceDto, service);
+                    BeanUtils.copyProperties(serviceDto, s1);
                     servicesDto.add(serviceDto);
                 }
             }

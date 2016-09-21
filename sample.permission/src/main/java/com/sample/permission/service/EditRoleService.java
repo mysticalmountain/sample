@@ -6,6 +6,7 @@ import com.sample.core.exception.UnifiedException;
 import com.sample.core.service.AbstractSampleService;
 import com.sample.core.service.ISampleService;
 import com.sample.core.service.Service;
+import com.sample.core.service.handler.BeforeServiceHandlerChain;
 import com.sample.core.service.handler.ServiceHandlerChain;
 import com.sample.permission.dto.BaseRsp;
 import com.sample.permission.dto.EditRoleReq;
@@ -17,15 +18,19 @@ import org.springframework.stereotype.Component;
  * Created by andongxu on 9/12/16.
  */
 @Component
-@com.sample.core.service.Service(code = "1002")
+@com.sample.core.service.Service(code = "1002", isValidateReq = true, isIdempotent = true)
 public class EditRoleService extends AbstractSampleService<EditRoleReq, BaseRsp> {
 
     @Autowired
-    private ServiceHandlerChain chain;
+    private ServiceHandlerChain<EditRoleReq, BaseRsp> chain;
+    @Autowired
+    private BeforeServiceHandlerChain beforeChain;
 
     @Override
     public BaseRsp doService(EditRoleReq editRoleReq) throws UnifiedException {
-        return null;
+        Service service = this.getClass().getAnnotation(Service.class);
+        beforeChain.handle(editRoleReq, service);
+        return chain.handle(editRoleReq, this.getClass().getAnnotation(Service.class));
     }
 
     @Override

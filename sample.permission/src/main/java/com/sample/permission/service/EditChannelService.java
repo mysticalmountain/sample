@@ -23,11 +23,11 @@ import java.lang.reflect.InvocationTargetException;
 public class EditChannelService extends AbstractSampleService<EditChannelReq, BaseRsp> {
 
     @Autowired
-    private ServiceHandlerChain chain;
+    private ServiceHandlerChain<EditChannelReq, BaseRsp> chain;
 
     @Override
     public BaseRsp doService(EditChannelReq editChannelReq) throws UnifiedException {
-        return chain.handle(editChannelReq);
+        return chain.handle(editChannelReq, this.getClass().getAnnotation(Service.class));
     }
 
     @Override

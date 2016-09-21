@@ -42,9 +42,8 @@ public class EditChannelHandler extends AbstractServiceHandler<EditChannelReq, B
         return false;
     }
 
-    @Parent
     @Override
-    public BaseRsp doHandle(EditChannelReq editChannelReq) throws UnifiedException {
+    public BaseRsp doHandle(EditChannelReq editChannelReq, com.sample.core.service.Service service) throws UnifiedException {
         Channel channel = channelRepository.findByCode(editChannelReq.getOwner());
         if (channel == null) {
             UnifiedExceptionUtil.throwSlightException("999999", "渠道代码不存在", "permission", null, null);
@@ -56,11 +55,11 @@ public class EditChannelHandler extends AbstractServiceHandler<EditChannelReq, B
             KeyValue<String, Operate> keyValue = keyValueIterator.next();
             String serviceCode = keyValue.getK();                       //服务代码
             Operate operate = keyValue.getV();                          //操作权限
-            Service service = serviceRepository.findByCode(serviceCode);
-            if (service == null) {
+            Service s = serviceRepository.findByCode(serviceCode);
+            if (s == null) {
                 UnifiedExceptionUtil.throwSlightException("999999", "服务代码不存在", "permission", null, null);
             }
-            Set<Permission> permissions1 = service.getPermissions();
+            Set<Permission> permissions1 = s.getPermissions();
             boolean exist = false;
             //存在权限则提取权限
             for (Permission permission : permissions1) {
@@ -75,7 +74,7 @@ public class EditChannelHandler extends AbstractServiceHandler<EditChannelReq, B
                 permission.setOperate(operate);
                 permission.setPermissionType(PermissionType.CHANNEL);
                 Set<Service> services = new HashSet<Service>();
-                services.add(service);
+                services.add(s);
                 permission.setServices(services);
                 permission = permissionRepository.save(permission);
                 permissions.add(permission);

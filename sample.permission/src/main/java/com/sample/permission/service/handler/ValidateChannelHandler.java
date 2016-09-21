@@ -25,7 +25,7 @@ public class ValidateChannelHandler extends AbstractServiceHandler<ValidateReq, 
     private ChannelRepository channelRepository;
 
     @Override
-    public ValidateRsp doHandle(ValidateReq validateReq) throws UnifiedException {
+    public ValidateRsp doHandle(ValidateReq validateReq, com.sample.core.service.Service service) throws UnifiedException {
         Channel channel = channelRepository.findByCode(validateReq.getOwner());
         if (channel == null) {
             UnifiedExceptionUtil.throwSlightException("999999", "渠道代码不存在", "permission", null, null);
@@ -34,8 +34,8 @@ public class ValidateChannelHandler extends AbstractServiceHandler<ValidateReq, 
         boolean isSuccess = false;
         for (Permission permission : permissions) {
             Set<Service> services = permission.getServices();
-            for (Service service: services) {
-                if (service.getCode().equals(validateReq.getServiceCode())) {
+            for (Service s: services) {
+                if (s.getCode().equals(validateReq.getServiceCode())) {
                     isSuccess = true;
                 }
             }

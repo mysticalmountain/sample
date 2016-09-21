@@ -26,7 +26,7 @@ public class ValidateMenuHandler extends AbstractServiceHandler<ValidateReq, Val
     private MenuRepository menuRepository;
 
     @Override
-    public ValidateRsp doHandle(ValidateReq validateReq) throws UnifiedException {
+    public ValidateRsp doHandle(ValidateReq validateReq, com.sample.core.service.Service service) throws UnifiedException {
         Menu menu = menuRepository.findOne(Long.valueOf(validateReq.getOwner()));
         if (menu == null) {
             UnifiedExceptionUtil.throwSlightException("999999", "菜单不存在", "permission", null, null);
@@ -39,8 +39,8 @@ public class ValidateMenuHandler extends AbstractServiceHandler<ValidateReq, Val
             Set<Service> serviceSet = permission.getServices();
             Iterator<Service> serviceIterator = serviceSet.iterator();
             while (serviceIterator.hasNext()) {
-                Service service = serviceIterator.next();
-                if (service.getCode().equals(validateReq.getServiceCode())) {
+                Service s = serviceIterator.next();
+                if (s.getCode().equals(validateReq.getServiceCode())) {
                     isSuccess = true;
                 }
             }
