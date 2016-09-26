@@ -80,6 +80,6 @@ public class EditRoleHandler extends AbstractServiceHandler<EditRoleReq, BaseRsp
         }
         role.setPermissions(permissions);
         roleRepository.save(role);
-        return new BaseRsp(true);
+        return new BaseRsp();
     }
 }

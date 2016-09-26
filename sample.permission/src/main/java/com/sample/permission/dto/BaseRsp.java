@@ -7,20 +7,7 @@ import com.sample.core.model.dto.Rsp;
  */
 public class BaseRsp extends Rsp {
 
-    private boolean isSuccess;
-
     public BaseRsp() {
     }
 
-    public BaseRsp(boolean isSuccess) {
-        this.isSuccess = isSuccess;
-    }
-
-    public boolean isSuccess() {
-        return isSuccess;
-    }
-
-    public void setSuccess(boolean success) {
-        isSuccess = success;
-    }
 }

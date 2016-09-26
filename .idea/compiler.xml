@@ -56,10 +56,26 @@
         <processorPath useClasspath="true" />
         <module name="sample.web" />
       </profile>
+      <profile default="false" name="Annotation profile for sample.idempotent" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="sample.idempotent" />
+      </profile>
+      <profile default="false" name="Annotation profile for sample.flow" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="sample.flow" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="sample" target="1.6" />
       <module name="sample.core" target="1.6" />
+      <module name="sample.flow" target="1.6" />
+      <module name="sample.idempotent" target="1.6" />
       <module name="sample.jpa" target="1.6" />
       <module name="sample.permission" target="1.6" />
       <module name="sample.test" target="1.6" />

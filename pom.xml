@@ -14,7 +14,7 @@
         <module>sample.test</module>
         <module>sample.permission</module>
         <module>sample.web</module>
-        <module>sample.idempotent</module>
+        <module>sample.flow</module>
     </modules>
 
     <properties>
@@ -118,6 +118,12 @@
                 <artifactId>guava</artifactId>
                 <version>19.0</version>
             </dependency>
+            <dependency>
+                <groupId>org.aspectj</groupId>
+                <artifactId>aspectjweaver</artifactId>
+                <version>1.8.9</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
