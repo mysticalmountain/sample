@@ -1,0 +1,42 @@
+2016-09-21 21:58:00 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-21 21:58:04 [ main:4523 ] - [ INFO ] system=,module=,trans=1002,--->args,Param 1=EditRoleReq{owner='10000000', keyValues=[KeyValue{k=10000019, v=READ}, KeyValue{k=10000018, v=WRITE}]}
+2016-09-21 21:58:05 [ main:4746 ] - [ ERROR ] Unified exception:重复请求进行幂等保护
+2016-09-21 21:58:05 [ main:4857 ] - [ INFO ] system=,module=,trans=1002,--->datas=Rsp{reqId='100001', errorCode='null', errorMsg='重复请求进行幂等保护', isSuccess=false}
+2016-09-21 21:58:05 [ Thread-1:4931 ] - [ INFO ] {dataSource-1} closed
+2016-09-21 22:33:46 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-21 22:33:50 [ main:3343 ] - [ INFO ] system=,module=,trans=1002,--->args,Param 1=EditRoleReq{owner='10000000', keyValues=[KeyValue{k=10000018, v=WRITE}, KeyValue{k=10000019, v=READ}]}
+2016-09-21 22:33:50 [ main:3424 ] - [ ERROR ] Unified exception:重复请求进行幂等保护
+2016-09-21 22:33:50 [ main:3486 ] - [ INFO ] system=,module=,trans=1002,--->datas=Rsp{reqId='100001', errorCode='null', errorMsg='重复请求进行幂等保护', isSuccess=false}
+2016-09-21 22:33:50 [ Thread-1:3553 ] - [ INFO ] {dataSource-1} closed
+2016-09-21 22:38:00 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-21 22:38:03 [ main:3528 ] - [ INFO ] system=,module=,trans=1002,--->args,Param 1=EditRoleReq{owner='10000000', keyValues=[KeyValue{k=10000019, v=READ}, KeyValue{k=10000018, v=WRITE}]}
+2016-09-21 22:38:03 [ main:3630 ] - [ ERROR ] Unified exception:repeat request
+2016-09-21 22:38:03 [ main:3683 ] - [ INFO ] system=,module=,trans=1002,--->datas=Rsp{reqId='100001', errorCode='999996', errorMsg='repeat request', isSuccess=false}
+2016-09-21 22:38:03 [ Thread-1:3747 ] - [ INFO ] {dataSource-1} closed
+2016-09-21 23:45:16 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-21 23:45:19 [ main:2155 ] - [ INFO ] {dataSource-1} closed
+2016-09-21 23:47:35 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-21 23:47:37 [ main:2131 ] - [ INFO ] {dataSource-1} closed
+2016-09-21 23:47:57 [ main:1 ] - [ INFO ] {dataSource-1} inited
+2016-09-21 23:48:00 [ main:2395 ] - [ INFO ] {dataSource-1} closed
+2016-09-21 23:48:20 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-21 23:48:55 [ main:34980 ] - [ INFO ] {dataSource-1} closed
+2016-09-21 23:51:22 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-21 23:51:26 [ main:4028 ] - [ INFO ] system=,module=,trans=1003,--->args,Param 1=Req{reqId='52fc6e20-41f0-4069-b863-4467f1fea024'}
+2016-09-21 23:51:33 [ main:11184 ] - [ INFO ] system=,module=,trans=1003,--->datas=Rsp{reqId='52fc6e20-41f0-4069-b863-4467f1fea024', errorCode='success', errorMsg='null', isSuccess=true}QueryRsp{pageNumber=null, pageSize=null, totalPages=null, totalElements=null, date=[ServiceDto{id=10000002, code='1001', className='null', tmp='null'}, ServiceDto{id=10000003, code='1002', className='null', tmp='null'}, ServiceDto{id=10000004, code='1003', className='null', tmp='null'}, ServiceDto{id=10000005, code='1004', className='null', tmp='null'}, ServiceDto{id=10000006, code='1005', className='null', tmp='null'}, ServiceDto{id=10000007, code='1006', className='null', tmp='null'}]}
+2016-09-21 23:51:34 [ Thread-1:11335 ] - [ INFO ] {dataSource-1} closed
+2016-09-21 23:52:29 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-21 23:52:33 [ main:3785 ] - [ INFO ] system=,module=,trans=1003,--->args,Param 1=Req{reqId='d0d57ceb-0894-4985-86fa-a93a72235daa'}
+2016-09-21 23:54:00 [ main:90846 ] - [ INFO ] system=,module=,trans=1003,--->datas=Rsp{reqId='d0d57ceb-0894-4985-86fa-a93a72235daa', errorCode='success', errorMsg='null', isSuccess=true}QueryRsp{pageNumber=null, pageSize=null, totalPages=null, totalElements=null, date=[ServiceDto{id=10000002, code='1001', className='null', tmp='null'}, ServiceDto{id=10000003, code='1002', className='null', tmp='null'}, ServiceDto{id=10000004, code='1003', className='null', tmp='null'}, ServiceDto{id=10000005, code='1004', className='null', tmp='null'}, ServiceDto{id=10000006, code='1005', className='null', tmp='null'}, ServiceDto{id=10000007, code='1006', className='null', tmp='null'}]}
+2016-09-21 23:54:00 [ Thread-1:91054 ] - [ INFO ] {dataSource-1} closed
+2016-09-21 23:54:47 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-21 23:54:51 [ main:3618 ] - [ INFO ] system=,module=,trans=1003,--->args,Param 1=Req{reqId='5a5e493a-4e19-47ca-b981-5603f2cb76a5'}
+2016-09-21 23:55:49 [ Thread-1:61275 ] - [ INFO ] {dataSource-1} closed
+2016-09-21 23:57:42 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-21 23:57:46 [ main:3721 ] - [ INFO ] system=,module=,trans=1003,--->args,Param 1=Req{reqId='437a947c-fcdf-4827-8f18-eb76d9c927da'}
+2016-09-21 23:58:27 [ main:44692 ] - [ INFO ] system=,module=,trans=1003,--->datas=Rsp{reqId='437a947c-fcdf-4827-8f18-eb76d9c927da', errorCode='success', errorMsg='null', isSuccess=true}QueryRsp{pageNumber=null, pageSize=null, totalPages=null, totalElements=null, date=[ServiceDto{id=10000002, code='1001', className='null', tmp='null'}, ServiceDto{id=10000003, code='1002', className='null', tmp='null'}, ServiceDto{id=10000004, code='1003', className='null', tmp='null'}, ServiceDto{id=10000005, code='1004', className='null', tmp='null'}, ServiceDto{id=10000006, code='1005', className='null', tmp='null'}, ServiceDto{id=10000007, code='1006', className='null', tmp='null'}]}
+2016-09-21 23:58:27 [ Thread-1:44815 ] - [ INFO ] {dataSource-1} closed
+2016-09-21 23:59:24 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-21 23:59:28 [ main:4221 ] - [ INFO ] system=,module=,trans=1003,--->args,Param 1=Req{reqId='4469351c-e5c5-46c6-8132-b5b5e93a3064'}
+2016-09-21 23:59:53 [ main:29854 ] - [ INFO ] system=,module=,trans=1003,--->datas=Rsp{reqId='4469351c-e5c5-46c6-8132-b5b5e93a3064', errorCode='success', errorMsg='null', isSuccess=true}QueryRsp{pageNumber=null, pageSize=null, totalPages=null, totalElements=null, date=[ServiceDto{id=10000002, code='1001', className='null', tmp='null'}, ServiceDto{id=10000003, code='1002', className='null', tmp='null'}, ServiceDto{id=10000004, code='1003', className='null', tmp='null'}, ServiceDto{id=10000005, code='1004', className='null', tmp='null'}, ServiceDto{id=10000006, code='1005', className='null', tmp='null'}, ServiceDto{id=10000007, code='1006', className='null', tmp='null'}]}
+2016-09-21 23:59:54 [ Thread-1:30011 ] - [ INFO ] {dataSource-1} closed

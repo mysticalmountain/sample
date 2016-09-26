@@ -19,7 +19,7 @@ import java.lang.reflect.InvocationTargetException;
  * Created by andongxu on 9/12/16.
  */
 @Component
-@com.sample.core.service.Service(code = "1001", isValidateReq = true)
+@com.sample.core.service.Service(code = "1001", isValidateReq = true, isIdempotent = true)
 public class EditChannelService extends AbstractSampleService<EditChannelReq, BaseRsp> {
 
     @Autowired

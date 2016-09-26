@@ -1,0 +1,111 @@
+2016-09-22 15:51:17 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 15:51:20 [ main:3039 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 15:52:48 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 15:52:52 [ main:4223 ] - [ INFO ] system=,module=,trans=1003,--->args,Param 1=Req{reqId='ef536ba2-5a12-45b7-83b6-66289a2585fb'}
+2016-09-22 15:53:10 [ main:22245 ] - [ INFO ] system=,module=,trans=1003,--->datas=Rsp{reqId='ef536ba2-5a12-45b7-83b6-66289a2585fb', errorCode='success', errorMsg='null', isSuccess=true}QueryRsp{pageNumber=null, pageSize=null, totalPages=null, totalElements=null, date=[ServiceDto{id=10000002, code='1001', className='null', tmp='null'}, ServiceDto{id=10000003, code='1002', className='null', tmp='null'}, ServiceDto{id=10000004, code='1003', className='null', tmp='null'}, ServiceDto{id=10000005, code='1004', className='null', tmp='null'}, ServiceDto{id=10000006, code='1005', className='null', tmp='null'}, ServiceDto{id=10000007, code='1006', className='null', tmp='null'}]}
+2016-09-22 15:53:10 [ Thread-1:22346 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 15:54:34 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 15:54:37 [ main:3665 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 15:54:38 [ main:4137 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-22 15:54:38 [ Thread-1:4364 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 15:57:08 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 15:57:12 [ main:3840 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 15:57:58 [ main:50120 ] - [ ERROR ] Unified exception:repeat request
+2016-09-22 15:57:58 [ main:50181 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='1000001', errorCode='999996', errorMsg='repeat request', isSuccess=false}
+2016-09-22 15:57:58 [ Thread-1:50189 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 15:58:08 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 15:58:12 [ main:3922 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 15:59:00 [ main:51839 ] - [ ERROR ] Unified exception:repeat request
+2016-09-22 15:59:00 [ Thread-1:51895 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 15:59:09 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 15:59:13 [ main:4377 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 16:00:56 [ main:106637 ] - [ ERROR ] Unified exception:repeat request
+2016-09-22 16:01:44 [ main:155434 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='1000001', errorCode='999996', errorMsg='repeat request', isSuccess=false}
+2016-09-22 16:01:45 [ Thread-1:155472 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 16:02:57 [ main:1 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 16:03:01 [ main:3853 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 16:03:22 [ main:24463 ] - [ ERROR ] Unified exception:repeat request
+2016-09-22 16:03:32 [ main:34748 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-22 16:03:32 [ Thread-1:34785 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 21:43:20 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 21:43:22 [ main:2539 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 21:46:11 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 21:46:15 [ main:3570 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 21:46:15 [ main:3676 ] - [ ERROR ] Unified exception:repeat request
+2016-09-22 21:46:15 [ main:3739 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='1000001', errorCode='999996', errorMsg='repeat request', isSuccess=false}
+2016-09-22 21:46:15 [ Thread-1:3791 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 21:48:19 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 21:48:23 [ main:3942 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 21:48:24 [ main:4082 ] - [ ERROR ] Unified exception:repeat request
+2016-09-22 21:48:24 [ main:4183 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='1000001', errorCode='999996', errorMsg='repeat request', isSuccess=false}
+2016-09-22 21:48:24 [ Thread-1:4248 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 21:49:00 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 21:49:04 [ main:4046 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 21:49:04 [ main:4155 ] - [ ERROR ] Unified exception:repeat request
+2016-09-22 21:49:04 [ main:4248 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='1000001', errorCode='999996', errorMsg='repeat request', isSuccess=false}
+2016-09-22 21:49:04 [ Thread-1:4342 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 21:50:11 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 21:50:15 [ main:3851 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 21:50:34 [ main:22139 ] - [ ERROR ] Unified exception:repeat request
+2016-09-22 21:50:34 [ main:22184 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='1000001', errorCode='999996', errorMsg='repeat request', isSuccess=false}
+2016-09-22 21:50:34 [ Thread-1:22227 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 21:51:27 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 21:51:30 [ main:3844 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 21:52:03 [ Thread-1:36482 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 21:52:25 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 21:52:29 [ main:4341 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 21:53:26 [ main:60785 ] - [ ERROR ] Unified exception:repeat request
+2016-09-22 21:53:26 [ main:60858 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='1000001', errorCode='999996', errorMsg='repeat request', isSuccess=false}
+2016-09-22 21:53:26 [ Thread-1:60928 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 21:54:19 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 21:54:23 [ main:4018 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 21:55:06 [ main:46108 ] - [ ERROR ] Unified exception:repeat request
+2016-09-22 21:55:06 [ main:46160 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='1000001', errorCode='999996', errorMsg='repeat request', isSuccess=false}
+2016-09-22 21:55:06 [ Thread-1:46208 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 21:55:15 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 21:55:19 [ main:3951 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 21:56:23 [ main:67577 ] - [ ERROR ] Unified exception:repeat request
+2016-09-22 21:56:23 [ Thread-1:67598 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 21:56:58 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 21:57:02 [ main:3622 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 21:57:24 [ main:25514 ] - [ ERROR ] Unified exception:repeat request
+2016-09-22 21:57:24 [ Thread-1:25526 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 21:57:43 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 21:57:47 [ main:3912 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 21:59:36 [ main:112532 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-22 21:59:36 [ Thread-1:112690 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 22:00:33 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 22:00:37 [ main:3817 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 22:02:25 [ main:111099 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-22 22:02:25 [ Thread-1:111160 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 22:02:49 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 22:02:53 [ main:3811 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 22:03:08 [ Thread-1:18457 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 22:05:14 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 22:05:18 [ main:3804 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 22:05:35 [ main:21201 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-22 22:05:35 [ Thread-1:21341 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 22:07:59 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 22:08:03 [ main:4067 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 22:09:01 [ main:62138 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-22 22:09:01 [ Thread-1:62275 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 22:10:13 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 22:10:17 [ main:3805 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 22:13:39 [ main:206018 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-22 22:13:42 [ Thread-1:209013 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 22:15:16 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 22:15:20 [ main:3788 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 22:17:46 [ main:150443 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-22 22:17:46 [ Thread-1:150636 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 22:21:08 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 22:21:12 [ main:3742 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 22:21:12 [ main:4175 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}
+2016-09-22 22:21:12 [ Thread-1:4359 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 22:22:13 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 22:22:17 [ main:4153 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 22:22:17 [ main:4747 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='null', errorCode='000000', errorMsg='success', isSuccess=false}
+2016-09-22 22:22:18 [ Thread-1:4903 ] - [ INFO ] {dataSource-1} closed
+2016-09-22 22:24:13 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-09-22 22:24:17 [ main:3731 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=EditChannelReq{owner='WY', keyValues=[KeyValue{k=1001, v=WRITE}]}
+2016-09-22 22:24:17 [ main:4257 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='null', errorCode='000000', errorMsg='success', isSuccess=true}
+2016-09-22 22:24:17 [ Thread-1:4382 ] - [ INFO ] {dataSource-1} closed

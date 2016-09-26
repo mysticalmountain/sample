@@ -1,11 +1,9 @@
 package com.sample.permission.service.handler;
 
+import com.sample.core.Constant;
 import com.sample.core.exception.UnifiedException;
 import com.sample.core.exception.UnifiedExceptionUtil;
-import com.sample.core.service.Parent;
-import com.sample.core.service.handler.AbstractServiceHandler;
-import com.sample.core.service.handler.IServiceHandler;
-import com.sample.core.service.handler.ServiceHandlerChain;
+import com.sample.core.service.handler.*;
 import com.sample.permission.dto.EditChannelReq;
 import com.sample.permission.dto.BaseRsp;
 import com.sample.permission.dto.KeyValue;
@@ -14,9 +12,11 @@ import com.sample.permission.model.Service;
 import com.sample.permission.repository.ChannelRepository;
 import com.sample.permission.repository.PermissionRepository;
 import com.sample.permission.repository.ServiceRepository;
+import org.apache.commons.beanutils.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.lang.reflect.InvocationTargetException;
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -82,8 +82,19 @@ public class EditChannelHandler extends AbstractServiceHandler<EditChannelReq, B
         }
         channel.setPermissions(permissions);
         channelRepository.save(channel);
-        return new BaseRsp(true);
+        BaseRsp baseRsp = new BaseRsp();
+        baseRsp.setErrorCode(Constant.SUCCESS[0]);
+        baseRsp.setErrorMsg(Constant.SUCCESS[1]);
+        baseRsp.setSuccess(true);
+        try {
+            BeanUtils.copyProperties(baseRsp, editChannelReq);
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
+//        return new BaseRsp(true);
+        return baseRsp;
     }
-
 }
 

@@ -90,6 +90,7 @@ public class ServiceAspect {
         if (service.isValidateReq()) {
             validatorService.service(joinPoint.getArgs()[0]);
         }
+//        log.info("execute service [" + service.code() + "] "  + joinPoint.getTarget().getClass().getName());
         Object rsp = joinPoint.proceed();
         //记录交易响应日志
         if (service.isWriteLog()) {

@@ -22,6 +22,10 @@ public class Constant {
      */
     public static String [] EXCEPTION_CONCURRENT = {"999997", "the number of concurrent too high"};
 
+    /**
+     * 重复请求
+     */
+    public static String [] EXCEPTION_REPEAT_REQUEST = {"999996", "repeat request"};
 
 
     /******************************************************************************************/
