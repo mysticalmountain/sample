@@ -10,6 +10,8 @@ import com.sample.core.service.handler.BeforeServiceHandlerChain;
 import org.apache.commons.beanutils.PropertyUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
+import javax.transaction.Transactional;
+
 /**
  * Created by andongxu on 9/12/16.
  */
@@ -39,17 +41,9 @@ public abstract class AbstractSampleService<I, O> implements ISampleService<I, O
         }
     }
 
+    @Transactional(value = Transactional.TxType.REQUIRED)
     public abstract O doService(I i) throws UnifiedException;
 
     public abstract O captureException(I i, UnifiedException ue) throws UnifiedException;
-
-//    public O exceptionHandler(I i, UnifiedException ue) throws UnifiedException {
-//        if (Constant.EXCEPTION_REPEAT_REQUEST[0].equals(ue.getErrorCode())) {       //重复请求异常
-//            Service service = this.getClass().getAnnotation(Service.class);
-//            return idempotentServiceChain.handle(i, service);
-//        } else {                                                                    //
-//            return this.captureException(i, ue);
-//        }
-//    }
 
 }
