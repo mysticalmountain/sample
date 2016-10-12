@@ -17,8 +17,6 @@ import java.util.UUID;
 /**
  * Created by andongxu on 16-9-2.
  */
-@Transactional
-@Commit
 public class QueryServiceHandlerTest extends BaseTest {
 
     @Autowired
@@ -30,6 +28,11 @@ public class QueryServiceHandlerTest extends BaseTest {
         QueryServiceReq queryServiceReqDto = new QueryServiceReq();
         queryServiceReqDto.setReqId(UUID.randomUUID().toString());
         QueryRsp queryRspDto = sampleService.service(queryServiceReqDto);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         Assert.assertNotNull(queryRspDto);
         Assert.assertTrue(queryRspDto.isSuccess());
     }
