@@ -10,12 +10,14 @@ import com.sample.core.service.Service;
 import com.sample.core.service.handler.AbstractAfterVoidServiceHandler;
 import com.sample.core.service.handler.Priority;
 import com.sample.core.utils.ObjectSerializeUtil;
+import com.sample.core.utils.ThreadExecutorPool;
 import com.sample.flow.model.ReqPK;
 import com.sample.flow.model.ReqRspFlow;
 import com.sample.flow.repository.ReqRspFlowRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.transaction.Transactional;
 import java.io.IOException;
 
 /**
@@ -30,18 +32,26 @@ public class AfterFlowHandler<I extends Rsp> extends AbstractAfterVoidServiceHan
     @Autowired
     private ReqRspFlowRepository reqRspFlowRepository;
 
+    @Autowired
+    private ThreadExecutorPool threadExecutorPool;
+
     @Override
-    public Void doHandle(Rsp rsp, Service service) throws UnifiedException {
-        ReqPK reqPK = new ReqPK();
-        reqPK.setRequestId(rsp.getReqId());
-        reqPK.setServiceCode(service.code());
-        ReqRspFlow reqRspFlow = reqRspFlowRepository.findOne(reqPK);
-        try {
-            reqRspFlow.setRspMsg(ObjectSerializeUtil.serializeObject(rsp));
-            reqRspFlowRepository.save(reqRspFlow);
-        } catch (IOException e) {
-            throw new UnifiedException(ExceptionLevel.COMMON, Constant.EXCEPTION_UNKNOWN[0], Constant.EXCEPTION_UNKNOWN[1], null, null, e);
-        }
+    public Void doHandle(final Rsp rsp, final Service service) throws UnifiedException {
+        threadExecutorPool.execute(new Runnable() {
+            @Override
+            public void run() {
+                ReqPK reqPK = new ReqPK();
+                reqPK.setRequestId(rsp.getReqId());
+                reqPK.setServiceCode(service.code());
+                ReqRspFlow reqRspFlow = reqRspFlowRepository.findOne(reqPK);
+                try {
+                    reqRspFlow.setRspMsg(ObjectSerializeUtil.serializeObject(rsp));
+                } catch (IOException e) {
+                    log.error("对象序列化异常", e);
+                }
+                reqRspFlowRepository.save(reqRspFlow);
+            }
+        });
         return null;
     }
 
