@@ -44,9 +44,9 @@ public class ValidateChannelHandler extends AbstractServiceHandler<ValidateReq, 
     }
 
     @Override
-    public boolean support(Object o) {
-        if (o instanceof ValidateReq) {
-            if (((ValidateReq) o).getPermissionType() == PermissionType.CHANNEL) {
+    public boolean support(Object ... objs) {
+        if (objs[0] instanceof ValidateReq) {
+            if (((ValidateReq) objs[0]).getPermissionType() == PermissionType.CHANNEL) {
                 return true;
             }
         }

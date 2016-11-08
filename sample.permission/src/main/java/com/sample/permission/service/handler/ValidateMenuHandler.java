@@ -50,9 +50,9 @@ public class ValidateMenuHandler extends AbstractServiceHandler<ValidateReq, Val
     }
 
     @Override
-    public boolean support(Object o) {
-        if (o instanceof ValidateReq) {
-            if (((ValidateReq) o).getPermissionType() == PermissionType.MENU) {
+    public boolean support(Object ... objs) {
+        if (objs[0] instanceof ValidateReq) {
+            if (((ValidateReq) objs[0]).getPermissionType() == PermissionType.MENU) {
                 return true;
             }
         }

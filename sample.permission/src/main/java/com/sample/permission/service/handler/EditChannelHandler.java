@@ -35,8 +35,8 @@ public class EditChannelHandler extends AbstractServiceHandler<EditChannelReq, B
     private ChannelRepository channelRepository;
 
     @Override
-    public boolean support(Object o) {
-        if (o instanceof EditChannelReq) {
+    public boolean support(Object ... objs) {
+        if (objs[0] instanceof EditChannelReq) {
             return true;
         }
         return false;

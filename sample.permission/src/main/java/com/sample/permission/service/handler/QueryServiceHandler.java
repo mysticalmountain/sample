@@ -95,7 +95,7 @@ public class QueryServiceHandler extends AbstractServiceHandler<QueryServiceReq,
                 }
             }
             BeanUtils.copyProperties(queryRsp, reqDto);
-            queryRsp.setDate(servicesDto);
+            queryRsp.setData(servicesDto);
             queryRsp.setErrorCode(Constant.SUCCESS[0]);
             queryRsp.setErrorCode(Constant.SUCCESS[1]);
             return queryRsp;
@@ -107,8 +107,8 @@ public class QueryServiceHandler extends AbstractServiceHandler<QueryServiceReq,
     }
 
     @Override
-    public boolean support(Object o) {
-        if (o instanceof QueryServiceReq) {
+    public boolean support(Object ... objs) {
+        if (objs[0] instanceof QueryServiceReq) {
             return true;
         }
         return false;
