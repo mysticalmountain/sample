@@ -20,7 +20,7 @@ public abstract class AbstractServiceHandler<I, O> implements IServiceHandler<I,
 
     @Override
     public O execute(I i, IServiceHandlerChain<I, O> chain, Service service) throws UnifiedException {
-        if (support(i)) {
+        if (support(i, service)) {
             //TODO 考虑异步处理
             try {
                 log.info("execute service [" + service.code() + "] request id [" + PropertyUtils.getProperty(i , "reqId") + "]");

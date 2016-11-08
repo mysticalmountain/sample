@@ -18,7 +18,7 @@ public class ServiceHandlerChain<I, O> implements IServiceHandlerChain<I, O> {
 
     private Log log = Log.getLog(this.getClass());
 
-    @Autowired
+    @Autowired(required = false)
     private List<AbstractServiceHandler> chain;
 
     private ThreadLocal<Integer> index = new ThreadLocal<Integer>() {

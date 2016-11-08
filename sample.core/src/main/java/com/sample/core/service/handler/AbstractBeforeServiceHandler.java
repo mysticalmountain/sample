@@ -19,7 +19,7 @@ public abstract class AbstractBeforeServiceHandler<I, O> implements IServiceHand
     @Override
     public O execute(I i, IServiceHandlerChain<I, O> chain, Service service) throws UnifiedException {
         O o = null;
-        if (support(i)) {
+        if (support(i, service)) {
             try {
                 log.info("execute service [" + service.code() + "] request id [" + PropertyUtils.getProperty(i , "reqId") + "]");
             } catch (Exception e) {

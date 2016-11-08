@@ -18,7 +18,7 @@ public class AfterServiceHandlerChain <I, O> implements IServiceHandlerChain<I, 
 
     private Log log = Log.getLog(this.getClass());
 
-    @Autowired
+    @Autowired(required = false)
     private List<AbstractAfterVoidServiceHandler> chain;
 
     private ThreadLocal<Integer> index = new ThreadLocal<Integer>() {
@@ -33,6 +33,9 @@ public class AfterServiceHandlerChain <I, O> implements IServiceHandlerChain<I, 
 
     @Override
     public O handle(I i, Service service) throws UnifiedException {
+        if (chain == null) {
+            return null;
+        }
         if (!isSort) {
             Collections.sort(chain, new ServiceHandlerSort());
             isSort = true;

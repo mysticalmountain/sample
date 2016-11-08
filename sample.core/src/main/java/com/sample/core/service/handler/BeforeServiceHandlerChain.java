@@ -17,7 +17,7 @@ public class BeforeServiceHandlerChain<I, O> implements IServiceHandlerChain<I, 
 
     private Log log = Log.getLog(this.getClass());
 
-    @Autowired
+    @Autowired(required = false)
     private List<AbstractBeforeServiceHandler<I, O>> chain;
 
     private ThreadLocal<Integer> index = new ThreadLocal<Integer>() {

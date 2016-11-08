@@ -19,9 +19,9 @@ public abstract class AbstractSampleService<I, O> implements ISampleService<I, O
 
     private Log log = Log4jLog.getLog(this.getClass());
 
-    @Autowired
+    @Autowired(required = false)
     private BeforeServiceHandlerChain<I, O> beforeServiceHandlerChain;
-    @Autowired
+    @Autowired(required = false)
     private AfterServiceHandlerChain<O, O> afterServiceHandlerChain;
 
     public O service(I i) throws UnifiedException {
