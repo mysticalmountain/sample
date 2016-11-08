@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 @com.sample.core.service.Service(code = "1003", isValidateReq = true, isIdempotent = true)
-public class QueryServiceService<I> extends AbstractSampleService<QueryServiceReq, QueryRsp> {
+public class QueryServiceService extends AbstractSampleService<QueryServiceReq, QueryRsp> {
 
     @Autowired
     private ServiceHandlerChain<QueryServiceReq, QueryRsp> chain;

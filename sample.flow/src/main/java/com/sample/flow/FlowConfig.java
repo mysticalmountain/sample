@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
  * Created by andongxu on 9/20/16.
  */
 @Configuration
-@ComponentScan
+@ComponentScan("com.sample.flow")
 @EnableAutoConfiguration
 public class FlowConfig {
 }

@@ -30,7 +30,7 @@ public class QueryRsp<D> extends Rsp {
     /**
      * 查询结果
      */
-    protected D date;
+    protected D data;
 
     public QueryRsp() {
     }
@@ -72,12 +72,12 @@ public class QueryRsp<D> extends Rsp {
         this.totalElements = totalElements;
     }
 
-    public D getDate() {
-        return date;
+    public D getData() {
+        return data;
     }
 
-    public void setDate(D date) {
-        this.date = date;
+    public void setData(D data) {
+        this.data = data;
     }
 
     @Override
@@ -87,7 +87,7 @@ public class QueryRsp<D> extends Rsp {
                 ", pageSize=" + pageSize +
                 ", totalPages=" + totalPages +
                 ", totalElements=" + totalElements +
-                ", date=" + date +
+                ", date=" + data+
                 '}';
     }
 }

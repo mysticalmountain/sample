@@ -37,26 +37,29 @@ public class AfterFlowHandler<I extends Rsp> extends AbstractAfterVoidServiceHan
 
     @Override
     public Void doHandle(final Rsp rsp, final Service service) throws UnifiedException {
-        threadExecutorPool.execute(new Runnable() {
-            @Override
-            public void run() {
-                ReqPK reqPK = new ReqPK();
-                reqPK.setRequestId(rsp.getReqId());
-                reqPK.setServiceCode(service.code());
-                ReqRspFlow reqRspFlow = reqRspFlowRepository.findOne(reqPK);
-                try {
-                    reqRspFlow.setRspMsg(ObjectSerializeUtil.serializeObject(rsp));
-                } catch (IOException e) {
-                    log.error("对象序列化异常", e);
-                }
-                reqRspFlowRepository.save(reqRspFlow);
-            }
-        });
+//        threadExecutorPool.execute(new Runnable() {
+//            @Override
+//            public void run() {
+        ReqPK reqPK = new ReqPK();
+        reqPK.setRequestId(rsp.getReqId());
+        reqPK.setServiceCode(service.code());
+        ReqRspFlow reqRspFlow = reqRspFlowRepository.findOne(reqPK);
+        if (reqRspFlow == null) {
+            return null;
+        }
+        try {
+            reqRspFlow.setRspMsg(ObjectSerializeUtil.serializeObject(rsp));
+        } catch (IOException e) {
+            log.error("对象序列化异常", e);
+        }
+        reqRspFlowRepository.save(reqRspFlow);
+//            }
+//        });
         return null;
     }
 
     @Override
-    public boolean support(Object o) {
+    public boolean support(Object ... objs) {
         return true;
     }
 }

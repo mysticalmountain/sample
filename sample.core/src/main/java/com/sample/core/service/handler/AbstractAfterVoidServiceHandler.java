@@ -19,7 +19,7 @@ public abstract class AbstractAfterVoidServiceHandler <I> implements IServiceHan
 
     @Override
     public Void execute(I i, IServiceHandlerChain<I, Void> chain, Service service) throws UnifiedException {
-        if (support(i)) {
+        if (support(i, service)) {
             try {
                 log.info("execute service [" + service.code() + "] request id [" + PropertyUtils.getProperty(i , "reqId") + "]");
             } catch (Exception e) {

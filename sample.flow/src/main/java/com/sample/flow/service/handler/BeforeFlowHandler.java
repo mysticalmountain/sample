@@ -58,7 +58,7 @@ public class BeforeFlowHandler<I extends Req, O> extends AbstractBeforeServiceHa
     }
 
     @Override
-    public boolean support(Object o) {
+    public boolean support(Object ... objs) {
         return true;
     }
 }

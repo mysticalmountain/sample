@@ -38,7 +38,7 @@ public class RateLimitsServiceHandler<I> extends AbstractBeforeVoidServiceHandle
     }
 
     @Override
-    public boolean support(Object o) {
+    public boolean support(Object ... objs) {
         return true;
     }
 }

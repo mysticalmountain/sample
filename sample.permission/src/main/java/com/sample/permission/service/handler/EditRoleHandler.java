@@ -32,8 +32,8 @@ public class EditRoleHandler extends AbstractServiceHandler<EditRoleReq, BaseRsp
     private RoleRepository roleRepository;
 
     @Override
-    public boolean support(Object o) {
-        if (o instanceof EditRoleReq) {
+    public boolean support(Object ... objs) {
+        if (objs[0] instanceof EditRoleReq) {
             return true;
         }
         return false;
