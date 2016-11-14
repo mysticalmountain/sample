@@ -7,16 +7,17 @@ import com.sample.core.log.Log;
 import com.sample.core.log.Log4jLog;
 import com.sample.core.service.ISampleService;
 import com.sample.core.service.Service;
-import com.sample.core.service.handler.IServiceHandler;
+import com.sample.core.utils.AopTargetUtils;
 import com.sample.core.validator.FormatException;
+import com.sample.web.fastjson.ext.SampleTypeReference;
 import org.springframework.aop.TargetSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Method;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 import java.net.URLDecoder;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -29,13 +30,13 @@ public class ServiceDispatcher {
 
     @Autowired
     private IServiceVisitor serviceVisitor;
-    @Autowired
+    @Autowired(required = false)
     private List<ISampleService> sampleServices;
 
 
     public String execute(String serviceCode, final String requestData) throws Exception {
         log.info("request data --->" + requestData);
-        for (ISampleService sampleService : sampleServices) {
+        for (final ISampleService sampleService : sampleServices) {
             Method getTargetSource = sampleService.getClass().getMethod("getTargetSource");
             TargetSource ts = (TargetSource) getTargetSource.invoke(sampleService);
             Class targetClass = ts.getTargetClass();
@@ -47,15 +48,18 @@ public class ServiceDispatcher {
                     @Override
                     public Object get() throws UnifiedException {
                         try {
+                            Object target = AopTargetUtils.getTarget(sampleService);
+                            Type superClass = target.getClass().getGenericSuperclass();
+                            Type type = ((ParameterizedType) superClass).getActualTypeArguments()[0];
                             String sourceDate = URLDecoder.decode(requestData, "utf-8");
-                            return JSON.parseObject(sourceDate, parameterTypes[0]);
+                            return JSON.parseObject(sourceDate, type);
                         } catch (Exception e) {
                             log.error(e.getMessage(), e);
                             throw new FormatException(ExceptionLevel.SLIGHT, "999999", "数据格式化错误", "web", null, e);
                         }
                     }
                 });
-                String responseData= JSON.toJSONString(result);
+                String responseData = JSON.toJSONString(result);
                 log.info("response data --->" + responseData);
                 return responseData;
             }

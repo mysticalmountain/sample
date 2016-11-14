@@ -30,19 +30,23 @@ public class ServiceController {
 
     @ExceptionHandler(UnifiedException.class)
     public @ResponseBody String handleIOException(UnifiedException ue) {
-        log.error(ue.getMessage(), ue);
-        return "{\"errorCode\":" + ue.getErrorCode() + ",\"errorMsg\":" + ue.getErrorMessage() + ",\"success\":false}";
+        log.debug(ue.getMessage(), ue);
+        String result = "{\"errorCode\":" + ue.getErrorCode() + ",\"errorMsg\":" + ue.getErrorMessage() + ",\"success\":false}";
+        log.info(result);
+        return result;
     }
 
     @ExceptionHandler(Exception.class)
     public @ResponseBody String handleIOException(Exception e) {
-        log.error(e.getMessage(), e);
+        log.debug(e.getMessage(), e);
         String message = "";
         if (e instanceof HttpMessageNotReadableException) {
             message = "request data is not readable";
         }else {
             message = "unknown error";
         }
-        return "{\"errorCode\":" + "999999" + ",\"errorMsg\":" + "\"" + message + "\"" + ",\"success\":false}";
+        String result = "{\"errorCode\":" + "999999" + ",\"errorMsg\":" + "\"" + message + "\"" + ",\"success\":false}";
+        log.info(result);
+        return result;
     }
 }
