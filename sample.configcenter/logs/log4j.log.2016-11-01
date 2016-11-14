@@ -1,0 +1,57 @@
+2016-11-01 15:47:53 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-11-01 15:47:54 [ main:1595 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=Req{reqId='null'}
+2016-11-01 15:47:55 [ main:1657 ] - [ ERROR ] Unified exception:[{reqId=不允许为空}]
+2016-11-01 15:47:55 [ main:1658 ] - [ INFO ] system=,module=,trans=,--->datas=null
+2016-11-01 15:47:55 [ Thread-1:1685 ] - [ INFO ] {dataSource-1} closed
+2016-11-01 15:49:08 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-11-01 15:49:10 [ main:1637 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=Req{reqId='null'}
+2016-11-01 15:49:10 [ main:1686 ] - [ INFO ] execute service [] request id [null]
+2016-11-01 15:49:10 [ main:1687 ] - [ INFO ] execute service [] request id [null]
+2016-11-01 15:49:10 [ main:1689 ] - [ INFO ] execute service [] request id [null]
+2016-11-01 15:49:10 [ main:1917 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}QueryRsp{pageNumber=null, pageSize=null, totalPages=null, totalElements=null, date=[]}
+2016-11-01 15:49:10 [ Thread-1:1949 ] - [ INFO ] {dataSource-1} closed
+2016-11-01 15:53:07 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-11-01 15:53:09 [ Thread-1:2060 ] - [ INFO ] {dataSource-1} closed
+2016-11-01 16:02:23 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-11-01 16:02:34 [ Thread-1:10725 ] - [ INFO ] {dataSource-1} closed
+2016-11-01 16:03:14 [ main:1 ] - [ INFO ] {dataSource-1} inited
+2016-11-01 16:03:20 [ main:5619 ] - [ INFO ] system=,module=,trans=,--->args,Param 1=Req{reqId='null'}
+2016-11-01 16:03:20 [ main:5881 ] - [ INFO ] execute service [] request id [null]
+2016-11-01 16:03:20 [ main:5884 ] - [ INFO ] execute service [] request id [null]
+2016-11-01 16:03:20 [ main:5891 ] - [ INFO ] execute service [] request id [null]
+2016-11-01 16:03:22 [ main:7257 ] - [ INFO ] system=,module=,trans=,--->datas=Rsp{reqId='null', errorCode='null', errorMsg='null', isSuccess=false}QueryRsp{pageNumber=null, pageSize=null, totalPages=null, totalElements=null, date=[com.sample.configcenter.dto.project.ProjectDto@5aa4b2]}
+2016-11-01 16:03:41 [ Thread-1:26512 ] - [ INFO ] {dataSource-1} closed
+2016-11-01 16:10:06 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-11-01 16:10:07 [ main:1052 ] - [ INFO ] {dataSource-1} closed
+2016-11-01 16:11:05 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-11-01 16:11:07 [ main:1691 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=Req{reqId='null'}
+2016-11-01 16:11:07 [ main:1768 ] - [ ERROR ] Unified exception:[{reqId=不允许为空}]
+2016-11-01 16:11:07 [ main:1769 ] - [ INFO ] system=,module=,trans=1001,--->datas=null
+2016-11-01 16:11:07 [ Thread-1:1805 ] - [ INFO ] {dataSource-1} closed
+2016-11-01 16:11:59 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-11-01 16:12:01 [ main:1858 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=Req{reqId='b0b71160-4585-4c4f-848d-440d5e6aebcc'}
+2016-11-01 16:12:01 [ main:1963 ] - [ INFO ] execute service [1001] request id [b0b71160-4585-4c4f-848d-440d5e6aebcc]
+2016-11-01 16:12:01 [ main:1963 ] - [ INFO ] execute service [1001] request id [b0b71160-4585-4c4f-848d-440d5e6aebcc]
+2016-11-01 16:12:01 [ main:1965 ] - [ INFO ] execute service [1001] request id [b0b71160-4585-4c4f-848d-440d5e6aebcc]
+2016-11-01 16:12:01 [ main:1966 ] - [ INFO ] execute service [1001] request id [b0b71160-4585-4c4f-848d-440d5e6aebcc]
+2016-11-01 16:12:01 [ main:2389 ] - [ INFO ] execute service [1001] request id [b0b71160-4585-4c4f-848d-440d5e6aebcc]
+2016-11-01 16:12:01 [ main:2391 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='b0b71160-4585-4c4f-848d-440d5e6aebcc', errorCode='null', errorMsg='null', isSuccess=false}QueryRsp{pageNumber=null, pageSize=null, totalPages=null, totalElements=null, date=[com.sample.configcenter.dto.project.ProjectDto@1da02b2]}
+2016-11-01 16:12:01 [ Thread-1:2437 ] - [ INFO ] {dataSource-1} closed
+2016-11-01 16:14:39 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-11-01 16:14:41 [ main:1682 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=Req{reqId='beced076-4df6-4f08-98b1-9a45f2aa57f1'}
+2016-11-01 16:14:41 [ main:1766 ] - [ INFO ] execute service [1001] request id [beced076-4df6-4f08-98b1-9a45f2aa57f1]
+2016-11-01 16:14:41 [ main:1767 ] - [ INFO ] execute service [1001] request id [beced076-4df6-4f08-98b1-9a45f2aa57f1]
+2016-11-01 16:14:41 [ main:1769 ] - [ INFO ] execute service [1001] request id [beced076-4df6-4f08-98b1-9a45f2aa57f1]
+2016-11-01 16:14:41 [ main:1769 ] - [ INFO ] execute service [1001] request id [beced076-4df6-4f08-98b1-9a45f2aa57f1]
+2016-11-01 16:14:41 [ main:2091 ] - [ INFO ] execute service [1001] request id [beced076-4df6-4f08-98b1-9a45f2aa57f1]
+2016-11-01 16:14:41 [ main:2092 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='beced076-4df6-4f08-98b1-9a45f2aa57f1', errorCode='null', errorMsg='null', isSuccess=false}QueryRsp{pageNumber=null, pageSize=null, totalPages=null, totalElements=null, date=[com.sample.configcenter.dto.project.ProjectDto@191c871]}
+2016-11-01 16:14:42 [ Thread-1:3150 ] - [ INFO ] {dataSource-1} closed
+2016-11-01 16:16:26 [ main:0 ] - [ INFO ] {dataSource-1} inited
+2016-11-01 16:16:32 [ main:5754 ] - [ INFO ] system=,module=,trans=1001,--->args,Param 1=Req{reqId='2453ddcd-5b15-47d7-946a-5821d4a65355'}
+2016-11-01 16:16:32 [ main:6301 ] - [ INFO ] execute service [1001] request id [2453ddcd-5b15-47d7-946a-5821d4a65355]
+2016-11-01 16:16:32 [ main:6304 ] - [ INFO ] execute service [1001] request id [2453ddcd-5b15-47d7-946a-5821d4a65355]
+2016-11-01 16:16:32 [ main:6311 ] - [ INFO ] execute service [1001] request id [2453ddcd-5b15-47d7-946a-5821d4a65355]
+2016-11-01 16:16:32 [ main:6312 ] - [ INFO ] execute service [1001] request id [2453ddcd-5b15-47d7-946a-5821d4a65355]
+2016-11-01 16:16:34 [ main:7781 ] - [ INFO ] execute service [1001] request id [2453ddcd-5b15-47d7-946a-5821d4a65355]
+2016-11-01 16:16:34 [ main:7788 ] - [ INFO ] system=,module=,trans=1001,--->datas=Rsp{reqId='2453ddcd-5b15-47d7-946a-5821d4a65355', errorCode='null', errorMsg='null', isSuccess=false}QueryRsp{pageNumber=null, pageSize=null, totalPages=null, totalElements=null, date=[com.sample.configcenter.dto.project.ProjectDto@d667eb]}
+2016-11-01 16:16:47 [ Thread-1:21094 ] - [ INFO ] {dataSource-1} closed

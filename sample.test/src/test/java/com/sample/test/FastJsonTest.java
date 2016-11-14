@@ -1,12 +1,17 @@
 package com.sample.test;
 
 import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
+import com.sample.configcenter.dto.item.ItemDto;
+import com.sample.core.model.dto.GenericSetReq;
 import com.sample.permission.dto.EditChannelReq;
 import com.sample.permission.dto.EditRoleReq;
 import com.sample.permission.dto.KeyValue;
 import org.junit.*;
 import org.junit.Test;
 
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -53,5 +58,42 @@ public class FastJsonTest {
         String json = "{\"keyValues\":[{\"k\":\"k2\",\"v\":\"v2\"},{\"k\":\"k1\",\"v\":\"v1\"}],\"owner\":\"1001\"}";
         EditChannelReq editChannelReq = JSON.parseObject(json, EditChannelReq.class);
         System.out.println(editChannelReq);
+    }
+
+    @Test
+    public void obj2Json3() {
+        GenericSetReq<ItemDto> items = new GenericSetReq<ItemDto>();
+        ItemDto itemDto1 = new ItemDto();
+        itemDto1.setId(Long.valueOf(1001));
+        itemDto1.setKei("k1");
+        itemDto1.setVal("v1");
+        Set<ItemDto> itemDtos = new HashSet<ItemDto>();
+        itemDtos.add(itemDto1);
+        ItemDto itemDto2 = new ItemDto();
+        itemDto2.setId(Long.valueOf(1001));
+        itemDto2.setKei("k2");
+        itemDto2.setVal("v2");
+        itemDtos.add(itemDto2);
+
+        items.setData(itemDtos);
+
+        String res = JSON.toJSONString(items);
+        System.out.println(res);
+    }
+
+    @Test
+    public void json2obj3() {
+       String str = "{\"reqid\":\"123456\",\"data\":[{\"kei\":\"k1\",\"val\":\"v1\",\"content\":\"c1\"},{\"kei\":\"k2\",\"val\":\"v2\",\"content\":\"c2\"}]}";
+//        GenericSetReq<ItemDto> items = new GenericSetReq<ItemDto>();
+//        Type superClass = items.getClass().getGenericSuperclass();
+//        Type[] type = ((ParameterizedType)items.getClass().getGenericSuperclass()).getActualTypeArguments();
+//        Type type = ((ParameterizedType)superClass).getActualTypeArguments()[0];
+//        items.getData();
+//        SampleTypeReference tr = new SampleTypeReference(){};
+
+
+        GenericSetReq<ItemDto> genericSetReq = JSON.parseObject(str, new TypeReference<GenericSetReq<ItemDto>>(){});
+//        GenericSetReq<ItemDto> genericSetReq = JSON.parseObject(str, new SampleTypeReference<i>);
+        System.out.println();
     }
 }

@@ -1,7 +1,5 @@
 package com.sample.test;
 
-import com.sun.javafx.collections.transformation.SortableList;
-import com.sun.javafx.collections.transformation.SortedList;
 
 import java.util.*;
 
