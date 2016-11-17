@@ -1,11 +1,6 @@
 package com.sample.test;
 
-import com.sample.core.model.dto.Req;
-import org.apache.commons.beanutils.BeanUtils;
 import org.junit.*;
-
-import java.io.IOException;
-import java.io.Serializable;
 
 /**
  * Created by andongxu on 9/23/16.

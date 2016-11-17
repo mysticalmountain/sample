@@ -4,8 +4,6 @@ import com.sample.configcenter.dto.version.VersionDto;
 import com.sample.core.exception.UnifiedException;
 import com.sample.core.model.dto.GenericReq;
 import com.sample.core.model.dto.GenericSetRsp;
-import com.sample.core.model.dto.GenericSetRsp;
-import com.sample.core.model.dto.Rsp;
 import com.sample.core.service.AbstractSampleService;
 import com.sample.core.service.Service;
 import com.sample.core.service.handler.ServiceHandlerChain;

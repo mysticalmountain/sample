@@ -1,8 +1,6 @@
 package com.sample.permission.web.service;
 
 import com.sample.core.exception.UnifiedException;
-import com.sample.core.model.dto.QueryRsp;
-import com.sample.permission.dto.QueryServiceReq;
 import com.sample.permission.web.WebTest;
 import org.junit.Assert;
 import org.junit.Test;

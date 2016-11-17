@@ -1,6 +1,7 @@
 package com.sample.permission.model;
 
 
+import com.sample.permission.model.Permission;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 

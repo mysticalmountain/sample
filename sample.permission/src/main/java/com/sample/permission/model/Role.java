@@ -1,13 +1,10 @@
 package com.sample.permission.model;
 
 import com.sample.core.model.Entity;
-import org.hibernate.annotations.Columns;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
-import org.springframework.context.annotation.Lazy;
 
 import javax.persistence.*;
-import java.util.List;
 import java.util.Set;
 
 /**
@@ -41,7 +38,7 @@ public class Role extends Entity {
     @JoinColumn(name = "parent_id", referencedColumnName = "id")
     private Set<Role> sons;
 
-    @ManyToMany(fetch = FetchType.EAGER, cascade = CascadeType.PERSIST)
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "Role_Permission",
             joinColumns = @JoinColumn(name = "role_id"),
             inverseJoinColumns = @JoinColumn(name = "permission_id"))

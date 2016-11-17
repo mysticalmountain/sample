@@ -1,7 +1,5 @@
 package com.sample.core.model.dto;
 
-import javax.persistence.criteria.CriteriaBuilder;
-
 /**
  * Created by andongxu on 9/10/16.
  */

@@ -9,7 +9,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 /**
  * Created by andongxu on 16-11-1.
  */
-@Controller
+//@Controller
 public class PageController {
 
     @RequestMapping("/home")
