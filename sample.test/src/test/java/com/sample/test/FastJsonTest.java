@@ -5,13 +5,9 @@ import com.alibaba.fastjson.TypeReference;
 import com.sample.configcenter.dto.item.ItemDto;
 import com.sample.core.model.dto.GenericSetReq;
 import com.sample.permission.dto.EditChannelReq;
-import com.sample.permission.dto.EditRoleReq;
 import com.sample.permission.dto.KeyValue;
-import org.junit.*;
 import org.junit.Test;
 
-import java.lang.reflect.ParameterizedType;
-import java.lang.reflect.Type;
 import java.util.HashSet;
 import java.util.Set;
 

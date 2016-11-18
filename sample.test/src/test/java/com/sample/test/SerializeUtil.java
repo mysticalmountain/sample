@@ -1,7 +1,5 @@
 package com.sample.test;
 
-import com.sample.core.model.dto.Req;
-
 import java.io.*;
 
 /**

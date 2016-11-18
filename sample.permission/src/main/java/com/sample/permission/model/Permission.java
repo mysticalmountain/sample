@@ -3,10 +3,8 @@ package com.sample.permission.model;
 import com.sample.core.model.Entity;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
-import org.springframework.context.annotation.Lazy;
 
 import javax.persistence.*;
-import java.util.Set;
 
 /**
  * Created by andongxu on 16-8-25.
@@ -29,6 +27,37 @@ public class Permission extends Entity {
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "permissionId")
     private Long id;
 
+    @ManyToOne(targetEntity = Resource.class)
+    @JoinColumn(name = "resource_id")
+    private Resource resource;
+
+    private Operate operate;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Resource getResource() {
+        return resource;
+    }
+
+    public void setResource(Resource resource) {
+        this.resource = resource;
+    }
+
+    public Operate getOperate() {
+        return operate;
+    }
+
+    public void setOperate(Operate operate) {
+        this.operate = operate;
+    }
+
+   /*
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "Role_Permission",
             joinColumns = @JoinColumn(name = "permission_id"),
@@ -113,4 +142,5 @@ public class Permission extends Entity {
     public void setOperate(Operate operate) {
         this.operate = operate;
     }
+*/
 }

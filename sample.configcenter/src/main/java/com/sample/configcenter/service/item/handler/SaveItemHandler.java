@@ -16,7 +16,6 @@ import com.sample.core.service.handler.AbstractServiceHandler;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import sun.security.util.Resources_sv;
 
 import java.util.Iterator;
 import java.util.Set;

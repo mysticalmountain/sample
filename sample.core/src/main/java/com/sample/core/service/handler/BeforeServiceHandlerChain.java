@@ -36,13 +36,21 @@ public class BeforeServiceHandlerChain<I, O> implements IServiceHandlerChain<I, 
             isSort = true;
         }
         Integer currentIndex = index.get();
-        if (currentIndex < chain.size()) {
+        if (currentIndex.intValue() < chain.size()) {
             index.set(currentIndex + 1);
-            O o = chain.get(currentIndex).execute(i, this, service);
+            O o = null;
+            try {
+                o = chain.get(currentIndex).execute(i, this, service);
+            } catch (UnifiedException e) {
+                index.remove();
+                throw e;
+            }
             if (o != null) {
+                index.remove();
                 return o;
             }
         }
+        index.remove();
         return null;
     }
 }

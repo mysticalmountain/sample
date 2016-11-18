@@ -9,11 +9,11 @@ import com.sample.core.service.ISampleService;
 import com.sample.core.service.Service;
 import com.sample.core.utils.AopTargetUtils;
 import com.sample.core.validator.FormatException;
-import com.sample.web.fastjson.ext.SampleTypeReference;
 import org.springframework.aop.TargetSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import javax.servlet.http.HttpServletRequest;
 import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
 import java.lang.reflect.Type;
@@ -32,10 +32,13 @@ public class ServiceDispatcher {
     private IServiceVisitor serviceVisitor;
     @Autowired(required = false)
     private List<ISampleService> sampleServices;
+    @Autowired(required = false)
+    private HttpServletRequest request;
 
 
     public String execute(String serviceCode, final String requestData) throws Exception {
         log.info("request data --->" + requestData);
+        final String userId = (String) request.getSession().getAttribute("userId");
         for (final ISampleService sampleService : sampleServices) {
             Method getTargetSource = sampleService.getClass().getMethod("getTargetSource");
             TargetSource ts = (TargetSource) getTargetSource.invoke(sampleService);
@@ -52,6 +55,8 @@ public class ServiceDispatcher {
                             Type superClass = target.getClass().getGenericSuperclass();
                             Type type = ((ParameterizedType) superClass).getActualTypeArguments()[0];
                             String sourceDate = URLDecoder.decode(requestData, "utf-8");
+                            String userIdStr = "{userId:'" + userId + "',";
+                            sourceDate = userIdStr + sourceDate.substring(1, sourceDate.length());
                             return JSON.parseObject(sourceDate, type);
                         } catch (Exception e) {
                             log.error(e.getMessage(), e);

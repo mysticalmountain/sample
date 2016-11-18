@@ -1,7 +1,6 @@
 package com.sample.configcenter.dto.version;
 
 import com.sample.configcenter.dto.project.ProjectDto;
-import com.sample.configcenter.model.Project;
 import com.sample.core.model.dto.Req;
 
 /**

@@ -1,5 +1,6 @@
 package com.sample.permission.model;
 
+import com.sample.permission.model.Permission;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
@@ -11,7 +12,7 @@ import java.util.Set;
  */
 @Entity
 @Table
-public class Service extends com.sample.core.model.Entity  {
+public class Service extends com.sample.core.model.Entity {
     @Id
     @GenericGenerator(name = "serviceId", strategy = "enhanced-table",
             parameters = {
@@ -26,15 +27,15 @@ public class Service extends com.sample.core.model.Entity  {
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "serviceId")
     private Long id;
 
+    @Column(length = 8)
     private String code;
 
-    private String className;
+    @Column(length = 255)
+    private String content;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "Permission_Service",
-            joinColumns = @JoinColumn(name = "service_id"),
-            inverseJoinColumns = @JoinColumn(name = "permission_id"))
-    private Set<Permission> permissions;
+    @OneToOne
+    @JoinColumn(name = "resource_id", unique = true, nullable = false, updatable = false)
+    private Resource resource;
 
     public Long getId() {
         return id;
@@ -52,19 +53,19 @@ public class Service extends com.sample.core.model.Entity  {
         this.code = code;
     }
 
-    public String getClassName() {
-        return className;
+    public String getContent() {
+        return content;
     }
 
-    public void setClassName(String className) {
-        this.className = className;
+    public void setContent(String content) {
+        this.content = content;
     }
 
-    public Set<Permission> getPermissions() {
-        return permissions;
+    public Resource getResource() {
+        return resource;
     }
 
-    public void setPermissions(Set<Permission> permissions) {
-        this.permissions = permissions;
+    public void setResource(Resource resource) {
+        this.resource = resource;
     }
 }

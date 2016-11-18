@@ -27,6 +27,11 @@ public class Constant {
      */
     public static String [] EXCEPTION_REPEAT_REQUEST = {"999996", "repeat request"};
 
+    /**
+     * 无权限
+     */
+    public static String [] EXCEPTION_NO_PERMISSION = {"999995", "no permission"};
+
 
     /******************************************************************************************/
 

@@ -1,7 +1,5 @@
 package com.sample.flow.service.handler;
 
-import com.sample.core.Constant;
-import com.sample.core.exception.ExceptionLevel;
 import com.sample.core.exception.UnifiedException;
 import com.sample.core.log.Log;
 import com.sample.core.log.Log4jLog;
@@ -17,7 +15,6 @@ import com.sample.flow.repository.ReqRspFlowRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import javax.transaction.Transactional;
 import java.io.IOException;
 
 /**

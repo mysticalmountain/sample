@@ -1,50 +1,50 @@
-//package com.sample.user.controller;
-//
-//import com.sample.user.repository.UserRepository;
-//import com.sample.user.model.User;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.http.MediaType;
-//import org.springframework.jca.cci.core.InteractionCallback;
-//import org.springframework.web.bind.annotation.*;
-//
-//import java.util.List;
-//
-///**
-// * Created by andongxu on 16-6-6.
-// */
-//
-//@RestController
-//@RequestMapping("/users")
-//public class UserController {
-//
-//    @Autowired
-//    private UserRepository userRepository;
-//
-//    @RequestMapping(method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-//    public List<User> list() {
-//        List<User> users = userRepository.findAll();
-//        System.out.println(users);
-//        return users;
-//    }
-//
-//    @RequestMapping(path = "{id}", method = RequestMethod.GET)
-//    public User query(@PathVariable Long id) {
-//        return userRepository.findOne(id);
-//    }
-//
-//    @RequestMapping(method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-//    public User save(User user) {
-//        userRepository.save(user);
-//        return user;
-//    }
-//
-//    @RequestMapping(path = "{id}", method = RequestMethod.POST, consumes = MediaType.APPLICATION_JSON_VALUE)
-//    public User update(@RequestParam("id") Long id, User user) {
-//        return userRepository.save(user);
-//    }
-//
-//    @RequestMapping(method = RequestMethod.DELETE)
-//    public void delete(@RequestParam("id") Long id) {
-//        userRepository.delete(id);
-//    }
-//}
+package com.sample.user.controller;
+
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
+import com.sample.core.exception.UnifiedException;
+import com.sample.core.model.dto.GenericReq;
+import com.sample.core.model.dto.GenericRsp;
+import com.sample.core.model.dto.Rsp;
+import com.sample.core.service.ISampleService;
+import com.sample.user.dto.LoginReqDto;
+import com.sample.user.dto.LoginRspDto;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.servlet.http.HttpServletRequest;
+
+/**
+ * Created by andongxu on 16-11-17.
+ */
+@Controller
+@RequestMapping(value = "/user", produces = "application/json; charset=UTF-8")
+public class UserController {
+
+    @Autowired
+    @Qualifier("loginService")
+    private ISampleService<GenericReq<LoginReqDto>, GenericRsp<LoginRspDto>> loginService;
+
+    @RequestMapping(value = "login", method = RequestMethod.POST)
+    public @ResponseBody String login(HttpServletRequest request, @RequestBody String body) {
+        GenericReq<LoginReqDto> genericReq = JSON.parseObject(body, new TypeReference<GenericReq<LoginReqDto>>(){});
+        try {
+            GenericRsp<LoginRspDto> genericRsp = loginService.service(genericReq);
+            if (genericRsp.isSuccess() == true) {
+                request.getSession().setAttribute("userId", genericRsp.getData().getUserId());
+            }
+            return JSON.toJSONString(genericRsp);
+        } catch (UnifiedException e) {
+            Rsp rsp = new Rsp();
+            rsp.setErrorCode(e.getErrorCode());
+            rsp.setErrorMsg(e.getErrorMessage());
+            rsp.setSuccess(false);
+            return JSON.toJSONString(rsp);
+        }
+    }
+}

@@ -1,5 +1,6 @@
 package com.sample.user.model;
 
+import com.sample.permission.model.Role;
 import com.sample.user.model.enums.UserType;
 
 import javax.persistence.*;
@@ -19,11 +20,8 @@ public class User extends BaseEntity {
     @Column(length = 32, nullable = false, unique = true)
     private String username;
 
-    @OneToMany(mappedBy = "user", targetEntity = Authtication.class)
-    private Set<Authtication> authtications;
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Role role;
+    @OneToMany(mappedBy = "user", targetEntity = Authority.class, cascade = CascadeType.PERSIST)
+    private Set<Authority> authtications;
 
     @OneToOne
     @PrimaryKeyJoinColumn
@@ -33,6 +31,12 @@ public class User extends BaseEntity {
     @Enumerated(EnumType.ORDINAL)
     private UserType userType;
 
+    @ManyToMany(targetEntity = Role.class, fetch = FetchType.EAGER)
+    @JoinTable(name = "User_Role",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id"))
+    private Set<Role> roles;
+
     public String getName() {
         return name;
     }
@@ -41,20 +45,12 @@ public class User extends BaseEntity {
         this.name = name;
     }
 
-    public Set<Authtication> getAuthtications() {
+    public Set<Authority> getAuthtications() {
         return authtications;
     }
 
-    public void setAuthtications(Set<Authtication> authtications) {
+    public void setAuthtications(Set<Authority> authtications) {
         this.authtications = authtications;
-    }
-
-    public Role getRole() {
-        return role;
-    }
-
-    public void setRole(Role role) {
-        this.role = role;
     }
 
     public Profile getProfile() {
@@ -79,5 +75,13 @@ public class User extends BaseEntity {
 
     public void setUserType(UserType userType) {
         this.userType = userType;
+    }
+
+    public Set<Role> getRoles() {
+        return roles;
+    }
+
+    public void setRoles(Set<Role> roles) {
+        this.roles = roles;
     }
 }

@@ -27,7 +27,7 @@ public class Role extends BaseEntity {
     private Set<User> users;
 
 //    @OneToMany
-//    private Set<Authtication> authtications;
+//    private Set<Authority> authtications;
 
 
     public String getName() {
@@ -46,11 +46,11 @@ public class Role extends BaseEntity {
         this.users = users;
     }
 
-//    public Set<Authtication> getAuthtications() {
+//    public Set<Authority> getAuthtications() {
 //        return authtications;
 //    }
 //
-//    public void setAuthtications(Set<Authtication> authtications) {
+//    public void setAuthtications(Set<Authority> authtications) {
 //        this.authtications = authtications;
 //    }
 }
