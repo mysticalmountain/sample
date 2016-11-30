@@ -7,6 +7,8 @@ import com.sample.core.log.Log;
 import com.sample.core.log.Log4jLog;
 import com.sample.core.service.Service;
 import org.apache.commons.beanutils.PropertyUtils;
+import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.lang.reflect.InvocationTargetException;
 
@@ -21,14 +23,20 @@ public abstract class AbstractServiceHandler<I, O> implements IServiceHandler<I,
     @Override
     public O execute(I i, IServiceHandlerChain<I, O> chain, Service service) throws UnifiedException {
         if (support(i, service)) {
-            //TODO 考虑异步处理
+            long begin = System.currentTimeMillis();
+            O o = null;
             try {
-                log.info("execute service [" + service.code() + "] request id [" + PropertyUtils.getProperty(i , "reqId") + "]");
-            } catch (Exception e) {
-                throw new UnifiedException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_UNKNOWN[0], Constant.EXCEPTION_UNKNOWN[1], null, null, e);
+                o = this.doHandle(i, service);
+            } finally {
+                long end = System.currentTimeMillis();
+                try {
+                    log.info("execute service [" + service.code() + "] request id [" + PropertyUtils.getProperty(i, "reqId") + "]" + "; time millis:" + (end - begin) + " ms");
+                } catch (Exception e) {
+                    throw new UnifiedException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_UNKNOWN[0], Constant.EXCEPTION_UNKNOWN[1], null, null, e);
+                }
             }
-            return this.doHandle(i, service);
-        }else {
+            return o;
+        } else {
             return chain.handle(i, service);
         }
     }

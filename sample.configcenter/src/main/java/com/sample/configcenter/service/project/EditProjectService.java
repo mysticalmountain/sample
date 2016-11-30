@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  * Created by andongxu on 16-11-8.
  */
 @Component
-@Service(code = "1005", isValidateReq = true)
+@Service(code = "editProject", isValidateReq = true, name = "编辑项目")
 public class EditProjectService extends AbstractSampleService<EditProjectReq, Rsp> {
 
     @Autowired

@@ -1,7 +1,6 @@
 package com.sample.configcenter.model;
 
 import com.sample.core.model.Entity;
-import org.hibernate.annotations.Columns;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
@@ -35,13 +34,11 @@ public class Project extends Entity {
     @Column(length = 255)
     private String content;
 
-    @OneToMany(targetEntity = Version.class)
-    @JoinColumn(name = "id")
+    @OneToMany(mappedBy = "project", targetEntity = Version.class)
     private Set<Version> versions;
 
-    @OneToMany(targetEntity = Item.class)
-    @JoinColumn(name = "id")
-    private Set<Item> items;
+    @OneToMany(mappedBy = "project", targetEntity = Kei.class)
+    private Set<Kei> keis;
 
     public Long getId() {
         return id;
@@ -71,12 +68,12 @@ public class Project extends Entity {
         return versions;
     }
 
-    public Set<Item> getItems() {
-        return items;
+    public Set<Kei> getKeis() {
+        return keis;
     }
 
-    public void setItems(Set<Item> items) {
-        this.items = items;
+    public void setKeis(Set<Kei> keis) {
+        this.keis = keis;
     }
 
     public void setVersions(Set<Version> versions) {

@@ -14,8 +14,8 @@ import java.util.regex.Pattern;
 /**
  * Created by andongxu on 16-11-16.
  */
-@Configuration
-@WebFilter(displayName = "sessionFilter", urlPatterns = "/*")
+//@Configuration
+//@WebFilter(displayName = "sessionFilter", urlPatterns = "/*")
 public class SessionFilter implements Filter {
 
     private Log log = Log.getLog(this.getClass());

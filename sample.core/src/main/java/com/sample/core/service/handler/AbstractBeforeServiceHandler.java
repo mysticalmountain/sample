@@ -20,18 +20,22 @@ public abstract class AbstractBeforeServiceHandler<I, O> implements IServiceHand
     public O execute(I i, IServiceHandlerChain<I, O> chain, Service service) throws UnifiedException {
         O o = null;
         if (support(i, service)) {
+            long begin = System.currentTimeMillis();
             try {
-                log.info("execute service [" + service.code() + "] request id [" + PropertyUtils.getProperty(i , "reqId") + "]");
-            } catch (Exception e) {
-                throw new UnifiedException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_UNKNOWN[0], Constant.EXCEPTION_UNKNOWN[1], null, null, e);
+                o = this.doHandle(i, service);
+            } finally {
+                long end = System.currentTimeMillis();
+                try {
+                    log.info("execute service [" + service.code() + "] request id [" + PropertyUtils.getProperty(i, "reqId") + "]; time mills:" + (end - begin) + " ms");
+                } catch (Exception e) {
+                    throw new UnifiedException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_UNKNOWN[0], Constant.EXCEPTION_UNKNOWN[1], null, null, e);
+                }
             }
-            //TODO 考虑异步处理
-            o = this.doHandle(i, service);
             if (o != null) {
                 return o;
             }
         }
-        o =  chain.handle(i, service);
+        o = chain.handle(i, service);
         if (o != null) {
             return o;
         } else {

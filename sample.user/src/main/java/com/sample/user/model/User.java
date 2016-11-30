@@ -23,8 +23,8 @@ public class User extends BaseEntity {
     @OneToMany(mappedBy = "user", targetEntity = Authority.class, cascade = CascadeType.PERSIST)
     private Set<Authority> authtications;
 
-    @OneToOne
-    @PrimaryKeyJoinColumn
+    @OneToOne(mappedBy = "user", targetEntity = Profile.class)
+//    @JoinColumn(name = "profile_id")
     private Profile profile;
 
     @Column(nullable = false)

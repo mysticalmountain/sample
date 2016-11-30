@@ -1,12 +1,15 @@
 package com.sample.web.dispatch;
 
 import com.alibaba.fastjson.JSON;
+import com.sample.core.Constant;
 import com.sample.core.exception.ExceptionLevel;
 import com.sample.core.exception.UnifiedException;
 import com.sample.core.log.Log;
 import com.sample.core.log.Log4jLog;
 import com.sample.core.service.ISampleService;
 import com.sample.core.service.Service;
+import com.sample.core.service.handler.AbstractServiceHandler;
+import com.sample.core.service.handler.ServiceHandlerChain;
 import com.sample.core.utils.AopTargetUtils;
 import com.sample.core.validator.FormatException;
 import org.springframework.aop.TargetSource;
@@ -32,6 +35,8 @@ public class ServiceDispatcher {
     private IServiceVisitor serviceVisitor;
     @Autowired(required = false)
     private List<ISampleService> sampleServices;
+    @Autowired(required = false)
+    private List<AbstractServiceHandler> abstractServiceHandlers;
     @Autowired(required = false)
     private HttpServletRequest request;
 
@@ -69,7 +74,7 @@ public class ServiceDispatcher {
                 return responseData;
             }
         }
-        throw new FormatException(ExceptionLevel.SERIOUS, "999999", "unknown exception", "web", null, null);
+        throw new FormatException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_NO_SERVICE[0], Constant.EXCEPTION_NO_SERVICE[1], "web", null, null);
     }
 
     private Method getMethod(Class c, String methodName) {

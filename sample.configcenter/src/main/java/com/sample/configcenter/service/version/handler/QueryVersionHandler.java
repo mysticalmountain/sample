@@ -5,6 +5,7 @@ import com.sample.configcenter.dto.version.VersionDto;
 import com.sample.configcenter.model.Project;
 import com.sample.configcenter.model.Version;
 import com.sample.configcenter.repository.VersionRepository;
+import com.sample.configcenter.service.version.QueryVersionService;
 import com.sample.core.Constant;
 import com.sample.core.exception.UnifiedException;
 import com.sample.core.model.dto.GenericReq;
@@ -32,7 +33,7 @@ public class QueryVersionHandler extends AbstractServiceHandler<GenericReq<Versi
     @Override
     public boolean support(Object... objs) {
         Service service = (Service)objs[1];
-        if (service.code().equals("1022")) {
+        if (service.code().equals(QueryVersionService.class.getAnnotation(Service.class).code())) {
             return true;
         }
         return false;

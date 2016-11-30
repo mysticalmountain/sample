@@ -1,5 +1,6 @@
 package com.sample.configcenter.dto.project;
 
+import com.sample.configcenter.dto.env.EnvDto;
 import com.sample.configcenter.dto.version.VersionDto;
 
 import java.io.Serializable;
@@ -16,6 +17,8 @@ public class ProjectDto implements Serializable{
     private String content;
 
     private VersionDto versionDto;
+
+    private EnvDto envDto;
 
     public Long getId() {
         return id;
@@ -47,5 +50,13 @@ public class ProjectDto implements Serializable{
 
     public void setVersionDto(VersionDto versionDto) {
         this.versionDto = versionDto;
+    }
+
+    public EnvDto getEnvDto() {
+        return envDto;
+    }
+
+    public void setEnvDto(EnvDto envDto) {
+        this.envDto = envDto;
     }
 }

@@ -27,7 +27,7 @@ $(document).ready(function () {
                     $("#errorTip").show();
 
                 } else {
-                    location.href = "/views/project/list.html";
+                    location.href = "/views/project/list.js";
                 }
                 // alert(result)
             }

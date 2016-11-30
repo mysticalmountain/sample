@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  * Created by andongxu on 16-11-10.
  */
 @Component
-@Service(code = "1021")
+@Service(code = "saveVersion", name = "保存项目版本号")
 public class SaveVersionService extends AbstractSampleService<GenericReq<VersionDto>, Rsp> {
 
     @Autowired

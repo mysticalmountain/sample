@@ -11,11 +11,7 @@
 <div id="navbar"></div>
 <div class="container">
     <div class="row">
-        <div class="span3 bs-docs-sidebar">
-            <ul class="nav nav-list bs-docs-sidenav">
-                <li><a id="a_projects" href="#"><i class="icon-chevron-right"></i>项目</a></li>
-                <li><a href="#button"><i class="icon-chevron-right"></i> 环境</a></li>
-            </ul>
+        <div id="menu" class="span3 bs-docs-sidebar">
         </div>
         <div class="span9">
             <div class="page-header">
@@ -25,30 +21,17 @@
                     </tr>
                 </table>
             </div>
-            <table class="table">
-                <tr>
-                    <td>
-                        <label class="col-sm-2 control-label">名称</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="name" placeholder="名称">
-                        </div>
-                    </td>
-                    <td>
-                        <label class="col-sm-2 control-label">描述</label>
-                        <div class="col-sm-10">
-                            <input type="text" class="form-control" id="content" placeholder="描述">
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="col-sm-offset-2 col-sm-10">
-                            <button class="btn btn-default" id="save">保存</button>
-                        </div>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
+            <label class="col-sm-2 control-label">名称</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="name" placeholder="名称">
+            </div>
+            <label class="col-sm-2 control-label">描述</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="content" placeholder="描述">
+            </div>
+            <div class="col-sm-offset-2 col-sm-10">
+                <button class="btn btn-default" id="save">保存</button>
+            </div>
             <div class="page-header">
                 <table width="100%">
                     <tr>
@@ -56,8 +39,16 @@
                     </tr>
                 </table>
             </div>
+            <label class="col-sm-2 control-label">版本</label>
+            <select id="versionId">
+                <option></option>
+            </select>
+            <label class="col-sm-2 control-label">环境</label>
+            <select id="envId">
+                <option></option>
+            </select>
             <div id="itemBody">
-                <table class="table">
+                <table class="table" id="keiVals">
                     <tr>
                         <td>
                             <label class="col-sm-2 control-label">键</label>
@@ -67,13 +58,11 @@
                             <label class="col-sm-2 control-label">值</label>
                             <input type="text" class="form-control" name="val" placeholder="值">
                         </td>
-                        <td></td>
-                    </tr>
-                    <tr>
                         <td colspan="3">
                             <label class="col-sm-2 control-label">描述</label>
                             <textarea name="content" rows="1" cols="200"></textarea>
                         </td>
+                        <td>&nbsp;</td>
                     </tr>
                 </table>
 

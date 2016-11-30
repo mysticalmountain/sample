@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  * Created by andongxu on 16-11-10.
  */
 @Component
-@Service(code = "1022")
+@Service(code = "queryVersion", name = "查询项目版本号")
 public class QueryVersionService extends AbstractSampleService<GenericReq<VersionDto>, GenericSetRsp<VersionDto>> {
 
     @Autowired

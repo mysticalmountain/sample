@@ -1,7 +1,6 @@
 package com.sample.core;
 
 import org.springframework.context.annotation.ComponentScan;
-
 import javax.annotation.Resource;
 
 /**

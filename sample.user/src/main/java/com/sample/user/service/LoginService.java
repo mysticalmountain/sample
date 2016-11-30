@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
  * Created by andongxu on 16-11-16.
  */
 @Component
-@Service(code = "1040")
+@Service(code = "1040", name = "登录")
 public class LoginService extends AbstractSampleService<GenericReq<LoginReqDto>, GenericRsp<LoginRspDto>> {
 
     @Autowired

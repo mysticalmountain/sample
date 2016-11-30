@@ -1,4 +1,5 @@
 $(document).ready(function () {
+    $.getScript("/resources/cc/common/menu.js");
     projects();
 
     $("#projectNew").click(function () {
@@ -6,22 +7,18 @@ $(document).ready(function () {
     });
 
     $("#a_projects").click(function () {
-        location.href = 'list.html';
+        location.href = 'list.js';
     });
 
     $("#linkNew").click(function () {
-        location.href = "../version/list.html";
+        location.href = "../version/list.js";
     });
-
-    $("#header").load("/views/common/header.html");
-    $("#footer").load("/views/common/footer.html");
-    $("#navbar").load("/views/common/navbar.html");
 });
 function projects() {
     $.ajax({
         type: "POST",
         contentType: "application/json",
-        url: "http://localhost:8080/service/1001",
+        url: "http://localhost:8080/service/queryProject",
         data: "{reqId:'123456'}",
         dataType: 'json',
         success: function (data) {
@@ -37,7 +34,7 @@ function projects() {
         buttons: {
             Ok: function () {
                 if ($("#errorCode").text() == 000000) {
-                    location.href = 'list.html';
+                    location.href = 'list.js';
                 } else {
                     $(this).dialog("close");
                 }

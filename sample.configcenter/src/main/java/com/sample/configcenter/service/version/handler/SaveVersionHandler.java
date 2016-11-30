@@ -5,6 +5,7 @@ import com.sample.configcenter.model.Project;
 import com.sample.configcenter.model.Version;
 import com.sample.configcenter.repository.ProjectRepository;
 import com.sample.configcenter.repository.VersionRepository;
+import com.sample.configcenter.service.version.SaveVersionService;
 import com.sample.core.Constant;
 import com.sample.core.exception.UnifiedException;
 import com.sample.core.model.dto.GenericReq;
@@ -30,7 +31,7 @@ public class SaveVersionHandler extends AbstractServiceHandler<GenericReq<Versio
     @Override
     public boolean support(Object... objs) {
         Service service = (Service) objs[1];
-        if (service.code().equals("1021")) {
+        if (service.code().equals(SaveVersionService.class.getAnnotation(Service.class).code())) {
             return true;
         }
         return false;

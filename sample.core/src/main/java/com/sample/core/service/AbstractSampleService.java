@@ -9,8 +9,8 @@ import com.sample.core.service.handler.AfterServiceHandlerChain;
 import com.sample.core.service.handler.BeforeServiceHandlerChain;
 import org.apache.commons.beanutils.PropertyUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.transaction.annotation.Transactional;
 
-import javax.transaction.Transactional;
 
 /**
  * Created by andongxu on 9/12/16.
@@ -25,13 +25,19 @@ public abstract class AbstractSampleService<I, O> implements ISampleService<I, O
     private AfterServiceHandlerChain<O, O> afterServiceHandlerChain;
 
     public O service(I i) throws UnifiedException {
+        long begin = System.currentTimeMillis();
         Service service = this.getClass().getAnnotation(Service.class);
+        O res = null;
         try {
-            log.info("execute service [" + service.code() + "] request id [" + PropertyUtils.getProperty(i , "reqId") + "]");
-        } catch (Exception e) {
-            throw new UnifiedException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_UNKNOWN[0], Constant.EXCEPTION_UNKNOWN[1], null, null, e);
+            res = beforeServiceHandlerChain.handle(i, service);
+        } finally {
+            long end = System.currentTimeMillis();
+            try {
+                log.info("execute service [" + service.code() + "] request id [" + PropertyUtils.getProperty(i, "reqId") + "]; time mills:" + (end - begin) + " ms");
+            } catch (Exception e) {
+                throw new UnifiedException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_UNKNOWN[0], Constant.EXCEPTION_UNKNOWN[1], null, null, e);
+            }
         }
-        O res = beforeServiceHandlerChain.handle(i, service);
         if (res != null) {
             return res;
         } else {
@@ -41,7 +47,6 @@ public abstract class AbstractSampleService<I, O> implements ISampleService<I, O
         }
     }
 
-    @Transactional(value = Transactional.TxType.REQUIRED)
     public abstract O doService(I i) throws UnifiedException;
 
     public abstract O captureException(I i, UnifiedException ue) throws UnifiedException;

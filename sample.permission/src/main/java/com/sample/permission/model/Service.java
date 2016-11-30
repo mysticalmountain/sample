@@ -1,6 +1,7 @@
 package com.sample.permission.model;
 
 import com.sample.permission.model.Permission;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.hibernate.annotations.GenericGenerator;
 import org.hibernate.annotations.Parameter;
 
@@ -27,11 +28,26 @@ public class Service extends com.sample.core.model.Entity {
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "serviceId")
     private Long id;
 
-    @Column(length = 8)
+    @Column(length = 32)
     private String code;
 
     @Column(length = 255)
     private String content;
+
+    @Column(length = 8)
+    private String system;
+
+    @Column(length = 8)
+    private String module;
+
+    @Column(length = 1)
+    private Boolean isWriteLog;
+
+    @Column(length = 1)
+    private Boolean isValidateReq;
+
+    @Column(length = 1)
+    private Boolean isIdempotent;
 
     @OneToOne
     @JoinColumn(name = "resource_id", unique = true, nullable = false, updatable = false)
@@ -59,6 +75,46 @@ public class Service extends com.sample.core.model.Entity {
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public String getSystem() {
+        return system;
+    }
+
+    public void setSystem(String system) {
+        this.system = system;
+    }
+
+    public String getModule() {
+        return module;
+    }
+
+    public void setModule(String module) {
+        this.module = module;
+    }
+
+    public Boolean getWriteLog() {
+        return isWriteLog;
+    }
+
+    public void setWriteLog(Boolean writeLog) {
+        isWriteLog = writeLog;
+    }
+
+    public Boolean getValidateReq() {
+        return isValidateReq;
+    }
+
+    public void setValidateReq(Boolean validateReq) {
+        isValidateReq = validateReq;
+    }
+
+    public Boolean getIdempotent() {
+        return isIdempotent;
+    }
+
+    public void setIdempotent(Boolean idempotent) {
+        isIdempotent = idempotent;
     }
 
     public Resource getResource() {

@@ -74,7 +74,7 @@ $(function () {
 
     var tabs = $( "#tabs2" ).tabs();
 
-    // modal dialog init: custom buttons and a "close" callback reseting the form inside
+    // modal dialog config: custom buttons and a "close" callback reseting the form inside
     var dialog = $( "#dialog2" ).dialog({
         autoOpen: false,
         modal: true,

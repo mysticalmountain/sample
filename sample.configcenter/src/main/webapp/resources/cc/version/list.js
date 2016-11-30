@@ -1,11 +1,8 @@
 $(document).ready(function () {
-
-    $("#header").load("/views/common/header.html");
-    $("#footer").load("/views/common/footer.html");
-    $("#navbar").load("/views/common/navbar.html");
+    $.getScript("/resources/cc/common/menu.js");
 
     $("#a_projects").click(function () {
-        location.href = '../project/list.html';
+        location.href = '../project/list.js';
     });
 
     $("#versionNew").click(function () {
@@ -13,7 +10,7 @@ $(document).ready(function () {
     });
 
     $("#linkNew").click(function () {
-        location.href = "list.html";
+        location.href = "list.js";
     });
 
     versions();
@@ -21,7 +18,7 @@ $(document).ready(function () {
     $.ajax({
         type: "POST",
         contentType: "application/json",
-        url: "http://localhost:8080/service/1001",
+        url: "http://localhost:8080/service/queryProject",
         data: "{reqId:'123456'}",
         dataType: 'json',
         success: function (data) {
@@ -84,7 +81,7 @@ function versions() {
     $.ajax({
         type: "POST",
         contentType: "application/json",
-        url: "http://localhost:8080/service/1022",
+        url: "http://localhost:8080/service/queryVersion",
         data: "{reqId:'123456'}",
         dataType: 'json',
         success: function (data) {

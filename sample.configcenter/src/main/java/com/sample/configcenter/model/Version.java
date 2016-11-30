@@ -37,9 +37,8 @@ public class Version extends Entity {
     @JoinColumn(name = "project_id", referencedColumnName = "id")
     private Project project;
 
-    @OneToMany(targetEntity = Item.class)
-    @JoinColumn(name = "id")
-    private Set<Item> items;
+    @OneToMany(mappedBy = "version", targetEntity = Kei.class)
+    private Set<Kei> keis;
 
     public Long getId() {
         return id;
@@ -69,15 +68,15 @@ public class Version extends Entity {
         return project;
     }
 
-    public Set<Item> getItems() {
-        return items;
-    }
-
-    public void setItems(Set<Item> items) {
-        this.items = items;
-    }
-
     public void setProject(Project project) {
         this.project = project;
+    }
+
+    public Set<Kei> getKeis() {
+        return keis;
+    }
+
+    public void setKeis(Set<Kei> keis) {
+        this.keis = keis;
     }
 }

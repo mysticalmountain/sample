@@ -11,7 +11,7 @@ import java.util.Set;
  * Created by andongxu on 16-10-31.
  */
 @Entity
-public class Env extends com.sample.core.model.Entity{
+public class Env extends com.sample.core.model.Entity {
 
     @Id
     @GenericGenerator(name = "id", strategy = "enhanced-table",
@@ -67,16 +67,4 @@ public class Env extends com.sample.core.model.Entity{
     public void setContent(String content) {
         this.content = content;
     }
-
-//    public Set<Project> getProjects() {
-//        return projects;
-//    }
-
-//    public void setProjects(Set<Project> projects) {
-//        this.projects = projects;
-//    }
-
-//    @OneToMany(targetEntity = Project.class)
-//    @JoinColumn(name = "id")
-//    private Set<Project> projects;
 }

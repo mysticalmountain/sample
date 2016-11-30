@@ -7,11 +7,10 @@ import org.hibernate.annotations.Parameter;
 import javax.persistence.*;
 
 /**
- * Created by andongxu on 16-10-31.
+ * Created by andongxu on 16-11-29.
  */
 @javax.persistence.Entity
-public class Item extends Entity {
-
+public class Val extends Entity {
     @Id
     @GenericGenerator(name = "id", strategy = "enhanced-table",
             parameters = {
@@ -26,22 +25,15 @@ public class Item extends Entity {
     @GeneratedValue(strategy = GenerationType.TABLE, generator = "id")
     private Long id;
 
-    @Column(length = 64)
-    private String kei;
-
-    @Column(length = 255)
     private String val;
 
-    @Column(length = 255)
-    private String content;
+    @ManyToOne(targetEntity = Kei.class)
+    @JoinColumn(name = "key_id", referencedColumnName = "id")
+    private Kei kei;
 
-    @ManyToOne(targetEntity = Project.class)
-    @JoinColumn(name = "project_id", referencedColumnName = "id")
-    private Project project;
-
-    @ManyToOne(targetEntity = Version.class)
-    @JoinColumn(name = "version_id", referencedColumnName = "id")
-    private Version version;
+    @ManyToOne(targetEntity = Env.class)
+    @JoinColumn(name = "env_id", referencedColumnName = "id")
+    private Env env;
 
     public Long getId() {
         return id;
@@ -49,14 +41,6 @@ public class Item extends Entity {
 
     public void setId(Long id) {
         this.id = id;
-    }
-
-    public String getKei() {
-        return kei;
-    }
-
-    public void setKei(String kei) {
-        this.kei = kei;
     }
 
     public String getVal() {
@@ -67,27 +51,19 @@ public class Item extends Entity {
         this.val = val;
     }
 
-    public String getContent() {
-        return content;
+    public Kei getKei() {
+        return kei;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setKei(Kei kei) {
+        this.kei = kei;
     }
 
-    public Project getProject() {
-        return project;
+    public Env getEnv() {
+        return env;
     }
 
-    public void setProject(Project project) {
-        this.project = project;
-    }
-
-    public Version getVersion() {
-        return version;
-    }
-
-    public void setVersion(Version version) {
-        this.version = version;
+    public void setEnv(Env env) {
+        this.env = env;
     }
 }

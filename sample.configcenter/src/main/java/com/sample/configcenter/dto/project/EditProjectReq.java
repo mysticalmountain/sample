@@ -9,7 +9,7 @@ import javax.validation.constraints.Pattern;
  */
 public class EditProjectReq extends Req {
 
-    @Pattern(regexp = "\\d{1,8}", message = "格式:\\d{1,8}")
+//    @Pattern(regexp = "\\d{1,8}", message = "格式:\\d{1,8}")
     private Long id;
 
     @Pattern(regexp = "(\\w|[\\u4E00-\\u9FA5]){1,32}", message = "格式:(\\w|[\\u4E00-\\u9FA5]){1,5}")

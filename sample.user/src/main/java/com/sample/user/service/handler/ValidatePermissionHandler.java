@@ -23,8 +23,8 @@ import java.util.Set;
 /**
  * Created by andongxu on 16-11-14.
  */
-@Priority(15)
-@Component
+//@Priority(15)
+//@Component
 public class ValidatePermissionHandler<I, O> extends AbstractBeforeServiceHandler<Req, Rsp> {
 
     private Log log = Log.getLog(this.getClass());
@@ -45,10 +45,11 @@ public class ValidatePermissionHandler<I, O> extends AbstractBeforeServiceHandle
 
     @Override
     public Rsp doHandle(Req req, Service service) throws UnifiedException {
-        log.info("ValidatePermissionHandler");
         if (req.getUserId() != null) {
-            log.info("web");
             com.sample.permission.model.Service s = serviceRepository.findByCode(service.code());
+            if (s == null) {
+                return null;
+            }
             Resource resource = s.getResource();
             User user = userRepository.findOne(Long.valueOf(req.getUserId()));
             Set<Role> roles = user.getRoles();
@@ -67,16 +68,9 @@ public class ValidatePermissionHandler<I, O> extends AbstractBeforeServiceHandle
             } else {
                 throw new UnifiedException(ExceptionLevel.COMMON, Constant.EXCEPTION_NO_PERMISSION[0], Constant.EXCEPTION_NO_PERMISSION[1], null, null, null);
             }
-//            if (s == null) {
-//                return null;
-//            } else {
-//                throw new UnifiedException(ExceptionLevel.COMMON, Constant.EXCEPTION_NO_PERMISSION[0], Constant.EXCEPTION_NO_PERMISSION[1], null, null, null);
-//            }
         } else if (req.getChannelId() != null) {
-            log.info("channel");
             throw new UnifiedException(ExceptionLevel.COMMON, Constant.EXCEPTION_NO_PERMISSION[0], Constant.EXCEPTION_NO_PERMISSION[1], null, null, null);
         } else {
-            log.info("web");
             com.sample.permission.model.Service s = serviceRepository.findByCode(service.code());
             if (s == null) {
                 return null;

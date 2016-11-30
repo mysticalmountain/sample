@@ -10,23 +10,25 @@ import com.sample.core.service.handler.ServiceHandlerChain;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.Set;
+
 /**
  * Created by andongxu on 16-11-9.
  */
 @Component
-@Service(code = "1030")
-public class SaveItemService extends AbstractSampleService<GenericSetReq<ItemDto>, Rsp> {
+@Service(code = "saveItem", name = "保存项目属性")
+public class SaveItemService extends AbstractSampleService<GenericSetReq<Set<ItemDto>>, Rsp> {
 
     @Autowired
-    private ServiceHandlerChain<GenericSetReq<ItemDto>, Rsp> chain;
+    private ServiceHandlerChain<GenericSetReq<Set<ItemDto>>, Rsp> chain;
 
     @Override
-    public Rsp doService(GenericSetReq<ItemDto> itemDtoGenericSetReq) throws UnifiedException {
+    public Rsp doService(GenericSetReq<Set<ItemDto>> itemDtoGenericSetReq) throws UnifiedException {
         return chain.handle(itemDtoGenericSetReq, this.getClass().getAnnotation(Service.class));
     }
 
     @Override
-    public Rsp captureException(GenericSetReq<ItemDto> itemDtoGenericSetReq, UnifiedException ue) throws UnifiedException {
+    public Rsp captureException(GenericSetReq<Set<ItemDto>> itemDtoGenericSetReq, UnifiedException ue) throws UnifiedException {
         Rsp rsp = new Rsp();
         rsp.setErrorCode(ue.getErrorCode());
         rsp.setErrorMsg(ue.getErrorMessage());

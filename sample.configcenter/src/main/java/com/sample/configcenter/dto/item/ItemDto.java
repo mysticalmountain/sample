@@ -19,6 +19,8 @@ public class ItemDto implements Serializable{
 
     private Long versionId;
 
+    private Long envId;
+
     public Long getId() {
         return id;
     }
@@ -65,5 +67,13 @@ public class ItemDto implements Serializable{
 
     public void setContent(String content) {
         this.content = content;
+    }
+
+    public Long getEnvId() {
+        return envId;
+    }
+
+    public void setEnvId(Long envId) {
+        this.envId = envId;
     }
 }

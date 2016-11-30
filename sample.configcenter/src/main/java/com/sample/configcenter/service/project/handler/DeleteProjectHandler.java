@@ -1,6 +1,7 @@
 package com.sample.configcenter.service.project.handler;
 
 import com.sample.configcenter.repository.ProjectRepository;
+import com.sample.configcenter.service.project.DeleteProjectService;
 import com.sample.core.Constant;
 import com.sample.core.exception.UnifiedException;
 import com.sample.core.model.dto.IdLongReq;
@@ -21,7 +22,8 @@ public class DeleteProjectHandler extends AbstractServiceHandler<IdLongReq, Rsp>
 
     @Override
     public boolean support(Object ... objs) {
-        if(objs[0] instanceof IdLongReq) {
+        Service service = (Service)objs[1];
+        if (service.code().equals(DeleteProjectService.class.getAnnotation(Service.class).code())) {
             return true;
         }
         return false;

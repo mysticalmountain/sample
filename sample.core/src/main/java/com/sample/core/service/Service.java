@@ -17,6 +17,11 @@ public @interface Service {
     String code() default "";
 
     /**
+     * 名称
+     */
+    String name () default "";
+
+    /**
      * 系统
      * @return
      */

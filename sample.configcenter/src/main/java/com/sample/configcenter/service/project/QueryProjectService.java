@@ -16,7 +16,7 @@ import java.util.List;
  * Created by andongxu on 16-11-1.
  */
 @Component
-@Service(isValidateReq = true, code = "1001")
+@Service(isValidateReq = true, code = "queryProject", name = "查询项目")
 public class QueryProjectService extends AbstractSampleService<QueryProjectReq, QueryRsp<List<ProjectDto>>> {
 
     @Autowired

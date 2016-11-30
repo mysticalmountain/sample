@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  * Created by andongxu on 16-11-8.
  */
 @Component
-@Service(code = "1004")
+@Service(code = "deleteProject", name = "删除项目")
 public class DeleteProjectService extends AbstractSampleService<IdLongReq, Rsp> {
 
     @Autowired

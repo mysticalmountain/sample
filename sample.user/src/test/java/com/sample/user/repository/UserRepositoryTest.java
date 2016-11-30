@@ -89,4 +89,12 @@ public class UserRepositoryTest extends BaseTest {
         user.setRoles(roles);
         userRepository.save(user);
     }
+
+    @Test
+    public void save7() {
+        Role role = new Role();
+        role.setName("管理员");
+//        Set<Role> roles = new HashSet<Role>();
+        roleRepository.save(role);
+    }
 }

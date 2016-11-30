@@ -7,10 +7,7 @@ import javax.persistence.Entity;
  * Created by andongxu on 16-6-14.
  */
 @Entity
-public class Profile extends com.sample.core.model.Entity {
-
-    @Id
-    private Long id;
+public class Profile extends BaseEntity{
 
     @Column(length = 2)
     private int age;
@@ -22,16 +19,9 @@ public class Profile extends com.sample.core.model.Entity {
     private String address;
 
     @OneToOne
-    @PrimaryKeyJoinColumn
+    @JoinColumn(name = "user_id")
     private User user;
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public int getAge() {
         return age;

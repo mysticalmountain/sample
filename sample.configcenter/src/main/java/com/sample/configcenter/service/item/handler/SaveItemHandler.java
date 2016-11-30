@@ -1,12 +1,13 @@
 package com.sample.configcenter.service.item.handler;
 
 import com.sample.configcenter.dto.item.ItemDto;
-import com.sample.configcenter.model.Item;
+import com.sample.configcenter.model.Kei;
 import com.sample.configcenter.model.Project;
 import com.sample.configcenter.model.Version;
-import com.sample.configcenter.repository.ItemRepository;
+import com.sample.configcenter.repository.KeiRepository;
 import com.sample.configcenter.repository.ProjectRepository;
 import com.sample.configcenter.repository.VersionRepository;
+import com.sample.configcenter.service.item.SaveItemService;
 import com.sample.core.Constant;
 import com.sample.core.exception.UnifiedException;
 import com.sample.core.model.dto.GenericSetReq;
@@ -27,7 +28,7 @@ import java.util.Set;
 public class SaveItemHandler extends AbstractServiceHandler<GenericSetReq<ItemDto>, Rsp> {
 
     @Autowired
-    private ItemRepository itemRepository;
+    private KeiRepository itemRepository;
     @Autowired
     private ProjectRepository projectRepository;
     @Autowired
@@ -36,7 +37,7 @@ public class SaveItemHandler extends AbstractServiceHandler<GenericSetReq<ItemDt
     @Override
     public boolean support(Object... objs) {
         Service service = (Service)objs[1];
-        if (service.code().equals("1030")) {
+        if (service.code().equals(SaveItemService.class.getAnnotation(Service.class).code())) {
             return true;
         }
         return false;
@@ -48,12 +49,12 @@ public class SaveItemHandler extends AbstractServiceHandler<GenericSetReq<ItemDt
         Iterator<ItemDto> itemDtoIterator = itemDtos.iterator();
         while (itemDtoIterator.hasNext()) {
             ItemDto itemDto = itemDtoIterator.next();
-            Item item = null;
+            Kei item = null;
             if (itemDto.getId() != null) {
                 item = itemRepository.findOne(itemDto.getId());
             }
             if (item == null) {
-                item = new Item();
+                item = new Kei();
             }
             BeanUtils.copyProperties(itemDto, item);
             Project project = projectRepository.findOne(itemDto.getProjectId());
