@@ -32,13 +32,17 @@ public class ServiceHandlerChain<I, O> implements IServiceHandlerChain<I, O> {
     public O handle(I i, Service service) throws UnifiedException {
         Integer currentIndex = index.get();
         if (currentIndex < chain.size()) {
-            if (currentIndex == chain.size() - 1) {
-                index.remove();
-            } else {
-                index.set(currentIndex + 1);
-            }
-
+            index.set(currentIndex + 1);
         }
         return (O) chain.get(currentIndex).execute(i, this, service);
+    }
+
+    public boolean isContinue() {
+        Integer currentIndex = index.get();
+        if (currentIndex == chain.size()) {
+            index.remove();
+            return false;
+        }
+        return true;
     }
 }

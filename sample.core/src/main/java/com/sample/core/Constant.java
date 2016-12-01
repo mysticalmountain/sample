@@ -37,6 +37,11 @@ public class Constant {
      */
     public static String [] EXCEPTION_NO_SERVICE = {"999994", "no service"};
 
+    /**
+     * 未找到服务handler
+     */
+    public static String [] EXCEPTION_NO_HANDLER = {"999993", "no service handler"};
+
 
     /******************************************************************************************/
 

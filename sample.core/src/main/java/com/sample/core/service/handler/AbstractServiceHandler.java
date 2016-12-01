@@ -6,6 +6,7 @@ import com.sample.core.exception.UnifiedException;
 import com.sample.core.log.Log;
 import com.sample.core.log.Log4jLog;
 import com.sample.core.service.Service;
+import com.sun.tools.internal.jxc.ap.Const;
 import org.apache.commons.beanutils.PropertyUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
@@ -37,7 +38,12 @@ public abstract class AbstractServiceHandler<I, O> implements IServiceHandler<I,
             }
             return o;
         } else {
-            return chain.handle(i, service);
+            ServiceHandlerChain serviceHandlerChain = (ServiceHandlerChain) chain;
+            if (serviceHandlerChain.isContinue()) {
+                return chain.handle(i, service);
+            } else {
+                throw new UnifiedException(ExceptionLevel.SERIOUS, Constant.EXCEPTION_NO_HANDLER[0], Constant.EXCEPTION_NO_HANDLER[1], null, null, null);
+            }
         }
     }
 
